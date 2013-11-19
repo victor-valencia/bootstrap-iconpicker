@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bootstrap Iconpicker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="bootstrap-3.0.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-3.0.0/dist/css/docs.css">
+        <link rel="stylesheet" href="bootstrap-3.0.0/dist/css/pygments-manni.css">
+        <link rel="stylesheet" href="font-awesome-4.0.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap-iconpicker/css/bootstrap-iconpicker.css">
+        
+    </head>
+    <body>
+        
+        <!-- Begin :: Donate Form -->
+	<form id="formDonate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+	    <input type="hidden" name="cmd" value="_s-xclick">
+	    <input type="hidden" name="hosted_button_id" value="7344EETBUX96A">
+	</form>
+	<!-- End :: Donate Form -->
+        
+        <div class="container">
+            
+            <div class="row text-center text-primary">
+                <i class="fa fa-th-large fa-5x"></i>
+                <h1>Iconpicker for Bootstrap 3.0 <small><em>By Victor Valencia Rico.</em></small></h1>
+                <span>A simple iconpicker</span>
+            </div>
+            
+            <div class="row text-center" style="padding-top: 20px;">
+               <div class="col-md-12">
+                    <div class="btn-group buttons-menu-container">
+                        <a class="btn btn-primary" href="https://github.com/victor-valencia/bootstrap-iconpicker/zipball/master" role="button">
+                            <i class=" fa fa-download"></i> Download Project
+                        </a>
+                        <a id="btnDonate" class="btn btn-warning" href="#" target="_blank" role="button">
+                            <i class=" fa fa-heart"></i> PayPal Donate
+                        </a>                     
+                        <a class="btn btn-primary" href="https://github.com/victor-valencia/bootstrap-iconpicker" target="_blank" role="button">
+                            <i class="fa fa-github-alt"></i> View on Git Hub
+                        </a>
+                    </div>
+                </div> 
+            </div>
+            
+            <h4>Configuration</h4>
+            <p>1.- Add the style file <code>bootstrap-iconpicker.min.css</code></p>            
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <p>2.- Add the javascript file <code>bootstrap-iconpicker.min.js</code></p>            
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4 style="padding-top: 30px;">Initialize</h4>
+            <p>Add <code>role="iconpicker"</code> to initialize the iconpicker.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <p><code>role="iconpicker"</code></p>
+                        <button class="btn btn-default" name="icon" role="iconpicker"></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Set Iconset</h4>
+            <p>Add <code>data-iconset="glyphicon|fontawesome"</code> to idicates the iconset.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <p><code>data-iconset="glyphicon"</code></p>
+                        <button class="btn btn-default" data-iconset="glyphicon" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-6">
+                        <p><code>data-iconset="fontawesome"</code></p>
+                        <button class="btn btn-default" data-iconset="fontawesome" role="iconpicker"></button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-iconset=</span><span class="s">"fontawesome"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Set Icon Selected </h4>
+            <p>Add <code>data-icon="glyphicon-heart"</code> to select an icon.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <p><code>data-icon="glyphicon-heart"</code></p>
+                        <button class="btn btn-default" data-icon="glyphicon-heart" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-6">
+                        <p><code>data-icon="fa-github-alt"</code></p>
+                        <button class="btn btn-default" data-icon="fa-github-alt" data-iconset="fontawesome" role="iconpicker"></button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-icon=</span><span class="s">"fontawesome"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Set Rows and Cols</h4>
+            <p>Add <code>data-rows="3"</code> or <code>data-cols="6"</code> to set rows and columns to showing in iconpicker.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <p><code>data-rows="3"</code> and <code>data-cols="6"</code></p>
+                        <button class="btn btn-default" data-rows="3" data-cols="6" role="iconpicker"></button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-rows=</span><span class="s">"3"</span> <span class="na">data-cols=</span><span class="s">"6"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Set Placement</h4>
+            <p>Add <code>data-placement="left|top|bottom|right"</code> to indicate where the datepicker will be display.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <p><code>data-placement="left"</code></p>
+                        <button class="btn btn-default" data-placement="left" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <p><code>data-placement="top"</code></p>
+                        <button class="btn btn-default" data-placement="top" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <p><code>data-placement="bottom"</code></p>
+                        <button class="btn btn-default" data-placement="bottom" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <p><code>data-placement="right"</code></p>
+                        <button class="btn btn-default" data-placement="right" role="iconpicker"></button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-placement=</span><span class="s">"left|top|bottom|right"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Set Style</h4>
+            <p>Add in <code>class=""</code> your custom style.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-2">
+                        <p><code>class="btn btn-default"</code></p>
+                        <button class="btn btn-default" data-placement="top" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-2">
+                        <p><code>class="btn btn-primary"</code></p> 
+                        <button class="btn btn-primary" data-placement="top" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-2">
+                        <p><code>class="btn btn-success"</code></p> 
+                        <button class="btn btn-success" data-placement="top" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-2">
+                        <p><code>class="btn btn-warning"</code></p>
+                        <button class="btn btn-warning" data-placement="top" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-2">
+                        <p><code>class="btn btn-danger"</code></p>
+                        <button class="btn btn-danger" data-placement="top" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-2">
+                        <p><code>class="btn btn-info"</code></p>
+                        <button class="btn btn-info" data-placement="top" role="iconpicker"></button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Javascript</h4>            
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <button id="convert" class="btn btn-primary" style="margin-left: 30px;">Click to convert</button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).iconpicker({</span> 
+    <span class="na">iconset: </span><span class="s">'fontawesome'</span>,
+    <span class="na">icon: </span><span class="s">'fa-key'</span>, 
+    <span class="na">rows: </span><span class="s">5</span>,
+    <span class="na">cols: </span><span class="s">5</span>,
+    <span class="na">placement: </span><span class="s">'top'</span>,
+<span class="nt">});</span>
+                    </code>
+                </pre>
+            </div>
+                        
+        </div>
+        
+        <script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.js"></script>
+        
+        <script type="text/javascript">
+        
+            $(function(){
+                $('#convert').on('click', function(e){
+                    e.preventDefault();
+                    $('#convert').off('click');
+                    $('#convert').iconpicker({
+                        iconset: 'fontawesome',
+                        icon: 'fa-key',
+                        rows: 5,
+                        cols: 5,
+                        placement: 'top'
+                    });                    
+                }); 
+            });
+            
+        </script>
+        
+        <script type="text/javascript">
+        
+            $(function(){
+                $('#btnDonate').bind('click', function(e){
+                    e.preventDefault();
+                    $('#formDonate').submit();                    
+                }); 
+            });
+            
+        </script>
+        
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38890641-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        
+    </body>
+</html>
