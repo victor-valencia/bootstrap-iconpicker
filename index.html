@@ -220,12 +220,17 @@ and open the template in the editor.
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).iconpicker({</span> 
+                    <code class="html">
+<span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).iconpicker({</span> 
     <span class="na">iconset: </span><span class="s">'fontawesome'</span>,
     <span class="na">icon: </span><span class="s">'fa-key'</span>, 
     <span class="na">rows: </span><span class="s">5</span>,
     <span class="na">cols: </span><span class="s">5</span>,
     <span class="na">placement: </span><span class="s">'top'</span>,
+<span class="nt">});</span>
+
+<span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).on(<span class="s">'change'</span>, function(e) {</span> 
+    <span class="nt">console.log(</span><span class="na">e.icon</span><span class="nt">);</span>
 <span class="nt">});</span>
                     </code>
                 </pre>
@@ -256,6 +261,9 @@ and open the template in the editor.
                         placement: 'top'
                     });                    
                 }); 
+                $('#convert').on('change', function(e) {
+                    console.log(e.icon);
+                });
             });
             
         </script>

@@ -739,6 +739,7 @@
             op.icon = icon;
             el.find('input').val(icon);
             el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
+            el.trigger({ type: "change", icon: icon });
             op.table.find('button.btn-warning').removeClass('btn-warning');
         }    
     };
