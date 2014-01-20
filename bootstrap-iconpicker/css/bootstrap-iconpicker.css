@@ -22,3 +22,7 @@
     text-align: center;
     padding: 0;
 }
+
+.popover {
+    max-width: inherit !important;
+}

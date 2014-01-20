@@ -232,7 +232,93 @@ and open the template in the editor.
 <span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).on(<span class="s">'change'</span>, function(e) {</span> 
     <span class="nt">console.log(</span><span class="na">e.icon</span><span class="nt">);</span>
 <span class="nt">});</span>
+
+<span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).iconpicker(<span class="s">'setIcon'</span>, <span class="s">'fa-globe'</span>);</span>
                     </code>
+                </pre>
+            </div>
+            
+            <h4>See in action (Bottom Builder)</h4>            
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row">
+                    <div class="col-md-4"> 
+                        <div id="button" class="well text-center" data-position="left" style="height: 290px; padding-top: 120px;">
+                            <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-adjust"></i> Button text</a>
+                        </div>                        
+                    </div>
+                    <div class="col-md-8">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="btn-text" class="col-sm-2 control-label">Text: </label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="btn-text" placeholder="Button Text" value="Button Text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="btn-color" class="col-sm-2 control-label">Color: </label>
+                                <div class="col-sm-10">
+                                    <div id="btn-colors" class="btn-group">
+                                        <button name="color" type="button" class="btn btn-default" value="btn-default">Default</button>
+                                        <button name="color" type="button" class="btn btn-primary" value="btn-primary">Primary</button>
+                                        <button name="color" type="button" class="btn btn-info" value="btn-info">Info</button>
+                                        <button name="color" type="button" class="btn btn-success" value="btn-success">Success</button>
+                                        <button name="color" type="button" class="btn btn-warning" value="btn-warning">Warning</button>
+                                        <button name="color" type="button" class="btn btn-danger" value="btn-danger">Danger</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="btn-color" class="col-sm-2 control-label">Size: </label>
+                                <div class="col-sm-10">
+                                  <div id="btn-sizes">
+                                        <p>
+                                            <button class="btn btn-xs btn-default" value="btn-xs" type="button">Mini</button>
+                                            <button class="btn btn-sm btn-default" value="btn-sm" type="button">Small</button>
+                                            <button class="btn btn-default" value="btn-default" type="button">Default</button>
+                                            <button class="btn btn-default btn-lg" value="btn-lg" type="button">Large</button>
+                                        </p>
+                                        <p>
+                                            <a href="#" class="btn btn-default btn-block" data-toggle="button">Full width button</a>
+                                        </p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="btn-color" class="col-sm-2 control-label">Icon: </label>
+                                <div class="col-sm-10">
+                                    <button id="btn-icon" class="btn btn-default"></button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="btn-color" class="col-sm-2 control-label">Icon position: </label>
+                                <div class="col-sm-10">
+                                    <div id="btn-icon-positions" class="btn-group">
+                                        <button class="btn btn-default" value="left" type="button"><span class="glyphicon glyphicon-arrow-left"></span> Left</button>
+                                        <button class="btn btn-default" value="right" type="button">Right <span class="glyphicon glyphicon-arrow-right"></span></button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </form>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code id="result" class="html">
+<!--<span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).iconpicker({</span> 
+    <span class="na">iconset: </span><span class="s">'fontawesome'</span>,
+    <span class="na">icon: </span><span class="s">'fa-key'</span>, 
+    <span class="na">rows: </span><span class="s">5</span>,
+    <span class="na">cols: </span><span class="s">5</span>,
+    <span class="na">placement: </span><span class="s">'top'</span>,
+<span class="nt">});</span>
+
+<span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).on(<span class="s">'change'</span>, function(e) {</span> 
+    <span class="nt">console.log(</span><span class="na">e.icon</span><span class="nt">);</span>
+<span class="nt">});</span>
+
+<span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).iconpicker(<span class="s">'setIcon'</span>, <span class="s">'fa-globe'</span>);</span>
+                    --></code>
                 </pre>
             </div>
             
@@ -263,6 +349,63 @@ and open the template in the editor.
                 }); 
                 $('#convert').on('change', function(e) {
                     console.log(e.icon);
+                });
+            });
+            
+        </script>
+        
+        <!-- Button Builder Example -->
+        <script type="text/javascript">
+        
+            $(function(){
+                var show_result = function(){
+                    $('#result').text($('#button').html().trim());
+                };
+                
+                show_result();
+                
+                $('#btn-text').on('focusout', function(e) {
+                    $('#btn-icon-positions button[value="' + $('#button').data('position') + '"]').trigger('click')
+                    show_result();
+                });
+                
+                $('#btn-colors button').on('click', function(e) {
+                    $('#button a').removeClass('btn-default btn-primary btn-info btn-success btn-warning btn-danger').addClass($(this).val());                   
+                    show_result();
+                });
+                
+                $('#btn-sizes button').on('click', function(e) {
+                    $('#button a').removeClass('btn-xs btn-sm btn-lg').addClass($(this).val());                   
+                    show_result();
+                });
+                
+                $('#btn-sizes a').on('click', function(e) {
+                    $('#button a').toggleClass('btn-block');                   
+                    show_result();
+                });
+                
+                $('#btn-icon').iconpicker({
+                    rows: 5,
+                    cols: 10,
+                });
+                
+                $('#btn-icon').on('change', function(e) {
+                    $('#button a > i').attr('class', '').addClass('glyphicon ' + e.icon);
+                    show_result();
+                });
+                
+                $('#btn-icon-positions button').on('click', function(e) {
+                    var icon = $('#button a > i');
+                    var text = $('#btn-text').val();
+                    $('#button a').empty();
+                    if($(this).val() == 'left'){
+                       $('#button a').append(icon).append(' ' + text);
+                    }
+                    else{
+                       $('#button a').append(text + ' ').append(icon); 
+                    }
+                    $('#button').data('position', $(this).val());
+                    show_result();
                 });
             });
             

@@ -777,48 +777,56 @@
         this.bindEvents();
     }  
   
+    Iconpicker.prototype.setIcon = function (icon) {        
+        this.select(icon);
+    }
+  
     // ICONPICKER PLUGIN DEFINITION
     // ========================
     var old = $.fn.iconpicker;
-    $.fn.iconpicker = function (option) {
+    $.fn.iconpicker = function (option, params) {
         return this.each(function () {
             var $this   = $(this);
             var data    = $this.data('bs.iconpicker');
             var options = typeof option == 'object' && option;
             if (!data) $this.data('bs.iconpicker', (data = new Iconpicker(this, options)));
-            var op = data.options;
-            var ic = (op.iconset == 'fontawesome') ? 'fa' : 'glyphicon';
-            op = $.extend(op, {
-                icons: Iconpicker.ICONSET[ic],
-                iconClass: ic,
-                iconClassFix: ic + '-',
-                page: 1,
-                selected: -1,
-                table: $('<table class="table-icons"><thead></thead><tbody></tbody></table>')
-            });
-            var name = ( typeof $this.attr('name') != 'undefined' ) ? 'name="' + $this.attr('name') + '"' : '';
-            $this.empty()
-                .append('<i></i>')
-                .append('<input type="hidden" ' + name + '></input>')
-                .append('<span class="caret"></span>');
-            $this.addClass('iconpicker');
-            data.createButtonBar();
-            data.changeList(1);
-            $this.on('click', function(){          
-                $this.popover({
-                    animation: false,
-                    trigger: 'manual',
-                    html: true,
-                    content: data.options.table,
-                    container: 'body',
-                    placement: data.options.placement
-                }).on('shown.bs.popover', function () {
-                    data.switchPage(op.icon);
-                    data.bindEvents();
-                });  
-                $this.popover('show');
-            });
-            data.select(op.icon);      
+            if (typeof option == 'string') data[option](params)
+            else{
+                var op = data.options;
+                var ic = (op.iconset == 'fontawesome') ? 'fa' : 'glyphicon';
+                op = $.extend(op, {
+                    icons: Iconpicker.ICONSET[ic],
+                    iconClass: ic,
+                    iconClassFix: ic + '-',
+                    page: 1,
+                    selected: -1,
+                    table: $('<table class="table-icons"><thead></thead><tbody></tbody></table>')
+                });
+                var name = ( typeof $this.attr('name') != 'undefined' ) ? 'name="' + $this.attr('name') + '"' : '';
+                $this.empty()
+                    .append('<i></i>')
+                    .append('<input type="hidden" ' + name + '></input>')
+                    .append('<span class="caret"></span>');
+                $this.addClass('iconpicker');
+                data.createButtonBar();
+                data.changeList(1);
+                $this.on('click', function(e){
+                    e.preventDefault();
+                    $this.popover({
+                        animation: false,
+                        trigger: 'manual',
+                        html: true,
+                        content: data.options.table,
+                        container: 'body',
+                        placement: data.options.placement
+                    }).on('shown.bs.popover', function () {
+                        data.switchPage(op.icon);
+                        data.bindEvents();
+                    });  
+                    $this.popover('show');
+                });
+                data.select(op.icon);      
+            }
         });
     };
 
