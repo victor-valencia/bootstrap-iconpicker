@@ -9,14 +9,14 @@
  */
 
 .iconpicker .caret {
-    margin-left: 10px !important;    
+    margin-left: 10px !important;
 }
 
-.iconpicker { 
-    min-width: 60px; 
+.iconpicker {
+    min-width: 60px;
 }
 
-.table-icons .btn{ 
+.table-icons .btn{
     min-height: 30px;
     min-width: 35px;
     text-align: center;
@@ -25,4 +25,8 @@
 
 .popover {
     max-width: inherit !important;
+}
+
+.iconpicker-popover {
+  z-index: 1050 !important;
 }
