@@ -25,8 +25,8 @@
     // ==============================
     var Iconpicker = function (element, options) {
       this.$element = $(element);
-      this.options  = $.extend({}, Iconpicker.DEFAULTS, this.$element.data());      
-      this.options  = $.extend({}, this.options, options);      
+      this.options  = $.extend({}, Iconpicker.DEFAULTS, this.$element.data());
+      this.options  = $.extend({}, this.options, options);
     };
 
     Iconpicker.ICONSET = {
@@ -230,7 +230,7 @@
             'warning-sign',
             'wrench',
             'zoom-in',
-            'zoom-out' 
+            'zoom-out'
         ],
         fa : [
             'adjust',
@@ -671,9 +671,9 @@
             'plus-square',
             'stethoscope',
             'user-md',
-            'wheelchair'        
+            'wheelchair'
         ]
-    };  
+    };
 
     Iconpicker.DEFAULTS = {
         iconset: 'glyphicon',
@@ -681,29 +681,29 @@
         rows: 4,
         cols: 4,
         placement: 'right',
-    };   
-    
-    Iconpicker.prototype.createButtonBar = function(){    
+    };
+
+    Iconpicker.prototype.createButtonBar = function(){
         var op = this.options;
         var tr = $('<tr></tr>');
         for(var i = 0; i < op.cols; i++){
-            var btn = $('<button class="btn btn-primary"><span class="glyphicon"></span></button>');        
+            var btn = $('<button class="btn btn-primary"><span class="glyphicon"></span></button>');
             var td = $('<td class="text-center"></td>');
-            if(i == 0 || i == op.cols - 1){            
+            if(i == 0 || i == op.cols - 1){
                 btn.val((i==0) ? -1: 1);
                 btn.addClass((i==0) ? 'btn-previous': 'btn-next');
-                btn.find('span').addClass( (i == 0) ? 'glyphicon-arrow-left': 'glyphicon-arrow-right');            
+                btn.find('span').addClass( (i == 0) ? 'glyphicon-arrow-left': 'glyphicon-arrow-right');
                 td.append(btn);
                 tr.append(td);
             }
             else if(tr.find('.page-count').length == 0){
                 td.attr('colspan', op.cols - 2).append('<span class="page-count"></span>');
-                tr.append(td);            
-            }            
+                tr.append(td);
+            }
         }
-        op.table.find('thead').append(tr); 
+        op.table.find('thead').append(tr);
     };
-  
+
     Iconpicker.prototype.updateButtonBar = function(page){
         var op = this.options;
         var total_pages = Math.ceil( op.icons.length / (op.cols * op.rows) );
@@ -713,21 +713,21 @@
         (page == 1) ? btn_prev.addClass('disabled'): btn_prev.removeClass('disabled');
         (page == total_pages) ? btn_next.addClass('disabled'): btn_next.removeClass('disabled');
     };
-  
+
     Iconpicker.prototype.bindEvents = function(){
         var op = this.options;
         var el = this;
-        op.table.find('.btn-previous, .btn-next').off('click').on('click', function(){        
+        op.table.find('.btn-previous, .btn-next').off('click').on('click', function(){
             var inc = parseInt($(this).val());
             el.changeList(op.page + inc);
         });
-        op.table.find('.btn-icon').off('click').on('click', function(){          
+        op.table.find('.btn-icon').off('click').on('click', function(){
             el.select($(this).val());
             el.$element.popover('destroy');
-        });  
+        });
     };
-  
-    Iconpicker.prototype.select = function(icon){    
+
+    Iconpicker.prototype.select = function(icon){
         var op = this.options;
         var el = this.$element;
         op.selected = $.inArray(icon.replace(op.iconClassFix, ''), op.icons);
@@ -741,33 +741,33 @@
             el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
             el.trigger({ type: "change", icon: icon });
             op.table.find('button.btn-warning').removeClass('btn-warning');
-        }    
+        }
     };
-  
+
     Iconpicker.prototype.switchPage = function(icon){
-        var op = this.options;        
+        var op = this.options;
         op.selected = $.inArray(icon.replace(op.iconClassFix, ''), op.icons);
         if(icon != '' && op.selected >= 0){
             var page = Math.ceil( (op.selected + 1) / (op.cols * op.rows) );
             this.changeList(page);
-        }    
+        }
         op.table.find('.'+icon).parent().addClass('btn-warning');
     };
-          
+
     Iconpicker.prototype.changeList = function(page){
         var op = this.options;
         this.updateButtonBar(page);
         var tbody = op.table.find('tbody').empty();
         var offset = (page - 1) * op.rows * op.cols;
         for(var i = 0; i < op.rows; i++){
-            var tr = $('<tr></tr>');            
+            var tr = $('<tr></tr>');
             for(var j = 0; j < op.cols; j++){
                 var pos = offset + (i * op.cols) + j;
                 var btn = $('<button class="btn btn-default btn-icon"></button>').hide();
                 if(pos < op.icons.length){
                     var v = op.iconClassFix + op.icons[pos];
-                    btn = $('<button class="btn btn-default btn-icon" value="' + v + '" title="' + v + '"><i class="' + op.iconClass + ' ' + v + '"></i></button>');                            
-                }                
+                    btn = $('<button class="btn btn-default btn-icon" value="' + v + '" title="' + v + '"><i class="' + op.iconClass + ' ' + v + '"></i></button>');
+                }
                 var td = $('<td></td>').append(btn);
                 tr.append(td);
             }
@@ -775,12 +775,12 @@
         }
         op.page = page;
         this.bindEvents();
-    }  
-  
-    Iconpicker.prototype.setIcon = function (icon) {        
+    }
+
+    Iconpicker.prototype.setIcon = function (icon) {
         this.select(icon);
     }
-  
+
     // ICONPICKER PLUGIN DEFINITION
     // ========================
     var old = $.fn.iconpicker;
@@ -822,10 +822,12 @@
                     }).on('shown.bs.popover', function () {
                         data.switchPage(op.icon);
                         data.bindEvents();
-                    });  
+                    });
+
+                    $this.data('bs.popover').tip().addClass('iconpicker-popover')
                     $this.popover('show');
                 });
-                data.select(op.icon);      
+                data.select(op.icon);
             }
         });
     };
@@ -852,8 +854,8 @@
             }
         });
     });
-  
+
     $('button[role="iconpicker"]').iconpicker();
-    
-  
+
+
 }(window.jQuery);
