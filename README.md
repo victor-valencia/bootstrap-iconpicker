@@ -1,6 +1,8 @@
 bootstrap-iconpicker
 ====================
 
+![Iconpicker](bootstrap-iconpicker.png)
+
 A simple iconpicker.
 
 See live examples here: <a href="http://victor-valencia.github.io/bootstrap-iconpicker">http://victor-valencia.github.io/bootstrap-iconpicker</a>
