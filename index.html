@@ -29,7 +29,7 @@ and open the template in the editor.
         <div class="container">
             
             <div class="row text-center text-primary">
-                <i class="fa fa-th-large fa-5x"></i>
+                <img src="bootstrap-iconpicker.png" title="Iconpicker" alt="Iconpicker"/>
                 <h1>Iconpicker for Bootstrap 3.0 <small><em>By Victor Valencia Rico.</em></small></h1>
                 <span>A simple iconpicker</span>
             </div>
@@ -206,6 +206,41 @@ and open the template in the editor.
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Button addons</h4>
+            <p>You can include it in a <code>class="input-group"</code></p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-4 col-md-offset-2">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" data-icon="glyphicon-map-marker" data-placement="bottom" role="iconpicker"></button>
+                            </span>
+                            <input type="text" class="form-control" value="My marker">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" value="My house">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" data-icon="glyphicon-home" data-placement="bottom" role="iconpicker"></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html">
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-icon=</span><span class="s">"glyphicon-map-marker"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">value=</span><span class="s">"My marker"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
                     </code>
                 </pre>
             </div>
