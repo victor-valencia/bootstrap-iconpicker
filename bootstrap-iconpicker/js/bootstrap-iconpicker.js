@@ -353,11 +353,21 @@
             if (typeof option == 'string') data[option](params)
             else{
                 var op = data.options;
-                var ic = (op.iconset == 'fontawesome') ? 'fa' : 'glyphicon';
+                if ($.isArray(op.iconset)) {
+                    op = $.extend(op, {
+                        icons: op.iconset,
+                        iconClass: op.iconClass || '',
+                        iconClassFix: op.iconClassFix || ''
+                    });
+                } else {
+                    var ic = (op.iconset == 'fontawesome') ? 'fa' : 'glyphicon';
+                    op = $.extend(op, {
+                        icons: Iconpicker.ICONSET[ic],
+                        iconClass: ic,
+                        iconClassFix: ic + '-'
+                    });
+                }
                 op = $.extend(op, {
-                    icons: Iconpicker.ICONSET[ic],
-                    iconClass: ic,
-                    iconClassFix: ic + '-',
                     page: 1,
                     selected: -1,
                     table: $('<table class="table-icons"><thead></thead><tbody></tbody></table>')
