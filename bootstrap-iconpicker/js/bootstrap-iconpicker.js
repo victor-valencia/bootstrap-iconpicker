@@ -405,7 +405,7 @@
 
     // ICONPICKER DATA-API
     // ===============
-    $('body').on('click', function (e) {
+    $(document).on('click', 'body', function (e) {
         $('.iconpicker').each(function () {
             //the 'is' for buttons that trigger popups
             //the 'has' for icons within a button that triggers a popup
