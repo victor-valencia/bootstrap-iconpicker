@@ -13,7 +13,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="bootstrap-3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap-3.2.0/css/docs.css">
         <link rel="stylesheet" href="bootstrap-3.2.0/css/pygments-manni.css">
-        <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="bootstrap-iconpicker/css/bootstrap-iconpicker.min.css">
         
     </head>
@@ -30,7 +30,7 @@ and open the template in the editor.
             
             <div class="row text-center text-primary">
                 <img src="bootstrap-iconpicker.png" title="Iconpicker" alt="Iconpicker"/>
-                <h1>Iconpicker for Bootstrap 3.0 <small><em>By Victor Valencia Rico.</em></small></h1>
+                <h1>Iconpicker for Bootstrap 3.2 <small><em>By Victor Valencia Rico.</em></small></h1>
                 <span>A simple iconpicker</span>
             </div>
             
@@ -50,16 +50,16 @@ and open the template in the editor.
                 </div> 
             </div>
             
-            <h4>Configuration</h4>
-            <p>1.- Add the style file <code>bootstrap-iconpicker.min.css</code></p>            
+            <h4>1. Configuration (Glyphicon)</h4>
+            <p>1.1- Add the style file <code>bootstrap-iconpicker.min.css</code></p>            
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">&gt;</span>
+                    <code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
                     </code>
                 </pre>
             </div>
             
-            <p>2.- Add the javascript file <code>bootstrap-iconpicker.min.js</code></p>            
+            <p>1.2- Add the javascript file <code>bootstrap-iconpicker.min.js</code></p>            
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
@@ -67,7 +67,35 @@ and open the template in the editor.
                 </pre>
             </div>
             
-            <h4 style="padding-top: 30px;">Initialize</h4>
+            <h4>2. Configuration (Font Awesome 4.2.0)</h4>
+            <p>2.1- Add the style file <code>bootstrap-iconpicker.min.css</code> and Font Awesome style file <code>font-awesome.min.css</code></p>            
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"font-awesome-4.2.0/css/font-awesome.min.css"</span><span class="nt">/&gt;</span>
+                    </code>
+                </pre>
+            </div>
+           
+            <p>2.2.- Add the Font Awesome icon names file <code>fa-icon-names-4.2.0.min.js</code> and javascript file <code>bootstrap-iconpicker.min.js</code></p>            
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/font-awesome/fa-icon-names-4.2.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <div class="bs-callout bs-callout-info">
+                <h4>Font Awesome icon names availables are:</h4>                
+                <p>
+                    <code>fa-icon-names-4.2.0.min.js</code></br>
+                    <code>fa-icon-names-4.1.0.min.js</code></br>
+                    <code>fa-icon-names-4.0.0.min.js</code>
+                </p>
+            </div>
+            
+            <h4>Initialize</h4>
             <p>Add <code>role="iconpicker"</code> to initialize the iconpicker.</p>
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
@@ -352,7 +380,8 @@ and open the template in the editor.
         
         <script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="bootstrap-3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.js"></script>
+        <script type="text/javascript" src="bootstrap-iconpicker/js/font-awesome/fa-icon-names-4.2.0.min.js"></script>
+        <script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
         
         <script type="text/javascript">
         
