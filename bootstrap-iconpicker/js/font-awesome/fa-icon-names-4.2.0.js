@@ -3,7 +3,7 @@
  * Font-awesome names from the version 4.2.0
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * ========================================================================
- * Copyright 2014 Victor Valencia Rico.
+ * Copyright 2013-2014 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
