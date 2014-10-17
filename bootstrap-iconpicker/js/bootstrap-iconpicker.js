@@ -1,8 +1,8 @@
 /* ========================================================================
- * Bootstrap: bootstrap-iconpicker.js v1.0.1 by @recktoner
+ * Bootstrap: bootstrap-iconpicker.js v1.4.0 by @recktoner
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * ========================================================================
- * Copyright 2014 Victor Valencia Rico.
+ * Copyright 2013-2014 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -240,14 +240,17 @@
         icon: '',
         rows: 4,
         cols: 4,
-        placement: 'right',
+        placement: 'bottom',
+        arrowClass: 'btn-primary',
+        selectedClass: 'btn-warning',        
+        unselectedClass: 'btn-default'
     };
 
     Iconpicker.prototype.createButtonBar = function(){
         var op = this.options;
         var tr = $('<tr></tr>');
         for(var i = 0; i < op.cols; i++){
-            var btn = $('<button class="btn btn-primary"><span class="glyphicon"></span></button>');
+            var btn = $('<button class="btn ' + op.arrowClass + '"><span class="glyphicon"></span></button>');
             var td = $('<td class="text-center"></td>');
             if(i == 0 || i == op.cols - 1){
                 btn.val((i==0) ? -1: 1);
@@ -300,7 +303,7 @@
             el.find('input').val(icon);
             el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
             el.trigger({ type: "change", icon: icon });
-            op.table.find('button.btn-warning').removeClass('btn-warning');
+            op.table.find('button.' + op.selectedClass).removeClass(op.selectedClass);
         }
     };
 
@@ -310,8 +313,8 @@
         if(icon != '' && op.selected >= 0){
             var page = Math.ceil( (op.selected + 1) / (op.cols * op.rows) );
             this.changeList(page);
-        }
-        op.table.find('.'+icon).parent().addClass('btn-warning');
+        }        
+        op.table.find('i.'+icon).parent().addClass(op.selectedClass);
     };
 
     Iconpicker.prototype.changeList = function(page){
@@ -323,10 +326,10 @@
             var tr = $('<tr></tr>');
             for(var j = 0; j < op.cols; j++){
                 var pos = offset + (i * op.cols) + j;
-                var btn = $('<button class="btn btn-default btn-icon"></button>').hide();
+                var btn = $('<button class="btn ' + op.unselectedClass + ' btn-icon"></button>').hide();
                 if(pos < op.icons.length){
                     var v = op.iconClassFix + op.icons[pos];
-                    btn = $('<button class="btn btn-default btn-icon" value="' + v + '" title="' + v + '"><i class="' + op.iconClass + ' ' + v + '"></i></button>');
+                    btn = $('<button class="btn ' + ( (op.icon == v) ? op.selectedClass : op.unselectedClass ) + ' btn-icon" value="' + v + '" title="' + v + '"><i class="' + op.iconClass + ' ' + v + '"></i></button>');
                 }
                 var td = $('<td></td>').append(btn);
                 tr.append(td);

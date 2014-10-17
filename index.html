@@ -37,8 +37,8 @@ and open the template in the editor.
             <div class="row text-center" style="padding-top: 20px;">
                <div class="col-md-12">
                     <div class="btn-group buttons-menu-container">
-                        <a class="btn btn-primary" href="https://github.com/victor-valencia/bootstrap-iconpicker/zipball/master" role="button">
-                            <i class=" fa fa-download"></i> Download Project
+                        <a class="btn btn-primary" href="https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.4.0.zip" role="button">
+                            <i class=" fa fa-download"></i> Download Project (v1.4.0)
                         </a>
                         <a id="btnDonate" class="btn btn-warning" href="#" target="_blank" role="button">
                             <i class=" fa fa-heart"></i> PayPal Donate
@@ -50,8 +50,9 @@ and open the template in the editor.
                 </div> 
             </div>
             
-            <h4>1. Configuration (Glyphicon)</h4>
-            <p>1.1- Add the style file <code>bootstrap-iconpicker.min.css</code></p>            
+            <h4>Configuration</h4>
+            <h4>- Glyphicon</h4>
+            <p>1.- Add the style file <code>bootstrap-iconpicker.min.css</code></p>            
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
@@ -59,7 +60,7 @@ and open the template in the editor.
                 </pre>
             </div>
             
-            <p>1.2- Add the javascript file <code>bootstrap-iconpicker.min.js</code></p>            
+            <p>2.- Add the javascript file <code>bootstrap-iconpicker.min.js</code></p>            
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
@@ -67,8 +68,8 @@ and open the template in the editor.
                 </pre>
             </div>
             
-            <h4>2. Configuration (Font Awesome 4.2.0)</h4>
-            <p>2.1- Add the style file <code>bootstrap-iconpicker.min.css</code> and Font Awesome style file <code>font-awesome.min.css</code></p>            
+            <h4>- Font Awesome 4.2.0</h4>
+            <p>1.- Add the style file <code>bootstrap-iconpicker.min.css</code> and Font Awesome style file <code>font-awesome.min.css</code></p>            
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
@@ -77,7 +78,7 @@ and open the template in the editor.
                 </pre>
             </div>
            
-            <p>2.2.- Add the Font Awesome icon names file <code>fa-icon-names-4.2.0.min.js</code> and javascript file <code>bootstrap-iconpicker.min.js</code></p>            
+            <p>2.- Add the Font Awesome icon names file <code>fa-icon-names-4.2.0.min.js</code> and javascript file <code>bootstrap-iconpicker.min.js</code></p>            
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/font-awesome/fa-icon-names-4.2.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
@@ -119,17 +120,17 @@ and open the template in the editor.
                 <div class="row text-center">
                     <div class="col-md-6">
                         <p><code>data-iconset="glyphicon"</code></p>
-                        <button class="btn btn-default" data-iconset="glyphicon" role="iconpicker"></button>
+                        <button class="btn btn-default" data-iconset="glyphicon" data-icon="glyphicon-camera" role="iconpicker"></button>
                     </div>
                     <div class="col-md-6">
                         <p><code>data-iconset="fontawesome"</code></p>
-                        <button class="btn btn-default" data-iconset="fontawesome" role="iconpicker"></button>
+                        <button class="btn btn-default" data-iconset="fontawesome" data-icon="fa-wifi" role="iconpicker"></button>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-iconset=</span><span class="s">"fontawesome"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-iconset=</span><span class="s">"glyphicon"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
                     </code>
                 </pre>
             </div>
@@ -150,7 +151,7 @@ and open the template in the editor.
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-icon=</span><span class="s">"fontawesome"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-icon=</span><span class="s">"glyphicon-heart"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
                     </code>
                 </pre>
             </div>
@@ -161,7 +162,7 @@ and open the template in the editor.
                 <div class="row text-center">
                     <div class="col-md-12">
                         <p><code>data-rows="3"</code> and <code>data-cols="6"</code></p>
-                        <button class="btn btn-default" data-rows="3" data-cols="6" role="iconpicker"></button>
+                        <button class="btn btn-default" data-icon="glyphicon-th-large" data-rows="3" data-cols="6" role="iconpicker"></button>
                     </div>
                 </div>                
             </div>
@@ -178,25 +179,25 @@ and open the template in the editor.
                 <div class="row text-center">
                     <div class="col-md-3">
                         <p><code>data-placement="left"</code></p>
-                        <button class="btn btn-default" data-placement="left" role="iconpicker"></button>
+                        <button class="btn btn-default" data-icon="glyphicon-arrow-left" data-placement="left" role="iconpicker"></button>
                     </div>
                     <div class="col-md-3">
                         <p><code>data-placement="top"</code></p>
-                        <button class="btn btn-default" data-placement="top" role="iconpicker"></button>
+                        <button class="btn btn-default" data-icon="glyphicon-arrow-up" data-placement="top" role="iconpicker"></button>
                     </div>
                     <div class="col-md-3">
                         <p><code>data-placement="bottom"</code></p>
-                        <button class="btn btn-default" data-placement="bottom" role="iconpicker"></button>
+                        <button class="btn btn-default" data-icon="glyphicon-arrow-down" data-placement="bottom" role="iconpicker"></button>
                     </div>
                     <div class="col-md-3">
                         <p><code>data-placement="right"</code></p>
-                        <button class="btn btn-default" data-placement="right" role="iconpicker"></button>
+                        <button class="btn btn-default" data-icon="glyphicon-arrow-right" data-placement="right" role="iconpicker"></button>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-placement=</span><span class="s">"left|top|bottom|right"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
                     </code>
                 </pre>
             </div>
@@ -207,33 +208,50 @@ and open the template in the editor.
                 <div class="row text-center">
                     <div class="col-md-2">
                         <p><code>class="btn btn-default"</code></p>
-                        <button class="btn btn-default" data-placement="top" role="iconpicker"></button>
+                        <button class="btn btn-default" data-iconset="fontawesome" data-icon="fa-jsfiddle" role="iconpicker"></button>
                     </div>
                     <div class="col-md-2">
                         <p><code>class="btn btn-primary"</code></p> 
-                        <button class="btn btn-primary" data-placement="top" role="iconpicker"></button>
+                        <button class="btn btn-primary" data-iconset="fontawesome" data-icon="fa-facebook" role="iconpicker"></button>
                     </div>
                     <div class="col-md-2">
                         <p><code>class="btn btn-success"</code></p> 
-                        <button class="btn btn-success" data-placement="top" role="iconpicker"></button>
+                        <button class="btn btn-success" data-iconset="fontawesome" data-icon="fa-html5" role="iconpicker"></button>
                     </div>
                     <div class="col-md-2">
                         <p><code>class="btn btn-warning"</code></p>
-                        <button class="btn btn-warning" data-placement="top" role="iconpicker"></button>
+                        <button class="btn btn-warning" data-iconset="fontawesome" data-icon="fa-stack-overflow" role="iconpicker"></button>
                     </div>
                     <div class="col-md-2">
                         <p><code>class="btn btn-danger"</code></p>
-                        <button class="btn btn-danger" data-placement="top" role="iconpicker"></button>
+                        <button class="btn btn-danger" data-iconset="fontawesome" data-icon="fa-youtube-play" role="iconpicker"></button>
                     </div>
                     <div class="col-md-2">
                         <p><code>class="btn btn-info"</code></p>
-                        <button class="btn btn-info" data-placement="top" role="iconpicker"></button>
+                        <button class="btn btn-info" data-iconset="fontawesome" data-icon="fa-twitter" role="iconpicker"></button>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
+            <h4>Set Picker Style</h4>
+            <p>Add <code>data-arrow-class=""</code> to indicate the class of the arrows, <code>data-selected-class=""</code> to indicate the class of the selected icon, <code>data-unselected-class=""</code> to indicate unselected icons.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <p><code>data-arrow-class="btn-success"</code> <code>data-selected-class="btn-danger"</code> <code>data-unselected-class="btn-info"</code></p>
+                        <button class="btn" data-icon="glyphicon-picture" data-arrow-class="btn-success" data-selected-class="btn-danger" data-unselected-class="btn-info" role="iconpicker"></button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">data-selected-class=</span><span class="s">"btn-danger"</span> <span class="na">data-unselected-class=</span><span class="s">"btn-info"</span> <span class="na">data-arrow-class=</span><span class="s">"btn-success"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
                     </code>
                 </pre>
             </div>
@@ -245,7 +263,7 @@ and open the template in the editor.
                     <div class="col-md-4 col-md-offset-2">
                         <div class="input-group">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" data-icon="glyphicon-map-marker" data-placement="bottom" role="iconpicker"></button>
+                                <button class="btn btn-default" data-icon="glyphicon-map-marker" role="iconpicker"></button>
                             </span>
                             <input type="text" class="form-control" value="My marker">
                         </div>
@@ -254,7 +272,7 @@ and open the template in the editor.
                         <div class="input-group">
                             <input type="text" class="form-control" value="My house">
                             <span class="input-group-btn">
-                                <button class="btn btn-default" data-icon="glyphicon-home" data-placement="bottom" role="iconpicker"></button>
+                                <button class="btn btn-default" data-icon="glyphicon-home" role="iconpicker"></button>
                             </span>
                         </div>
                     </div>
@@ -290,6 +308,9 @@ and open the template in the editor.
     <span class="na">rows: </span><span class="s">5</span>,
     <span class="na">cols: </span><span class="s">5</span>,
     <span class="na">placement: </span><span class="s">'top'</span>,
+    <span class="na">arrowClass: </span><span class="s">'btn-danger'</span>,
+    <span class="na">selectedClass: </span><span class="s">'btn-success'</span>,
+    <span class="na">unselectedClass: </span><span class="s">''</span>
 <span class="nt">});</span>
 
 <span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).on(<span class="s">'change'</span>, function(e) {</span> 
@@ -306,7 +327,7 @@ and open the template in the editor.
                 <div class="row">
                     <div class="col-md-4"> 
                         <div id="button" class="well text-center" data-position="left" style="height: 290px; padding-top: 120px;">
-                            <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-adjust"></i> Button text</a>
+                            <a href="#" class="btn btn-default"><i class="fa fa-area-chart"></i> Button text</a>
                         </div>                        
                     </div>
                     <div class="col-md-8">
@@ -349,7 +370,7 @@ and open the template in the editor.
                             <div class="form-group">
                                 <label for="btn-color" class="col-sm-2 control-label">Icon: </label>
                                 <div class="col-sm-10">
-                                    <button id="btn-icon" class="btn btn-default"></button>
+                                    <button id="btn-icon" class="btn btn-default" data-placement="right" data-iconset="fontawesome" data-icon="fa-area-chart"></button>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -394,7 +415,10 @@ and open the template in the editor.
                         icon: 'fa-key',
                         rows: 5,
                         cols: 5,
-                        placement: 'top'
+                        placement: 'top',
+                        arrowClass: 'btn-danger',
+                        selectedClass: 'btn-success',
+                        unselectedClass: ''
                     });                    
                 }); 
                 $('#convert').on('change', function(e) {
@@ -440,7 +464,7 @@ and open the template in the editor.
                 });
                 
                 $('#btn-icon').on('change', function(e) {
-                    $('#button a > i').attr('class', '').addClass('glyphicon ' + e.icon);
+                    $('#button a > i').attr('class', '').addClass('fa ' + e.icon);
                     show_result();
                 });
                 
