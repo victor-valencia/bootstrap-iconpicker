@@ -18,7 +18,7 @@ Please note that this project is for <a href="http://getbootstrap.com/"><strong>
 
 Three quick start options are available:
 
-- [Download the latest release](https://github.com/victor-valencia/bootstrap-iconpicker/archive/master.zip).
+- [Download the latest release](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.4.0.zip).
 - Clone the repo: `git clone https://github.com/victor-valencia/bootstrap-iconpicker.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-iconpicker`.
 
