@@ -37,8 +37,8 @@ and open the template in the editor.
             <div class="row text-center" style="padding-top: 20px;">
                <div class="col-md-12">
                     <div class="btn-group buttons-menu-container">
-                        <a class="btn btn-primary" href="https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.4.0.zip" role="button">
-                            <i class=" fa fa-download"></i> Download Project (v1.4.0)
+                        <a class="btn btn-primary" href="https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.5.0.zip" role="button">
+                            <i class=" fa fa-download"></i> Download Project (v1.5.0)
                         </a>
                         <a id="btnDonate" class="btn btn-warning" href="#" target="_blank" role="button">
                             <i class=" fa fa-heart"></i> PayPal Donate
@@ -256,6 +256,23 @@ and open the template in the editor.
                 </pre>
             </div>
             
+            <h4>Search Icon</h4>
+            <p>Add <code>data-search="true|false"</code> to indicate the search icon, <code>data-search-text=""</code> to inidicate search text.</p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <p><code>data-search="true"</code> <code>data-search-text="Search..."</code></p>
+                        <button class="btn btn-default" data-cols="4" data-icon="glyphicon-search" data-search="true" data-search-text="Search..." role="iconpicker"></button>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-search=</span><span class="s">"true"</span> <span class="na">data-search-text=</span><span class="s">"Search..."</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            
             <h4>Button addons</h4>
             <p>You can include it in a <code>class="input-group"</code></p>
             <div class="bs-example" style="padding-bottom: 24px;">
@@ -311,6 +328,8 @@ and open the template in the editor.
     <span class="na">arrowClass: </span><span class="s">'btn-danger'</span>,
     <span class="na">selectedClass: </span><span class="s">'btn-success'</span>,
     <span class="na">unselectedClass: </span><span class="s">''</span>
+    <span class="na">search: </span><span class="s">true</span>
+    <span class="na">searchText: </span><span class="s">'Search'</span>
 <span class="nt">});</span>
 
 <span class="nt">$(</span><span class="s">'#convert'</span><span class="nt">).on(<span class="s">'change'</span>, function(e) {</span> 
@@ -418,7 +437,9 @@ and open the template in the editor.
                         placement: 'top',
                         arrowClass: 'btn-danger',
                         selectedClass: 'btn-success',
-                        unselectedClass: ''
+                        unselectedClass: '',
+                        search: true,
+                        searchText: 'Search'
                     });                    
                 }); 
                 $('#convert').on('change', function(e) {

@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: bootstrap-iconpicker.js v1.4.0 by @recktoner
+ * Bootstrap: bootstrap-iconpicker.js v1.5.0 by @recktoner
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * ========================================================================
  * Copyright 2013-2014 Victor Valencia Rico.
@@ -243,7 +243,9 @@
         placement: 'bottom',
         arrowClass: 'btn-primary',
         selectedClass: 'btn-warning',        
-        unselectedClass: 'btn-default'
+        unselectedClass: 'btn-default',
+        search: true,
+        searchText: 'Search icon'
     };
 
     Iconpicker.prototype.createButtonBar = function(){
@@ -265,16 +267,26 @@
             }
         }
         op.table.find('thead').append(tr);
+        if(op.search == true){
+            var search = [
+                '<tr>',
+                '   <td colspan="' + op.cols + '">',
+                '       <input type="text" class="form-control search-control" style="width: ' + op.cols * 39 + 'px;" placeholder="' + op.searchText + '">',
+                '   </td>',
+                '</tr>'
+            ];            
+            op.table.find('thead').append(search.join(''));
+        }
     };
 
     Iconpicker.prototype.updateButtonBar = function(page){
         var op = this.options;
         var total_pages = Math.ceil( op.icons.length / (op.cols * op.rows) );
-        op.table.find('.page-count').html(page + ' / ' + total_pages);
+        op.table.find('.page-count').html(((total_pages == 0 ) ? 0: page) + ' / ' + total_pages);
         var btn_prev = op.table.find('.btn-previous');
         var btn_next = op.table.find('.btn-next');
         (page == 1) ? btn_prev.addClass('disabled'): btn_prev.removeClass('disabled');
-        (page == total_pages) ? btn_next.addClass('disabled'): btn_next.removeClass('disabled');
+        (page == total_pages || total_pages == 0) ? btn_next.addClass('disabled'): btn_next.removeClass('disabled');
     };
 
     Iconpicker.prototype.bindEvents = function(){
@@ -287,6 +299,9 @@
         op.table.find('.btn-icon').off('click').on('click', function(){
             el.select($(this).val());
             el.$element.popover('destroy');
+        });
+        op.table.find('.search-control').off('keyup').on('keyup', function(e){
+            el.changeList(1);
         });
     };
 
@@ -319,6 +334,22 @@
 
     Iconpicker.prototype.changeList = function(page){
         var op = this.options;
+        var search = "";
+        if(op.search == true){
+            search = op.table.find('.search-control').val();
+            if(search == ""){
+                op.icons = Iconpicker.ICONSET[op.ic];
+            }
+            else{
+                var result = [];
+                $.each(Iconpicker.ICONSET[op.ic], function(i, v){
+                   if(v.indexOf(search) > -1){
+                       result.push(v);
+                   } 
+                });
+                op.icons = result;
+            }   
+        }
         this.updateButtonBar(page);
         var tbody = op.table.find('tbody').empty();
         var offset = (page - 1) * op.rows * op.cols;
@@ -358,6 +389,7 @@
                 var op = data.options;
                 var ic = (op.iconset == 'fontawesome') ? 'fa' : 'glyphicon';
                 op = $.extend(op, {
+                    ic: ic,
                     icons: Iconpicker.ICONSET[ic],
                     iconClass: ic,
                     iconClassFix: ic + '-',
@@ -371,7 +403,7 @@
                     .append('<input type="hidden" ' + name + '></input>')
                     .append('<span class="caret"></span>');
                 $this.addClass('iconpicker');
-                data.createButtonBar();
+                data.createButtonBar();                
                 data.changeList(1);
                 $this.on('click', function(e){
                     e.preventDefault();
