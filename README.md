@@ -59,7 +59,7 @@ See documentation and live examples here: <a href="http://victor-valencia.github
 - v1.5.0 - Add search field. @[victor-valencia](https://github.com/victor-valencia)
 
 ## Versioning
-For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
+For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap-Iconpicker is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
 
 ## Author
 @[victor-valencia](https://github.com/victor-valencia)
