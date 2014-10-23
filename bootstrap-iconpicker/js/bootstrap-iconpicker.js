@@ -1,5 +1,5 @@
 /* ========================================================================
- * Bootstrap: bootstrap-iconpicker.js v1.5.0 by @recktoner
+ * Bootstrap: bootstrap-iconpicker.js v2.0.0 by @recktoner
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * ========================================================================
  * Copyright 2013-2014 Victor Valencia Rico.
@@ -17,9 +17,7 @@
  * limitations under the License.
  * ======================================================================== */
 
-
 +function ($) { "use strict";
-
 
     // ICONPICKER PUBLIC CLASS DEFINITION
     // ==============================
@@ -28,211 +26,23 @@
       this.options  = $.extend({}, Iconpicker.DEFAULTS, this.$element.data());
       this.options  = $.extend({}, this.options, options);
     };
+    
+    Iconpicker.ICONSET_EMPTY = {
+        icons: [],
+        iconClass: '',
+        iconClassFix: ''
+    }
 
     Iconpicker.ICONSET = {
-        glyphicon : [
-            'adjust',
-            'align-center',
-            'align-justify',
-            'align-left',
-            'align-right',
-            'arrow-down',
-            'arrow-left',
-            'arrow-right',
-            'arrow-up',
-            'asterisk',
-            'backward',
-            'ban-circle',
-            'barcode',
-            'bell',
-            'bold',
-            'book',
-            'bookmark',
-            'briefcase',
-            'bullhorn',
-            'calendar',
-            'camera',
-            'certificate',
-            'check',
-            'chevron-down',
-            'chevron-left',
-            'chevron-right',
-            'chevron-up',
-            'circle-arrow-down',
-            'circle-arrow-left',
-            'circle-arrow-right',
-            'circle-arrow-up',
-            'cloud',
-            'cloud-download',
-            'cloud-upload',
-            'cog',
-            'collapse-down',
-            'collapse-up',
-            'comment',
-            'compressed',
-            'copyright-mark',
-            'credit-card',
-            'cutlery',
-            'dashboard',
-            'download',
-            'download-alt',
-            'earphone',
-            'edit',
-            'eject',
-            'envelope',
-            'euro',
-            'exclamation-sign',
-            'expand',
-            'export',
-            'eye-close',
-            'eye-open',
-            'facetime-video',
-            'fast-backward',
-            'fast-forward',
-            'file',
-            'film',
-            'filter',
-            'fire',
-            'flag',
-            'flash',
-            'floppy-disk',
-            'floppy-open',
-            'floppy-remove',
-            'floppy-save',
-            'floppy-saved',
-            'folder-close',
-            'folder-open',
-            'font',
-            'forward',
-            'fullscreen',
-            'gbp',
-            'gift',
-            'glass',
-            'globe',
-            'hand-down',
-            'hand-left',
-            'hand-right',
-            'hand-up',
-            'hd-video',
-            'hdd',
-            'header',
-            'headphones',
-            'heart',
-            'heart-empty',
-            'home',
-            'import',
-            'inbox',
-            'indent-left',
-            'indent-right',
-            'info-sign',
-            'italic',
-            'leaf',
-            'link',
-            'list',
-            'list-alt',
-            'lock',
-            'log-in',
-            'log-out',
-            'magnet',
-            'map-marker',
-            'minus',
-            'minus-sign',
-            'move',
-            'music',
-            'new-window',
-            'off',
-            'ok',
-            'ok-circle',
-            'ok-sign',
-            'open',
-            'paperclip',
-            'pause',
-            'pencil',
-            'phone',
-            'phone-alt',
-            'picture',
-            'plane',
-            'play',
-            'play-circle',
-            'plus',
-            'plus-sign',
-            'print',
-            'pushpin',
-            'qrcode',
-            'question-sign',
-            'random',
-            'record',
-            'refresh',
-            'registration-mark',
-            'remove',
-            'remove-circle',
-            'remove-sign',
-            'repeat',
-            'resize-full',
-            'resize-horizontal',
-            'resize-small',
-            'resize-vertical',
-            'retweet',
-            'road',
-            'save',
-            'saved',
-            'screenshot',
-            'sd-video',
-            'search',
-            'send',
-            'share',
-            'share-alt',
-            'shopping-cart',
-            'signal',
-            'sort',
-            'sort-by-alphabet',
-            'sort-by-alphabet-alt',
-            'sort-by-attributes',
-            'sort-by-attributes-alt',
-            'sort-by-order',
-            'sort-by-order-alt',
-            'sound-5-1',
-            'sound-6-1',
-            'sound-7-1',
-            'sound-dolby',
-            'sound-stereo',
-            'star',
-            'star-empty',
-            'stats',
-            'step-backward',
-            'step-forward',
-            'stop',
-            'subtitles',
-            'tag',
-            'tags',
-            'tasks',
-            'text-height',
-            'text-width',
-            'th',
-            'th-large',
-            'th-list',
-            'thumbs-down',
-            'thumbs-up',
-            'time',
-            'tint',
-            'tower',
-            'transfer',
-            'trash',
-            'tree-conifer',
-            'tree-deciduous',
-            'unchecked',
-            'upload',
-            'usd',
-            'user',
-            'volume-down',
-            'volume-off',
-            'volume-up',
-            'warning-sign',
-            'wrench',
-            'zoom-in',
-            'zoom-out'
-        ],
-        fa : $.fontawesome || []
+        _custom: null,
+        elusiveicon: $.iconset_elusiveicon || Iconpicker.ICONSET_EMPTY,
+        fontawesome: $.iconset_fontawesome || Iconpicker.ICONSET_EMPTY,
+        ionicon: $.iconset_ionicon || Iconpicker.ICONSET_EMPTY,
+        glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,        
+        mapicon: $.iconset_mapicon || Iconpicker.ICONSET_EMPTY,
+        octicon: $.iconset_octicon || Iconpicker.ICONSET_EMPTY,
+        typicon: $.iconset_typicon || Iconpicker.ICONSET_EMPTY,
+        weathericon: $.iconset_weathericon || Iconpicker.ICONSET_EMPTY
     };
 
     Iconpicker.DEFAULTS = {
@@ -242,6 +52,8 @@
         cols: 4,
         placement: 'bottom',
         arrowClass: 'btn-primary',
+        arrowPrevIconClass: 'glyphicon glyphicon-arrow-left',
+        arrowNextIconClass: 'glyphicon glyphicon-arrow-right',
         selectedClass: 'btn-warning',        
         unselectedClass: 'btn-default',
         search: true,
@@ -252,12 +64,12 @@
         var op = this.options;
         var tr = $('<tr></tr>');
         for(var i = 0; i < op.cols; i++){
-            var btn = $('<button class="btn ' + op.arrowClass + '"><span class="glyphicon"></span></button>');
+            var btn = $('<button class="btn ' + op.arrowClass + '"><span></span></button>');
             var td = $('<td class="text-center"></td>');
             if(i == 0 || i == op.cols - 1){
                 btn.val((i==0) ? -1: 1);
                 btn.addClass((i==0) ? 'btn-previous': 'btn-next');
-                btn.find('span').addClass( (i == 0) ? 'glyphicon-arrow-left': 'glyphicon-arrow-right');
+                btn.find('span').addClass( (i == 0) ? op.arrowPrevIconClass: op.arrowNextIconClass);
                 td.append(btn);
                 tr.append(td);
             }
@@ -338,18 +150,18 @@
         if(op.search == true){
             search = op.table.find('.search-control').val();
             if(search == ""){
-                op.icons = Iconpicker.ICONSET[op.ic];
+                op.icons = Iconpicker.ICONSET[op.iconset].icons;
             }
             else{
                 var result = [];
-                $.each(Iconpicker.ICONSET[op.ic], function(i, v){
+                $.each(Iconpicker.ICONSET[op.iconset].icons, function(i, v){
                    if(v.indexOf(search) > -1){
                        result.push(v);
                    } 
                 });
                 op.icons = result;
             }   
-        }
+        }        
         this.updateButtonBar(page);
         var tbody = op.table.find('tbody').empty();
         var offset = (page - 1) * op.rows * op.cols;
@@ -387,12 +199,15 @@
             if (typeof option == 'string') data[option](params)
             else{
                 var op = data.options;
-                var ic = (op.iconset == 'fontawesome') ? 'fa' : 'glyphicon';
-                op = $.extend(op, {
-                    ic: ic,
-                    icons: Iconpicker.ICONSET[ic],
-                    iconClass: ic,
-                    iconClassFix: ic + '-',
+                if( $.isPlainObject(op.iconset) ) {                    
+                    Iconpicker.ICONSET['_custom'] = $.extend(Iconpicker.ICONSET_EMPTY, op.iconset);
+                    op.iconset = '_custom';
+                    console.log(Iconpicker.ICONSET['_custom']);
+                }
+                else if( !Iconpicker.ICONSET.hasOwnProperty(op.iconset) ) {
+                    op.iconset = Iconpicker.DEFAULTS.iconset;
+                }
+                op = $.extend(op, Iconpicker.ICONSET[op.iconset], {                    
                     page: 1,
                     selected: -1,
                     table: $('<table class="table-icons"><thead></thead><tbody></tbody></table>')
@@ -418,7 +233,6 @@
                         data.switchPage(op.icon);
                         data.bindEvents();
                     });
-
                     $this.data('bs.popover').tip().addClass('iconpicker-popover')
                     $this.popover('show');
                 });
@@ -429,14 +243,12 @@
 
     $.fn.iconpicker.Constructor = Iconpicker;
 
-
     // ICONPICKER NO CONFLICT
     // ==================
     $.fn.iconpicker.noConflict = function () {
         $.fn.iconpicker = old;
         return this;
     };
-
 
     // ICONPICKER DATA-API
     // ===============
@@ -451,6 +263,5 @@
     });
 
     $('button[role="iconpicker"]').iconpicker();
-
 
 }(window.jQuery);
