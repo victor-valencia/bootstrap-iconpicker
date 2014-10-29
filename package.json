@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-iconpicker",
+  "version": "1.5.0",
+  "devDependencies": {
+    "mocha": "~1.7.4"
+  },
+  "testling": {
+    "harness" : "mocha",
+    "files": "bootstrap-iconpicker/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "license": "MIT"
+}
