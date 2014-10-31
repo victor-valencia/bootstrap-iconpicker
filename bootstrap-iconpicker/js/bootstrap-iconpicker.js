@@ -126,6 +126,16 @@
         this.bindEvents();
     };
     
+    Iconpicker.prototype.removeAddClass = function (target, remove, add) {
+        this.options.table.find(target).removeClass(remove).addClass(add);
+        return add;
+    };
+    
+    Iconpicker.prototype.reset = function () {
+        this.updateNavigationBar();                
+        this.changeList(1);
+    };
+    
     Iconpicker.prototype.select = function (icon) {
         var op = this.options;
         var el = this.$element;
@@ -231,27 +241,23 @@
     // ==============================    
     Iconpicker.prototype.setArrowClass = function (value) {
         var op = this.options;
-        op.table.find('.btn-arrow').removeClass(op.arrowClass).addClass(value);
-        op.arrowClass = value;
+        op.arrowClass = this.removeAddClass('.btn-arrow', op.arrowClass, value);
     };
     
     Iconpicker.prototype.setArrowNextIconClass = function (value) {
         var op = this.options;
-        op.table.find('.btn-next > span').removeClass(op.arrowNextIconClass).addClass(value);
-        op.arrowNextIconClass = value;
+        op.arrowNextIconClass = this.removeAddClass('.btn-next > span', op.arrowNextIconClass, value);
     };
     
     Iconpicker.prototype.setArrowPrevIconClass = function (value) {
         var op = this.options;
-        op.table.find('.btn-previous > span').removeClass(op.arrowPrevIconClass).addClass(value);
-        op.arrowPrevIconClass = value;
+        op.arrowPrevIconClass = this.removeAddClass('.btn-previous > span', op.arrowPrevIconClass, value);
     };
     
     Iconpicker.prototype.setCols = function (value) {
         var op = this.options;
         op.cols = value;
-        this.updateNavigationBar();
-        this.changeList(1);
+        this.reset();
     };
         
     Iconpicker.prototype.setIcon = function (value) {
@@ -261,7 +267,7 @@
     Iconpicker.prototype.setIconset = function (value) {
         var op = this.options;                
         if ($.isPlainObject(value)) {                    
-            Iconpicker.ICONSET['_custom'] = $.extend(Iconpicker.ICONSET_EMPTY, value);
+            Iconpicker.ICONSET._custom = $.extend(Iconpicker.ICONSET_EMPTY, value);
             op.iconset = '_custom';
         }
         else if (!Iconpicker.ICONSET.hasOwnProperty(value)) {
@@ -271,8 +277,7 @@
             op.iconset = value;
         }
         op = $.extend(op, Iconpicker.ICONSET[op.iconset]);
-        this.updateNavigationBar();                
-        this.changeList(1);
+        this.reset();
         this.select(op.icon);
     };
     
@@ -296,8 +301,7 @@
     Iconpicker.prototype.setRows = function (value) {
         var op = this.options;
         op.rows = value;
-        this.updateNavigationBar();
-        this.changeList(1);
+        this.reset();
     };
     
     Iconpicker.prototype.setSearch = function (value) {
@@ -322,14 +326,12 @@
     
     Iconpicker.prototype.setSelectedClass = function (value) {
         var op = this.options;
-        op.table.find('.btn-icon-selected').removeClass(op.selectedClass).addClass(value);
-        op.selectedClass = value;
+        op.selectedClass = this.removeAddClass('.btn-icon-selected', op.selectedClass, value);
     };
     
     Iconpicker.prototype.setUnselectedClass = function (value) {
         var op = this.options;
-        op.table.find('.btn-icon').removeClass(op.unselectedClass).addClass(value);
-        op.unselectedClass = value;
+        op.unselectedClass = this.removeAddClass('.btn-icon', op.unselectedClass, value);
     };
     
     // ICONPICKER PLUGIN DEFINITION
