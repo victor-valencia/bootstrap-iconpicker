@@ -362,7 +362,7 @@
                 var name = (typeof $this.attr('name') !== 'undefined') ? 'name="' + $this.attr('name') + '"' : '';
                 $this.empty()
                     .append('<i></i>')
-                    .append('<input type="hidden" ' + name + '></input>')
+                    .append('<input type="hidden" name="icon" ' + name + '></input>')
                     .append('<span class="caret"></span>');
                 $this.addClass('iconpicker');                
                 data.setIconset(op.iconset);
