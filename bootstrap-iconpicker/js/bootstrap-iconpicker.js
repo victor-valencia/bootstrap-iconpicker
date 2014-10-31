@@ -240,23 +240,19 @@
     // ICONPICKER PUBLIC METHODS
     // ==============================    
     Iconpicker.prototype.setArrowClass = function (value) {
-        var op = this.options;
-        op.arrowClass = this.removeAddClass('.btn-arrow', op.arrowClass, value);
+        this.options.arrowClass = this.removeAddClass('.btn-arrow', this.options.arrowClass, value);
     };
     
     Iconpicker.prototype.setArrowNextIconClass = function (value) {
-        var op = this.options;
-        op.arrowNextIconClass = this.removeAddClass('.btn-next > span', op.arrowNextIconClass, value);
+        this.options.arrowNextIconClass = this.removeAddClass('.btn-next > span', this.options.arrowNextIconClass, value);
     };
     
     Iconpicker.prototype.setArrowPrevIconClass = function (value) {
-        var op = this.options;
-        op.arrowPrevIconClass = this.removeAddClass('.btn-previous > span', op.arrowPrevIconClass, value);
+        this.options.arrowPrevIconClass = this.removeAddClass('.btn-previous > span', this.options.arrowPrevIconClass, value);
     };
     
     Iconpicker.prototype.setCols = function (value) {
-        var op = this.options;
-        op.cols = value;
+        this.options.cols = value;
         this.reset();
     };
         
@@ -294,13 +290,11 @@
     };
     
     Iconpicker.prototype.setPlacement = function (value) {
-        var op = this.options;
-        op.placement = value;
+        this.options.placement = value;
     };
     
     Iconpicker.prototype.setRows = function (value) {
-        var op = this.options;
-        op.rows = value;
+        this.options.rows = value;
         this.reset();
     };
     
@@ -325,13 +319,11 @@
     };
     
     Iconpicker.prototype.setSelectedClass = function (value) {
-        var op = this.options;
-        op.selectedClass = this.removeAddClass('.btn-icon-selected', op.selectedClass, value);
+        this.options.selectedClass = this.removeAddClass('.btn-icon-selected', this.options.selectedClass, value);
     };
     
     Iconpicker.prototype.setUnselectedClass = function (value) {
-        var op = this.options;
-        op.unselectedClass = this.removeAddClass('.btn-icon', op.unselectedClass, value);
+        this.options.unselectedClass = this.removeAddClass('.btn-icon', this.options.unselectedClass, value);
     };
     
     // ICONPICKER PLUGIN DEFINITION
