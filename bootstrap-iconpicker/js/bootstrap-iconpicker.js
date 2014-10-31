@@ -17,7 +17,7 @@
  * limitations under the License.
  * ======================================================================== */
 
-+function ($) { "use strict";
++(function($){ "use strict";
 
     // ICONPICKER PUBLIC CLASS DEFINITION
     // ==============================
@@ -74,7 +74,7 @@
         var op = this.options;
         var el = this;
         op.table.find('.btn-previous, .btn-next').off('click').on('click', function() {
-            var inc = parseInt($(this).val());
+            var inc = parseInt($(this).val(), 10);
             el.changeList(op.page + inc);
         });
         op.table.find('.btn-icon').off('click').on('click', function() {
@@ -161,10 +161,18 @@
         var offset = (page - 1) * op.rows * op.cols;
         var total = page * op.rows * op.cols;
         op.table.find('.icons-count').html(op.labelFooter.replace('{0}', offset + 1).replace('{1}', (total < length) ? total: length).replace('{2}', length));
-        var btn_prev = op.table.find('.btn-previous');
-        var btn_next = op.table.find('.btn-next');
-        (page === 1) ? btn_prev.addClass('disabled') : btn_prev.removeClass('disabled');
-        (page === total_pages || total_pages === 0) ? btn_next.addClass('disabled') : btn_next.removeClass('disabled');
+        if (page === 1) { 
+            op.table.find('.btn-previous').addClass('disabled');
+        }
+        else {
+            op.table.find('.btn-previous').removeClass('disabled');
+        }
+        if (page === total_pages || total_pages === 0) { 
+            op.table.find('.btn-next').addClass('disabled');
+        }
+        else {
+            op.table.find('.btn-next').removeClass('disabled');
+        }
     };
     
     Iconpicker.prototype.updateNavigationBar = function () {
@@ -201,7 +209,12 @@
                 '</tr>'
             ];
             search = $(search.join(''));
-            (op.search === true) ? search.show() : search.hide();
+            if (op.search === true) { 
+                search.show();
+            }
+            else {
+                search.hide();
+            }
             op.table.find('thead').append(search);
             var icons_count = [
                 '<tr>',
@@ -290,7 +303,12 @@
     Iconpicker.prototype.setSearch = function (value) {
         var op = this.options;
         var search = op.table.find('.search-control');
-        (value === true) ? search.show() : search.hide();
+        if (value === true) { 
+            search.show();
+        }
+        else {
+            search.hide();
+        }
         search.val('');
         this.changeList(1);
         op.search = value;
@@ -322,7 +340,9 @@
             var $this = $(this);
             var data = $this.data('bs.iconpicker');
             var options = typeof option === 'object' && option;
-            if (!data) $this.data('bs.iconpicker', (data = new Iconpicker(this, options)));
+            if (!data) {
+                $this.data('bs.iconpicker', (data = new Iconpicker(this, options)));
+            }
             if (typeof option === 'string') {
                 if (typeof data[option] === 'undefined') {
                     throw 'Iconpicker => The "' + option + '" method does not exists.';
@@ -388,4 +408,4 @@
 
     $('button[role="iconpicker"]').iconpicker();
 
-}(window.jQuery);
+})(jQuery);
