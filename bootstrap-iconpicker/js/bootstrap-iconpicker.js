@@ -89,13 +89,15 @@
     Iconpicker.prototype.changeList = function (page) {
         var op = this.options;
         var search = op.table.find('.search-control').val();
-        if (search == "") {
+        if (search === "") {
             op.icons = Iconpicker.ICONSET[op.iconset].icons;
         }
         else {
             var result = [];
             $.each(Iconpicker.ICONSET[op.iconset].icons, function(i, v) {
-               if (v.indexOf(search) > -1) result.push(v);
+               if (v.indexOf(search) > -1) {
+                   result.push(v);
+               }
             });
             op.icons = result;
         }
@@ -110,7 +112,7 @@
                 if (pos < op.icons.length) {
                     var v = op.iconClassFix + op.icons[pos];
                     btn.val(v).attr('title', v).append('<i class="' + op.iconClass + ' ' + v + '"></i>').show();
-                    if (op.icon == v) {
+                    if (op.icon === v) {
                         btn.addClass(op.selectedClass);
                         btn.addClass('btn-icon-selected');
                     }
@@ -128,11 +130,11 @@
         var op = this.options;
         var el = this.$element;
         op.selected = $.inArray(icon.replace(op.iconClassFix, ''), op.icons);
-        if (op.selected == -1) {
+        if (op.selected === -1) {
             op.selected = 0;
             icon = op.iconClassFix + op.icons[op.selected];
         }
-        if (icon != '' && op.selected >= 0) {
+        if (icon !== '' && op.selected >= 0) {
             op.icon = icon;
             el.find('input').val(icon);
             el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
@@ -144,7 +146,7 @@
     Iconpicker.prototype.switchPage = function (icon) {
         var op = this.options;
         op.selected = $.inArray(icon.replace(op.iconClassFix, ''), op.icons);
-        if (icon != '' && op.selected >= 0) {
+        if (icon !== '' && op.selected >= 0) {
             var page = Math.ceil((op.selected + 1) / (op.cols * op.rows));
             this.changeList(page);
         }        
@@ -155,14 +157,14 @@
         var op = this.options;
         var length = op.icons.length;
         var total_pages = Math.ceil( length / (op.cols * op.rows) );
-        op.table.find('.page-count').html(op.labelHeader.replace('{0}', (total_pages == 0 ) ? 0 : page).replace('{1}', total_pages));
+        op.table.find('.page-count').html(op.labelHeader.replace('{0}', (total_pages === 0 ) ? 0 : page).replace('{1}', total_pages));
         var offset = (page - 1) * op.rows * op.cols;
         var total = page * op.rows * op.cols;
         op.table.find('.icons-count').html(op.labelFooter.replace('{0}', offset + 1).replace('{1}', (total < length) ? total: length).replace('{2}', length));
         var btn_prev = op.table.find('.btn-previous');
         var btn_next = op.table.find('.btn-next');
-        (page == 1) ? btn_prev.addClass('disabled') : btn_prev.removeClass('disabled');
-        (page == total_pages || total_pages == 0) ? btn_next.addClass('disabled') : btn_next.removeClass('disabled');
+        (page === 1) ? btn_prev.addClass('disabled') : btn_prev.removeClass('disabled');
+        (page === total_pages || total_pages === 0) ? btn_next.addClass('disabled') : btn_next.removeClass('disabled');
     };
     
     Iconpicker.prototype.updateNavigationBar = function () {
@@ -178,14 +180,14 @@
             for (var i = 0; i < op.cols; i++) {
                 var btn = $('<button class="btn btn-arrow ' + op.arrowClass + '"><span></span></button>');
                 var td = $('<td class="text-center"></td>');
-                if (i == 0 || i == op.cols - 1) {
-                    btn.val((i==0) ? -1 : 1);
-                    btn.addClass((i==0) ? 'btn-previous' : 'btn-next');
-                    btn.find('span').addClass( (i == 0) ? op.arrowPrevIconClass : op.arrowNextIconClass);
+                if (i === 0 || i === op.cols - 1) {
+                    btn.val((i === 0) ? -1 : 1);
+                    btn.addClass((i === 0) ? 'btn-previous' : 'btn-next');
+                    btn.find('span').addClass( (i === 0) ? op.arrowPrevIconClass : op.arrowNextIconClass);
                     td.append(btn);
                     tr.append(td);
                 }
-                else if (tr.find('.page-count').length == 0) {
+                else if (tr.find('.page-count').length === 0) {
                     td.attr('colspan', op.cols - 2).append('<span class="page-count"></span>');
                     tr.append(td);
                 }
@@ -199,7 +201,7 @@
                 '</tr>'
             ];
             search = $(search.join(''));
-            (op.search == true) ? search.show() : search.hide();
+            (op.search === true) ? search.show() : search.hide();
             op.table.find('thead').append(search);
             var icons_count = [
                 '<tr>',
@@ -288,7 +290,7 @@
     Iconpicker.prototype.setSearch = function (value) {
         var op = this.options;
         var search = op.table.find('.search-control');
-        (value == true) ? search.show() : search.hide();
+        (value === true) ? search.show() : search.hide();
         search.val('');
         this.changeList(1);
         op.search = value;
@@ -319,10 +321,10 @@
         return this.each(function () {
             var $this = $(this);
             var data = $this.data('bs.iconpicker');
-            var options = typeof option == 'object' && option;
+            var options = typeof option === 'object' && option;
             if (!data) $this.data('bs.iconpicker', (data = new Iconpicker(this, options)));
-            if (typeof option == 'string') {
-                if (typeof data[option] == 'undefined') {
+            if (typeof option === 'string') {
+                if (typeof data[option] === 'undefined') {
                     throw 'Iconpicker => The "' + option + '" method does not exists.';
                 }
                 else {
@@ -336,7 +338,7 @@
                     selected: -1,
                     table: $('<table class="table-icons"><thead></thead><tbody></tbody><tfoot></tfoot></table>')
                 });
-                var name = (typeof $this.attr('name') != 'undefined') ? 'name="' + $this.attr('name') + '"' : '';
+                var name = (typeof $this.attr('name') !== 'undefined') ? 'name="' + $this.attr('name') + '"' : '';
                 $this.empty()
                     .append('<i></i>')
                     .append('<input type="hidden" ' + name + '></input>')
@@ -356,7 +358,7 @@
                         data.switchPage(op.icon);
                         data.bindEvents();
                     });
-                    $this.data('bs.popover').tip().addClass('iconpicker-popover')
+                    $this.data('bs.popover').tip().addClass('iconpicker-popover');
                     $this.popover('show');
                 });                
             }
