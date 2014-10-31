@@ -86,31 +86,11 @@
         });
     };
     
-    Iconpicker.prototype.changeList = function (page) {
-        var op = this.options;
+    Iconpicker.prototype.changeList = function (page) {        
         this.filterIcons();
         this.updateLabelBar(page);
-        var tbody = op.table.find('tbody').empty();
-        var offset = (page - 1) * op.rows * op.cols;
-        for (var i = 0; i < op.rows; i++) {
-            var tr = $('<tr></tr>');
-            for (var j = 0; j < op.cols; j++) {
-                var pos = offset + (i * op.cols) + j;
-                var btn = $('<button class="btn ' + op.unselectedClass + ' btn-icon"></button>').hide();
-                if (pos < op.icons.length) {
-                    var v = op.iconClassFix + op.icons[pos];
-                    btn.val(v).attr('title', v).append('<i class="' + op.iconClass + ' ' + v + '"></i>').show();
-                    if (op.icon === v) {
-                        btn.addClass(op.selectedClass);
-                        btn.addClass('btn-icon-selected');
-                    }
-                }
-                var td = $('<td></td>').append(btn);
-                tr.append(td);
-            }
-            tbody.append(tr);
-        }
-        op.page = page;
+        this.updateIcons(page);
+        this.options.page = page;
         this.bindEvents();
     };
     
@@ -167,7 +147,29 @@
         }        
         op.table.find('i.' + icon).parent().addClass(op.selectedClass);
     };
-        
+    
+    Iconpicker.prototype.updateIcons = function (page) {
+        var op = this.options;
+        var tbody = op.table.find('tbody').empty();
+        var offset = (page - 1) * op.rows * op.cols;
+        for (var i = 0; i < op.rows; i++) {
+            var tr = $('<tr></tr>');
+            for (var j = 0; j < op.cols; j++) {
+                var pos = offset + (i * op.cols) + j;
+                var btn = $('<button class="btn ' + op.unselectedClass + ' btn-icon"></button>').hide();
+                if (pos < op.icons.length) {
+                    var v = op.iconClassFix + op.icons[pos];
+                    btn.val(v).attr('title', v).append('<i class="' + op.iconClass + ' ' + v + '"></i>').show();
+                    if (op.icon === v) {
+                        btn.addClass(op.selectedClass).addClass('btn-icon-selected');
+                    }
+                }
+                tr.append($('<td></td>').append(btn));
+            }
+            tbody.append(tr);
+        }
+    };
+    
     Iconpicker.prototype.updateLabelBar = function (page) {
         var op = this.options;
         var length = op.icons.length;
