@@ -88,19 +88,7 @@
     
     Iconpicker.prototype.changeList = function (page) {
         var op = this.options;
-        var search = op.table.find('.search-control').val();
-        if (search === "") {
-            op.icons = Iconpicker.ICONSET[op.iconset].icons;
-        }
-        else {
-            var result = [];
-            $.each(Iconpicker.ICONSET[op.iconset].icons, function(i, v) {
-               if (v.indexOf(search) > -1) {
-                   result.push(v);
-               }
-            });
-            op.icons = result;
-        }
+        this.filterIcons();
         this.updateLabelBar(page);
         var tbody = op.table.find('tbody').empty();
         var offset = (page - 1) * op.rows * op.cols;
@@ -124,6 +112,23 @@
         }
         op.page = page;
         this.bindEvents();
+    };
+    
+    Iconpicker.prototype.filterIcons = function () {
+        var op = this.options;
+        var search = op.table.find('.search-control').val();
+        if (search === "") {
+            op.icons = Iconpicker.ICONSET[op.iconset].icons;
+        }
+        else {
+            var result = [];
+            $.each(Iconpicker.ICONSET[op.iconset].icons, function(i, v) {
+               if (v.indexOf(search) > -1) {
+                   result.push(v);
+               }
+            });
+            op.icons = result;
+        }
     };
     
     Iconpicker.prototype.removeAddClass = function (target, remove, add) {
