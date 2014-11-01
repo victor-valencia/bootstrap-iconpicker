@@ -27,7 +27,7 @@ Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/el
 
 Three quick start options are available:
 
-- ![Latest release](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg) [Download the latest release](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.6.0.zip).
+- Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.6.0.zip).
 - Clone the repo: `git clone https://github.com/victor-valencia/bootstrap-iconpicker.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-iconpicker`.
 
