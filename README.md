@@ -78,8 +78,25 @@ You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a 
 - [![v1.6.0](http://img.shields.io/badge/zip-v1.6.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.6.0.zip).
     - Restructure `iconset` configuration.
     - Option `iconset` accepts `String` and `Object` (Limit your `iconset` option).
-    - Add options `arrowPrevIconClass`, `arrowNextIconClass`, `labelHeader` and `labelFooter`.
-    - Add methods `setArrowClass`, `setArrowPrevIconClass`, `setArrowNextIconClass`, `setCols`, `setIconset`, `setLabelHeader`, `setLabelFooter`, `setPlacement`, `setRows`, `setSearch`, `setSearchText`, `setSelectedClass`, and `setUnselectedClass`.
+    - Add options: 
+        - `arrowPrevIconClass`
+        - `arrowNextIconClass`
+        - `labelHeader`
+        - `labelFooter`
+    - Add methods: 
+        - `setArrowClass`
+        - `setArrowPrevIconClass`
+        - `setArrowNextIconClass`
+        - `setCols`
+        - `setIconset`
+        - `setLabelHeader`
+        - `setLabelFooter`
+        - `setPlacement`
+        - `setRows`
+        - `setSearch`
+        - `setSearchText`
+        - `setSelectedClass`
+        - `setUnselectedClass`
     - Support for 6 more icon fonts:
         - [Elusive Icons v2.0.0](http://press.codes/downloads/elusive-icons-webfont/)
         - [Ionicons v1.5.2](http://ionicons.com/)
