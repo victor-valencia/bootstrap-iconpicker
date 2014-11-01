@@ -17,7 +17,7 @@
  * limitations under the License.
  * ======================================================================== */
 
-+(function($){ "use strict";
+;(function($){ "use strict";
 
     // ICONPICKER PUBLIC CLASS DEFINITION
     // ==============================
@@ -226,12 +226,14 @@
         var op = this.options;
         var tr = $('<tr></tr>');
         for (var i = 0; i < op.cols; i++) {
-            var btn = $('<button class="btn btn-arrow ' + op.arrowClass + '"><span></span></button>');
             var td = $('<td class="text-center"></td>');
             if (i === 0 || i === op.cols - 1) {
-                btn.val((i === 0) ? -1 : 1).addClass((i === 0) ? 'btn-previous' : 'btn-next');
-                btn.find('span').addClass( (i === 0) ? op.arrowPrevIconClass : op.arrowNextIconClass);
-                td.append(btn);
+                var arrow = [
+                    '<button class="btn btn-arrow ' + ((i === 0) ? 'btn-previous' : 'btn-next') + ' ' + op.arrowClass + '" value="' + ((i === 0) ? -1 : 1) + '">',
+                        '<span class="' + ((i === 0) ? op.arrowPrevIconClass : op.arrowNextIconClass) + '"></span>',
+                    '</button>'
+                ];
+                td.append(arrow.join(''));
                 tr.append(td);
             }
             else if (tr.find('.page-count').length === 0) {
