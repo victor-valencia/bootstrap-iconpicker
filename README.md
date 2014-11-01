@@ -17,6 +17,7 @@ Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/el
 ## Table of contents
 - [Quick start](#quick-start)
 - [Documentation and live examples](#documentation-and-live-examples)
+- [Bugs and feature requests](#bugs-and-feature-requests)
 - [Changelog](#changelog)
 - [Versioning](#versioning)
 - [Author](#author)
