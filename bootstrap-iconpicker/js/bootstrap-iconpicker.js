@@ -61,6 +61,7 @@
         labelHeader: '{0} / {1}',
         labelFooter: '{0} - {1} of {2}',
         placement: 'bottom',
+        container: 'body',
         rows: 4,
         search: true,
         searchText: 'Search icon',
@@ -332,6 +333,10 @@
         this.options.placement = value;
     };
     
+    Iconpicker.prototype.setContainer= function (value) {
+        this.options.container = value;
+    };
+    
     Iconpicker.prototype.setRows = function (value) {
         this.options.rows = value;
         this.reset();
@@ -403,7 +408,7 @@
                         trigger: 'manual',
                         html: true,
                         content: op.table,
-                        container: 'body',
+                        container: op.container,
                         placement: op.placement
                     }).on('shown.bs.popover', function () {
                         data.switchPage(op.icon);
