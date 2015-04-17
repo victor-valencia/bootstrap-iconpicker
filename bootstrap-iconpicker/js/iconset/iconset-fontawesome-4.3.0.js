@@ -1,8 +1,8 @@
 /* ========================================================================
- * Bootstrap: iconset-fontawesome-4.2.0.js by @recktoner 
+ * Bootstrap: iconset-fontawesome-4.3.0.js by @recktoner 
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * 
- * Iconset: Font Awesome 4.2.0
+ * Iconset: Font Awesome 4.3.0
  * http://fortawesome.github.io/Font-Awesome/
  * ========================================================================
  * Copyright 2013-2014 Victor Valencia Rico.
