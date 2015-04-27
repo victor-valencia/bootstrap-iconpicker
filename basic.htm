@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Bootstrap Iconpicker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="bootstrap-3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-3.2.0/css/docs.css" />
+    <link rel="stylesheet" href="bootstrap-3.2.0/css/pygments-manni.css" />
+    <link rel="stylesheet" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css" />
+    <link rel="stylesheet" href="icon-fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="icon-fonts/ionicons-1.5.2/css/ionicons.min.css" />
+    <link rel="stylesheet" href="icon-fonts/map-icons-2.1.0/css/map-icons.min.css" />
+    <link rel="stylesheet" href="icon-fonts/octicons-2.1.2/css/octicons.min.css" />
+    <link rel="stylesheet" href="icon-fonts/typicons-2.0.6/css/typicons.min.css" />
+    <link rel="stylesheet" href="icon-fonts/weather-icons-1.2.0/css/weather-icons.min.css" />
+    <link rel="stylesheet" href="bootstrap-iconpicker/css/bootstrap-iconpicker.min.css" />
+
+    <style type="text/css">
+        .bg-gray {
+            color: #777;
+            background-color: #eee;
+        }
+
+        #btnGithub, #btnDonate {
+            width: 200px;
+        }
+
+            #btnGithub span, #btnDonate span {
+                font-style: italic;
+            }
+
+        #btnStars, #btnForks, #btnReleases, #btnContributors {
+            font-weight: bold;
+        }
+
+        .tab-content {
+            padding: 12px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        code.code-default {
+            color: #ffffff;
+            background-color: #f0ad4e;
+        }
+
+        code.code-info {
+            color: #ffffff;
+            background-color: #5bc0de;
+        }
+
+        code.code-options {
+            color: #ffffff;
+            background-color: #9b59b6;
+        }
+
+        code.code-event {
+            color: #ffffff;
+            background-color: #449d44;
+        }
+
+        code.code-method {
+            color: #ffffff;
+            background-color: #357ebd;
+        }
+
+        #console {
+            height: 135px;
+            overflow-y: scroll;
+            color: white;
+            background-color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Begin :: Donate Form -->
+    <form id="formDonate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="7344EETBUX96A">
+    </form>
+    <!-- End :: Donate Form -->
+
+    <div class="container">
+
+        
+
+        <div class="bs-example" style="padding-bottom: 24px;">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <button id="convert_example_1" class="btn btn-primary" style="margin-left: 30px;"></button>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <button id="example2" role="iconpicker" data-rows="10" data-cols="6" data-iconset="fontawesome|glyphicon" data-icon="camera" class="btn btn-primary" style="margin-left: 30px;"></button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="panel panel-default" style="margin-top:25px">
+            <div class="panel-heading">
+                <h4>API</h4>
+            </div>
+            <div class="panel-body">
+                    <div class="row" >
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label for="icon-value" class="control-label">
+                                    Icon Value
+                                </label>
+                            </div>
+                            <div class="col-md-8">
+                                <input type="text" readonly id="icon-value" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.js"></script>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $('#convert_example_1').iconpicker({
+                arrowClass: 'btn-danger',
+                arrowPrevIconClass: 'glyphicon glyphicon-chevron-left',
+                arrowNextIconClass: 'glyphicon glyphicon-chevron-right',
+                cols: 5,
+                icon: 'paper-plane-o',
+                iconset: ['fontawesome', 'glyphicon'],
+                labelHeader: '{0} of {1} pages',
+                labelFooter: '{0} - {1} of {2} icons',
+                placement: 'bottom',
+                rows: 5,
+                search: true,
+                searchText: 'Search',
+                selectedClass: 'btn-success',
+                unselectedClass: ''
+            }).bind('change', function (e) {
+                $('#icon-value').val(e.icon);
+            });
+        });
+
+              
+
+    </script>
+</body>
+</html>
