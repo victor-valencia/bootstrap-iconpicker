@@ -12,7 +12,7 @@
 A simple iconpicker for Bootstrap 3.x.
 
 Please note that this project is for [Bootstrap 3.x](http://getbootstrap.com/), including Glyphicons.
-Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/elusive-icons-webfont/), [Font Awesome](http://fontawesome.io/), [Ionicons](http://ionicons.com/), [Map Icons](http://map-icons.com/), [Octicons](https://octicons.github.com/), [Typicons](http://typicons.com), [Weather Icons](http://erikflowers.github.io/weather-icons/).
+Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/elusive-icons-webfont/), [Font Awesome](http://fontawesome.io/), [Ionicons](http://ionicons.com/), [Map Icons](http://map-icons.com/), [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/), [Octicons](https://octicons.github.com/), [Typicons](http://typicons.com), [Weather Icons](http://erikflowers.github.io/weather-icons/).
 
 ## Table of contents
 - [Quick start](#quick-start)
@@ -92,7 +92,7 @@ You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a 
         - `setHeader`
         - `setFooter`
     - Support for 1 more icon fonts:
-        - [Material Design v1.1.1](http://zavoloklom.github.io/material-design-iconic-font/)
+        - [Material Design Icons v1.1.1](http://zavoloklom.github.io/material-design-iconic-font/)
 - [![v1.6.0](http://img.shields.io/badge/zip-v1.6.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.6.0.zip).
     - Restructure `iconset` configuration.
     - Option `iconset` accepts `String` and `Object` (Limit your `iconset` option).
