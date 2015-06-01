@@ -1,7 +1,7 @@
 /*!
- * Bootstrap-iconpicker v1.5.0
+ * Bootstrap-iconpicker v1.7.0
  *
- * Copyright 2013-2014 Victor Valencia Rico.
+ * Copyright 2013-2015 Victor Valencia Rico.
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -14,6 +14,24 @@
 
 .iconpicker {
     min-width: 60px;
+}
+
+.iconpicker input.search-control {
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+div.iconpicker.left .table-icons {
+    margin-right: auto;
+}
+
+div.iconpicker.center .table-icons {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.iconpicker.right .table-icons {
+    margin-left: auto;
 }
 
 .table-icons .btn {
