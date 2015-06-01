@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-iconpicker",
   "description": "Simple Iconpicker for Bootstrap 3.x",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "keywords": [
     "Bootstrap",
     "Iconpicker",
@@ -10,6 +10,7 @@
     "Elusive Icons",
     "Ionicons",
     "Map Icons",
+    "Material Design Icons",
     "Octicons",
     "Typicons",
     "Weather Icons"

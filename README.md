@@ -6,7 +6,7 @@
 [![Issues](http://img.shields.io/github/issues/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/issues?q=is%3Aopen)
 [![Issues](http://img.shields.io/badge/license-MIT-red.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE)
 
-# [Bootstrap-Iconpicker v1.6.0](http://victor-valencia.github.io/bootstrap-iconpicker)
+# [Bootstrap-Iconpicker v1.7.0](http://victor-valencia.github.io/bootstrap-iconpicker)
 ![Iconpicker](bootstrap-iconpicker.png)
 
 A simple iconpicker for Bootstrap 3.x.
@@ -28,7 +28,7 @@ Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/el
 
 Three quick start options are available:
 
-- Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.6.0.zip).
+- Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.7.0.zip).
 - Clone the repo: `git clone https://github.com/victor-valencia/bootstrap-iconpicker.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-iconpicker`.
 
@@ -42,6 +42,7 @@ bootstrap-iconpicker/
 │   ├── bootstrap-iconpicker.min.css
 ├── js/
 │   ├── iconset/
+│       ├── iconset-all.min.js
 │       ├── iconset-elusiveicon-2.0.0.js
 │       ├── iconset-elusiveicon-2.0.0.min.js
 │       ├── iconset-fontawesome-4.0.0.js
@@ -56,6 +57,8 @@ bootstrap-iconpicker/
 │       ├── iconset-ionicon-1.5.2.min.js
 │       ├── iconset-mapicon-2.1.0.js
 │       ├── iconset-mapicon-2.1.0.min.js
+│       ├── iconset-materialdesign-1.1.1.js
+│       ├── iconset-materialdesign-1.1.1.min.js
 │       ├── iconset-octicon-2.1.2.js
 │       ├── iconset-octicon-2.1.2.min.js
 │       ├── iconset-typicon-2.0.6.js
@@ -76,6 +79,20 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/vi
 You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a template for your bug reports.
 
 ## Changelog
+- [![v1.7.0](http://img.shields.io/badge/zip-v1.7.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.7.0.zip).
+    - Support for button and div tags.
+    - All `iconset` includes the empty icon value.
+    - Option `rows` accepts the value 0 to indicate all rows.
+    - Add options: 
+        - `align`
+        - `header`
+        - `footer`
+    - Add methods: 
+        - `setAlign`
+        - `setHeader`
+        - `setFooter`
+    - Support for 1 more icon fonts:
+        - [Material Design v1.1.1](http://zavoloklom.github.io/material-design-iconic-font/)
 - [![v1.6.0](http://img.shields.io/badge/zip-v1.6.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.6.0.zip).
     - Restructure `iconset` configuration.
     - Option `iconset` accepts `String` and `Object` (Limit your `iconset` option).

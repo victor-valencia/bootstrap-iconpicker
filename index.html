@@ -17,6 +17,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="icon-fonts/font-awesome-4.2.0/css/font-awesome.min.css"/>
         <link rel="stylesheet" href="icon-fonts/ionicons-1.5.2/css/ionicons.min.css"/>
         <link rel="stylesheet" href="icon-fonts/map-icons-2.1.0/css/map-icons.min.css"/>
+        <link rel="stylesheet" href="icon-fonts/material-design-1.1.1/css/material-design-iconic-font.min.css"/>
         <link rel="stylesheet" href="icon-fonts/octicons-2.1.2/css/octicons.min.css"/>
         <link rel="stylesheet" href="icon-fonts/typicons-2.0.6/css/typicons.min.css"/>
         <link rel="stylesheet" href="icon-fonts/weather-icons-1.2.0/css/weather-icons.min.css"/>
@@ -175,6 +176,7 @@ and open the template in the editor.
                         <li><a href="#octicon" role="tab" data-toggle="tab"><i class="octicon octicon-bug"></i> Octicons 2.1.2</a></li>
                         <li><a href="#typicon" role="tab" data-toggle="tab"><i class="typcn typcn-anchor"></i> Typicons 2.0.6</a></li>
                         <li><a href="#elusiveicon" role="tab" data-toggle="tab"><i class="el-icon-female"></i> Elusive Icons 2.0.0</a></li>
+                        <li><a href="#materialdesign" role="tab" data-toggle="tab"><i class="md md-3d-rotation"></i> Material Design 1.1.1</a></li>
                     </ul>
                 </li>
             </ul>
@@ -419,7 +421,36 @@ and open the template in the editor.
 </code>
                         </pre>
                     </div>
-                </div>                            
+                </div>
+                <div class="tab-pane" id="materialdesign">
+                    <p>1.- Add the style files: <code>bootstrap.min.css</code>, <code>material-design-iconic-font.min.css</code> and <code>bootstrap-iconpicker.min.css</code></p>
+                    <div class="highlight">
+                        <pre>
+                            <code class="html"><span class="c">&lt;!-- Bootstrap --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-3.2.0/css/bootstrap.min.css"</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!-- Elusive Icons --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"icon-fonts/material-design-1.1.1/css/material-design-iconic-font.min.css"</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+</code>
+                        </pre>
+                    </div>
+
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-materialdesign-1.1.1.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <div class="highlight">
+                        <pre>
+                            <code class="html"><span class="c">&lt;!-- jQuery --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"jquery/jquery-1.10.2.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-3.2.0/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Material Design --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-materialdesign-1.1.1.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+</code>
+                        </pre>
+                    </div>
+                </div>
             </div>
             
             <h1 class="page-header">Via data attributes.</h1>
@@ -428,21 +459,28 @@ and open the template in the editor.
             <p>Add <code>role="iconpicker"</code> to initialize the iconpicker.</p>
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
-                    <div class="col-md-12">
-                        <p><code>role="iconpicker"</code></p>
+                    <div class="col-md-6">
+                        <p><code>button</code></br><code>role="iconpicker"</code></p>
                         <button class="btn btn-default" role="iconpicker"></button>
+                    </div>
+                    <div class="col-md-6">
+                        <p><code>div</code></br><code>role="iconpicker"</code></p>
+                        <div role="iconpicker"></div>
                     </div>
                 </div>
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span></code>
+                    <code class="html"><span class="c">&lt;!-- Button tag --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Div tag --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span></code>
                 </pre>
             </div>
             
             <div class="bs-callout bs-callout-info">
                 <h4>Use iconpicker in a form</h4>
-                <p>Just add attribute <code class="code-default">name=""</code> in button tag.</p>
+                <p>Just add attribute <code class="code-default">name=""</code> in button tag or div tag.</p>
             </div>
             
             <h4>Set Iconset and Icon Selected.</h4>
@@ -451,42 +489,48 @@ and open the template in the editor.
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
                     <div class="col-md-6">
-                        <p><code>data-iconset="glyphicon"</code> and <code>data-icon="glyphicon-camera"</code></p>
+                        <p><code>data-iconset="glyphicon"</code></br><code>data-icon="glyphicon-camera"</code></p>
                         <button class="btn btn-default" data-iconset="glyphicon" data-icon="glyphicon-camera" role="iconpicker"></button>
                     </div>
                     <div class="col-md-6">
-                        <p><code>data-iconset="ionicon"</code> and <code>data-icon="ion-ionic"</code></p>
+                        <p><code>data-iconset="ionicon"</code></br><code>data-icon="ion-ionic"</code></p>
                         <button class="btn btn-default" data-iconset="ionicon" data-icon="ion-ionic" role="iconpicker"></button>
                     </div>
                 </div>
                 <div class="row text-center" style="padding-top: 12px;">
                     <div class="col-md-6">
-                        <p><code>data-iconset="fontawesome"</code> and <code>data-icon="fa-wifi"</code></p>
+                        <p><code>data-iconset="fontawesome"</code></br><code>data-icon="fa-wifi"</code></p>
                         <button class="btn btn-default" data-iconset="fontawesome" data-icon="fa-wifi" role="iconpicker"></button>
                     </div>
                     <div class="col-md-6">
-                        <p><code>data-iconset="weathericon"</code> and <code>data-icon="wi-day-rain"</code></p>
+                        <p><code>data-iconset="weathericon"</code></br><code>data-icon="wi-day-rain"</code></p>
                         <button class="btn btn-default" data-iconset="weathericon" data-icon="wi-day-rain" role="iconpicker"></button>
                     </div>
                 </div>
                 <div class="row text-center" style="padding-top: 12px;">
                     <div class="col-md-6">
-                        <p><code>data-iconset="mapicon"</code> and <code>data-icon="map-icon-walking"</code></p>
+                        <p><code>data-iconset="mapicon"</code></br><code>data-icon="map-icon-walking"</code></p>
                         <button class="btn btn-default" data-iconset="mapicon" data-icon="map-icon-walking" role="iconpicker"></button>
                     </div>                
                     <div class="col-md-6">
-                        <p><code>data-iconset="octicon"</code> and <code>data-icon="octicon-bug"</code></p>
+                        <p><code>data-iconset="octicon"</code></br><code>data-icon="octicon-bug"</code></p>
                         <button class="btn btn-default" data-iconset="octicon" data-icon="octicon-bug" role="iconpicker"></button>
                     </div>
                 </div>
                 <div class="row text-center" style="padding-top: 12px;">
                     <div class="col-md-6">
-                        <p><code>data-iconset="typicon"</code> and <code>data-icon="typcn-anchor"</code></p>
+                        <p><code>data-iconset="typicon"</code></br><code>data-icon="typcn-anchor"</code></p>
                         <button class="btn btn-default" data-iconset="typicon" data-icon="typcn-anchor" role="iconpicker"></button>
                     </div>
                     <div class="col-md-6">
-                        <p><code>data-iconset="elusiveicon"</code> and <code>data-icon="el-icon-female"</code></p>
+                        <p><code>data-iconset="elusiveicon"</code></br><code>data-icon="el-icon-female"</code></p>
                         <button class="btn btn-default" data-iconset="elusiveicon" data-icon="el-icon-female" role="iconpicker"></button>
+                    </div>
+                </div>
+                <div class="row text-center" style="padding-top: 12px;">
+                    <div class="col-md-6">
+                        <p><code>data-iconset="materialdesign"</code></br><code>data-icon="md-sd-storage"</code></p>
+                        <button class="btn btn-default" data-iconset="materialdesign" data-icon="md-sd-storage" role="iconpicker"></button>
                     </div>
                 </div>
             </div>
@@ -508,6 +552,8 @@ and open the template in the editor.
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-iconset=</span><span class="s">"typicon"</span> <span class="na">data-icon=</span><span class="s">"typcn-anchor"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
 <span class="c">&lt;!-- Example 8 --&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-iconset=</span><span class="s">"elusiveicon"</span> <span class="na">data-icon=</span><span class="s">"el-icon-female"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="c">&lt;!-- Example 9 --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-iconset=</span><span class="s">"materialdesign"</span> <span class="na">data-icon=</span><span class="s">"md-sd-storage"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
 </code>
                 </pre>
             </div>                        
@@ -523,39 +569,48 @@ and open the template in the editor.
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
                     <div class="col-md-6">
-                        <p><code>data-search="true"</code> and <code>data-search-text="Search..."</code></p>
-                        <button class="btn btn-default" data-icon="glyphicon-search" data-search="true" data-search-text="Search..." role="iconpicker"></button>
+                        <p><code>data-search="true"</code></br><code>data-search-text="Search..."</code></p>
+                        <div data-search="true" data-search-text="Search..." role="iconpicker"></div>
                     </div>
                     <div class="col-md-6">
                         <p><code>data-search="false"</code></p>
-                        <button class="btn btn-default" data-icon="glyphicon-search" data-search="false" role="iconpicker"></button>
+                        <div data-search="false" role="iconpicker"></div>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="c">&lt;!-- Example 1 --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-search=</span><span class="s">"true"</span> <span class="na">data-search-text=</span><span class="s">"Search..."</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-search=</span><span class="s">"true"</span> <span class="na">data-search-text=</span><span class="s">"Search..."</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
 <span class="c">&lt;!-- Example 2 --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-search=</span><span class="s">"false"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-search=</span><span class="s">"false"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
 </code>
                 </pre>
             </div>
             
             <h4>Set Labels.</h4>
+            <p>Add <code>data-header="true|false"</code> to show or hide the header. <small>Default: <code class="code-default">data-header="true"</code></small></p>
             <p>Add <code>data-label-header=""</code> to indicate header text. <small>Default: <code class="code-default">data-label-header="{0} / {1}"</code></small></p>
+            <p>Add <code>data-footer="true|false"</code> to show or hide the footer. <small>Default: <code class="code-default">data-footer="true"</code></small></p>
             <p>Add <code>data-label-footer=""</code> to indicate footer text. <small>Default: <code class="code-default">data-label-footer="{0} - {1} of {2}"</code></small></p>
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
-                    <div class="col-md-12">
-                        <p><code>data-label-header="{0} - {1} pages"</code> and <code>data-label-footer="{0} - {1} of {2} icons"</code></p>
-                        <button class="btn btn-default" data-icon="glyphicon-font" data-cols="5" data-label-header="{0} - {1} pages" data-label-footer="{0} - {1} of {2} icons" role="iconpicker"></button>
+                    <div class="col-md-6">
+                        <p><code>data-label-header="{0} - {1} pages"</code></br><code>data-label-footer="{0} - {1} of {2} icons"</code></p>
+                        <div data-cols="5" data-label-header="{0} - {1} pages" data-label-footer="{0} - {1} of {2} icons" role="iconpicker"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><code>data-header="false"</code></br><code>data-footer="false"</code></p>
+                        <div data-cols="5" data-header="false" data-footer="false" role="iconpicker"></div>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-label-header=</span><span class="s">"{0} - {1} pages"</span> <span class="na">data-label-footer=</span><span class="s">"{0} - {1} of {2} icons"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span>
+                    <code class="html"><span class="c">&lt;!-- Example 1 --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-label-header=</span><span class="s">"{0} - {1} pages"</span> <span class="na">data-label-footer=</span><span class="s">"{0} - {1} of {2} icons"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- Example 2 --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-header=</span><span class="s">"false"</span> <span class="na">data-footer=</span><span class="s">"false"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
 </code>
                 </pre>
             </div>
@@ -566,18 +621,48 @@ and open the template in the editor.
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <p><code>data-rows="3"</code> and <code>data-cols="6"</code></p>
-                        <button class="btn btn-default" data-icon="glyphicon-th-large" data-rows="3" data-cols="6" role="iconpicker"></button>
+                        <p><code>data-rows="3"</code></br><code>data-cols="6"</code></p>
+                        <div data-rows="3" data-cols="6" role="iconpicker"></div>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-rows=</span><span class="s">"3"</span> <span class="na">data-cols=</span><span class="s">"6"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span></code>
+                    <code class="html"><span class="nt">&lt;div</span> <span class="na">data-rows=</span><span class="s">"3"</span> <span class="na">data-cols=</span><span class="s">"6"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span></code>
                 </pre>
             </div>
             
-            <h4>Set Placement.</h4>
+            <h4>Set Align. (Only in div tag)</h4>
+            <p>Add <code>data-align="left|center|right"</code> to indicate the align. <small>Default: <code class="code-default">data-align="center"</code></small></p>
+            <div class="bs-example" style="padding-bottom: 24px;">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <p><code>data-align="left"</code></p>
+                        <div data-align="left" role="iconpicker"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <p><code>data-align="center"</code></p>
+                        <div data-align="center" role="iconpicker"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <p><code>data-align="right"</code></p>
+                        <div data-align="right" role="iconpicker"></div>
+                    </div>
+                </div>                
+            </div>
+            <div class="highlight">
+                <pre>
+                    <code class="html"><span class="c">&lt;!-- Example 1 --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- Example 2 --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- Example 3 --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
+</code>
+                </pre>
+            </div>
+            
+            <h4>Set Placement. (Only in button tag)</h4>
             <p>Add <code>data-placement="left|top|bottom|right"</code> to indicate where the iconpicker will be display. <small>Default: <code class="code-default">data-placement="bottom"</code></small></p>
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
@@ -620,14 +705,14 @@ and open the template in the editor.
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <p><code>data-arrow-class="btn-success"</code>, <code>data-arrow-prev-icon-class="glyphicon glyphicon-chevron-left"</code> and <code>data-arrow-next-icon-class="glyphicon glyphicon-chevron-right"</code></p>
-                        <button class="btn btn-default" data-icon="glyphicon-picture" data-arrow-class="btn-success" data-arrow-prev-icon-class="glyphicon glyphicon-chevron-left" data-arrow-next-icon-class="glyphicon glyphicon-chevron-right" role="iconpicker"></button>
+                        <p><code>data-arrow-class="btn-success"</code></br><code>data-arrow-prev-icon-class="glyphicon glyphicon-chevron-left"</code></br><code>data-arrow-next-icon-class="glyphicon glyphicon-chevron-right"</code></p>
+                        <div data-arrow-class="btn-success" data-arrow-prev-icon-class="glyphicon glyphicon-chevron-left" data-arrow-next-icon-class="glyphicon glyphicon-chevron-right" role="iconpicker"></div>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-arrow-class=</span><span class="s">"btn-success"</span> <span class="na">data-arrow-prev-icon-class==</span><span class="s">"glyphicon glyphicon-chevron-left"</span> <span class="na">data-arrow-next-icon-class=</span><span class="s">"glyphicon glyphicon-chevron-right"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span></code>
+                    <code class="html"><span class="nt">&lt;div</span> <span class="na">data-arrow-class=</span><span class="s">"btn-success"</span> <span class="na">data-arrow-prev-icon-class==</span><span class="s">"glyphicon glyphicon-chevron-left"</span> <span class="na">data-arrow-next-icon-class=</span><span class="s">"glyphicon glyphicon-chevron-right"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span></code>
                 </pre>
             </div>
             
@@ -637,14 +722,14 @@ and open the template in the editor.
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <p><code>data-selected-class="btn-danger"</code> and <code>data-unselected-class="btn-info"</code></p>
-                        <button class="btn btn-default" data-icon="glyphicon-picture" data-selected-class="btn-danger" data-unselected-class="btn-info" role="iconpicker"></button>
+                        <p><code>data-selected-class="btn-danger"</code></br><code>data-unselected-class="btn-info"</code></p>
+                        <div data-selected-class="btn-danger" data-unselected-class="btn-info" role="iconpicker"></div>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
-                    <code class="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">data-selected-class=</span><span class="s">"btn-danger"</span> <span class="na">data-unselected-class=</span><span class="s">"btn-info"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/button&gt;</span></code>
+                    <code class="html"><span class="nt">&lt;div</span> <span class="na">data-selected-class=</span><span class="s">"btn-danger"</span> <span class="na">data-unselected-class=</span><span class="s">"btn-info"</span> <span class="na">role=</span><span class="s">"iconpicker"</span><span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span></code>
                 </pre>
             </div>
             
@@ -746,7 +831,7 @@ and open the template in the editor.
             <h4><small><code class="code-options">.iconpicker(options)</code> Initializes an iconpicker with options.</small></h4>
             
             <h4>Options.</h4>
-            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-arrow-class=""</code>.</p>
+            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-align=""</code>.</p>
             
             <div class="table-responsive">
                 <table class="table table-bordered table-striped">
@@ -759,6 +844,12 @@ and open the template in the editor.
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td><code class="code-options">align</code></td>
+                            <td>String</td>
+                            <td><code class="code-default">'center'</code></td>
+                            <td>(Only in div tag) Align of the iconpicker.</td>
+                        </tr>
                         <tr>
                             <td><code class="code-options">arrowClass</code></td>
                             <td>String</td>
@@ -782,6 +873,18 @@ and open the template in the editor.
                             <td>Integer</td>
                             <td><code class="code-default">4</td>
                             <td>Number of columns to display in the iconpicker. Min value is: <code class="code-info">4</code></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-options">footer</code></td>
+                            <td>Boolean</td>
+                            <td><code class="code-default">true</code></td>
+                            <td>Indicates whether to show or hide the footer. <code class="code-info">true|false</code></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-options">header</code></td>
+                            <td>Boolean</td>
+                            <td><code class="code-default">true</code></td>
+                            <td>Indicates whether to show or hide the header. <code class="code-info">true|false</code></td>
                         </tr>
                         <tr>
                             <td><code class="code-options">icon</code></td>
@@ -814,7 +917,7 @@ and open the template in the editor.
                             <td><code class="code-options">placement</code></td>
                             <td>String</td>
                             <td><code class="code-default">'bottom'</code></td>
-                            <td>Where the iconpicker will be display. <code class="code-info">left|top|bottom|right</code></td>
+                            <td>(Only in button tag) Where the iconpicker will be display. <code class="code-info">left|top|bottom|right</code></td>
                         </tr>
                         <tr>
                             <td><code class="code-options">rows</code></td>
@@ -853,7 +956,7 @@ and open the template in the editor.
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <button id="convert_example_1" class="btn btn-primary" style="margin-left: 30px;"></button>
+                        <div id="convert_example_1"></div>
                     </div>
                 </div>                
             </div>
@@ -864,15 +967,18 @@ and open the template in the editor.
 
 <span class="c">// Custom options</span>
 <span class="nx">$(</span><span class="s">'#target'</span><span class="nx">).iconpicker({</span> 
+    <span class="o">align: </span><span class="s">'center'</span>, <span class="c">// Only in div tag</span>
     <span class="o">arrowClass: </span><span class="s">'btn-danger'</span>,
     <span class="o">arrowPrevIconClass: </span><span class="s">'glyphicon glyphicon-chevron-left'</span>,
     <span class="o">arrowNextIconClass: </span><span class="s">'glyphicon glyphicon-chevron-right'</span>,
-    <span class="o">cols: </span><span class="nx">5</span>,
-    <span class="o">icon: </span><span class="s">'fa-key'</span>,
+    <span class="o">cols: </span><span class="nx">10</span>,
+    <span class="o">footer: </span><span class="na">true</span>,
+    <span class="o">header: </span><span class="na">true</span>,
+    <span class="o">icon: </span><span class="s">'fa-bomb'</span>,
     <span class="o">iconset: </span><span class="s">'fontawesome'</span>,   
     <span class="o">labelHeader: </span><span class="s">'{0} of {1} pages'</span>,
     <span class="o">labelFooter: </span><span class="s">'{0} - {1} of {2} icons'</span>,
-    <span class="o">placement: </span><span class="s">'bottom'</span>,
+    <span class="o">placement: </span><span class="s">'bottom'</span>, <span class="c">// Only in button tag</span>
     <span class="o">rows: </span><span class="nx">5</span>,
     <span class="o">search: </span><span class="na">true</span>,
     <span class="o">searchText: </span><span class="s">'Search'</span>,
@@ -940,6 +1046,10 @@ and open the template in the editor.
                     </thead>
                     <tbody>
                         <tr>
+                            <td>.iconpicker(<code class="code-method">'setAlign'</code>, String)</td>
+                            <td>(Only in div tag) Sets align of the iconpicker. <code class="code-info">left|center|right</code></td>
+                        </tr>
+                        <tr>
                             <td>.iconpicker(<code class="code-method">'setArrowClass'</code>, String)</td>
                             <td>Sets class of the arrows.</td>
                         </tr>
@@ -956,6 +1066,14 @@ and open the template in the editor.
                             <td>
                                 Sets the columns to display in the iconpicker. Min value is: <code class="code-info">4</code>
                             </td>
+                        </tr>
+                        <tr>
+                            <td>.iconpicker(<code class="code-method">'setFooter'</code>, Boolean)</td>
+                            <td>Sets whether to show or hide the footer. <code class="code-info">true|false</code></td>
+                        </tr>
+                        <tr>
+                            <td>.iconpicker(<code class="code-method">'setHeader'</code>, Boolean)</td>
+                            <td>Sets whether to show or hide the header. <code class="code-info">true|false</code></td>
                         </tr>
                         <tr>
                             <td>.iconpicker(<code class="code-method">'setIcon'</code>, String)</td>
@@ -979,12 +1097,12 @@ and open the template in the editor.
                         </tr>
                         <tr>
                             <td>.iconpicker(<code class="code-method">'setPlacement'</code>, String)</td>
-                            <td>Sets where the iconpicker will be display. <code class="code-info">left|top|bottom|right</code></td>
+                            <td>(Only in button tag) Sets where the iconpicker will be display. <code class="code-info">left|top|bottom|right</code></td>
                         </tr>
                         <tr>
                             <td>.iconpicker(<code class="code-method">'setRows'</code>, Integer)</td>
                             <td>
-                                Sets the rows to display in the iconpicker. Min value is: <code class="code-info">1</code>
+                                Sets the rows to display in the iconpicker. Value = <code class="code-info">0</code> indicates all rows.
                             </td>
                         </tr>
                         <tr>
@@ -1010,17 +1128,20 @@ and open the template in the editor.
             <div class="bs-example" style="padding-bottom: 24px;">
                 <div class="row text-center">
                     <div class="col-md-12">
-                        <button id="convert_example_3" class="btn btn-primary" style="margin-left: 30px;"></button>
+                        <div id="convert_example_3"></div>
                     </div>
                 </div>                
             </div>
             <div class="highlight">
                 <pre>
                     <code class="html"><span class="nx">$(</span><span class="s">'#target'</span><span class="nx">).iconpicker()</span>
+            <span class="nx">.iconpicker(</span><span class="s">'setAlign'</span><span class="nx">, </span><span class="s">'center'</span><span class="nx">)</span> <span class="c">// Only in div tag</span>
             <span class="nx">.iconpicker(</span><span class="s">'setArrowClass'</span><span class="nx">, </span><span class="s">'btn-success'</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setArrowPrevIconClass'</span><span class="nx">, </span><span class="s">'glyphicon glyphicon-chevron-left'</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setArrowNextIconClass'</span><span class="nx">, </span><span class="s">'glyphicon glyphicon-chevron-right'</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setCols'</span><span class="nx">, </span><span class="nx">9</span><span class="nx">)</span>
+            <span class="nx">.iconpicker(</span><span class="s">'setFooter'</span><span class="nx">, </span><span class="na">true</span><span class="nx">)</span>
+            <span class="nx">.iconpicker(</span><span class="s">'setHeader'</span><span class="nx">, </span><span class="na">true</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setIcon'</span><span class="nx">, </span><span class="s">'glyphicon-pause'</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setIconset'</span><span class="nx">, {</span>
                 <span class="o">iconClass: </span><span class="s">'glyphicon'</span>,
@@ -1039,8 +1160,8 @@ and open the template in the editor.
             <span class="nx">})</span>            
             <span class="nx">.iconpicker(</span><span class="s">'setLabelHeader'</span><span class="nx">, </span><span class="s">'{0} of {1} pages'</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setLabelFooter'</span><span class="nx">, </span><span class="s">'{0} - {1} of {2} icons'</span><span class="nx">)</span>
-            <span class="nx">.iconpicker(</span><span class="s">'setPlacement'</span><span class="nx">, </span><span class="s">'bottom'</span><span class="nx">)</span>
-            <span class="nx">.iconpicker(</span><span class="s">'setRows'</span><span class="nx">, </span><span class="nx">1</span><span class="nx">)</span>
+            <span class="nx">.iconpicker(</span><span class="s">'setPlacement'</span><span class="nx">, </span><span class="s">'bottom'</span><span class="nx">)</span> <span class="c">// Only in button tag</span>
+            <span class="nx">.iconpicker(</span><span class="s">'setRows'</span><span class="nx">, </span><span class="nx">0</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setSearch'</span><span class="nx">, </span><span class="na">true</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setSearchText'</span><span class="nx">, </span><span class="s">'Type text'</span><span class="nx">)</span>
             <span class="nx">.iconpicker(</span><span class="s">'setSelectedClass'</span><span class="nx">, </span><span class="s">'btn-danger'</span><span class="nx">)</span>
@@ -1098,7 +1219,7 @@ and open the template in the editor.
                             <div class="form-group">
                                 <label for="btn-color" class="col-sm-2 control-label">Icon: </label>
                                 <div class="col-sm-10">
-                                    <button id="btn-icon" class="btn btn-default" data-placement="right" data-iconset="fontawesome" data-icon="fa-area-chart"></button>
+                                    <div id="btn-icon" data-iconset="fontawesome" data-icon="fa-area-chart"></div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -1130,15 +1251,8 @@ and open the template in the editor.
         
         <script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="bootstrap-3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"></script>
+        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-all.min.js"></script>
+        <script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.js"></script>
         
         <script type="text/javascript">
         
@@ -1148,8 +1262,10 @@ and open the template in the editor.
                     arrowClass: 'btn-danger',
                     arrowPrevIconClass: 'glyphicon glyphicon-chevron-left',
                     arrowNextIconClass: 'glyphicon glyphicon-chevron-right',
-                    cols: 5,                    
-                    icon: 'fa-key',
+                    cols: 10,
+                    footer: true,
+                    header: true,
+                    icon: 'fa-bomb',
                     iconset: 'fontawesome',                    
                     labelHeader: '{0} of {1} pages',
                     labelFooter: '{0} - {1} of {2} icons',
@@ -1166,11 +1282,14 @@ and open the template in the editor.
                 });
                
                 $('#convert_example_3')
-                        .iconpicker()                        
+                        .iconpicker()
+                        .iconpicker('setAlign', 'center')
                         .iconpicker('setArrowClass', 'btn-success')
                         .iconpicker('setArrowPrevIconClass', 'glyphicon glyphicon-chevron-left')
                         .iconpicker('setArrowNextIconClass', 'glyphicon glyphicon-chevron-right')
                         .iconpicker('setCols', 9)
+                        .iconpicker('setFooter', true)
+                        .iconpicker('setHeader', true)
                         .iconpicker('setIcon', 'glyphicon-pause')
                         .iconpicker('setIconset', {
                             iconClass: 'glyphicon',
@@ -1190,7 +1309,7 @@ and open the template in the editor.
                         .iconpicker('setLabelHeader', '{0} of {1} pages')
                         .iconpicker('setLabelFooter', '{0} - {1} of {2} icons')
                         .iconpicker('setPlacement', 'bottom')
-                        .iconpicker('setRows', 1)
+                        .iconpicker('setRows', 0)
                         .iconpicker('setSearch', true)
                         .iconpicker('setSearchText', 'Type text')
                         .iconpicker('setSelectedClass', 'btn-danger')
@@ -1233,6 +1352,7 @@ and open the template in the editor.
                 $('#btn-icon').iconpicker({
                     rows: 5,
                     cols: 10,
+                    align: 'left'
                 });
                 
                 $('#btn-icon').on('change', function(e) {
