@@ -1,11 +1,11 @@
-/* ========================================================================
+/*!========================================================================
  * Bootstrap: iconset-elusiveicon-2.0.0.js by @recktoner 
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * 
  * Iconset: Elusive icons 2.0.0
  * http://press.codes/downloads/elusive-icons-webfont/
  * ========================================================================
- * Copyright 2013-2014 Victor Valencia Rico.
+ * Copyright 2013-2015 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,7 @@
         iconClass: '',
         iconClassFix: 'el-icon-',
         icons: [
+            '',
             'zoom-out',
             'zoom-in',
             'youtube',

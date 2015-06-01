@@ -1,11 +1,11 @@
-/* ========================================================================
+/*!========================================================================
  * Bootstrap: iconset-octicon-2.1.2.js by @recktoner 
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * 
  * Iconset: Octicons 2.1.2
  * https://octicons.github.com/
  * ========================================================================
- * Copyright 2013-2014 Victor Valencia Rico.
+ * Copyright 2013-2015 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,7 @@
         iconClass: 'octicon',
         iconClassFix: 'octicon-',
         icons: [
+            '',
             'alert',
             'alignment-align',
             'alignment-aligned-to',

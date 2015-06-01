@@ -1,11 +1,11 @@
-/* ========================================================================
+/*!========================================================================
  * Bootstrap: iconset-ionicon-1.5.2.js by @recktoner 
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * 
  * Iconset: Ionicons 1.5.2
  * http://ionicons.com/
  * ========================================================================
- * Copyright 2013-2014 Victor Valencia Rico.
+ * Copyright 2013-2015 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,7 @@
         iconClass: '',
         iconClassFix: 'ion-',
         icons: [
+            '',
             'ionic',
             'arrow-up-a',
             'arrow-right-a',

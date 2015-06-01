@@ -1,10 +1,10 @@
-/* ========================================================================
+/*!========================================================================
  * Bootstrap: iconset-glyphicon.js by @recktoner 
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * 
  * Iconset: Glyphicons
  * ========================================================================
- * Copyright 2013-2014 Victor Valencia Rico.
+ * Copyright 2013-2015 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,6 +25,7 @@
         iconClass: 'glyphicon',
         iconClassFix: 'glyphicon-',
         icons: [
+            '',
             'adjust',
             'align-center',
             'align-justify',

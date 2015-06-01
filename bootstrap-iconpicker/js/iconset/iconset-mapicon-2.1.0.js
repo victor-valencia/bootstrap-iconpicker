@@ -1,11 +1,11 @@
-/* ========================================================================
+/*!========================================================================
  * Bootstrap: iconset-mapicon-2.1.0.js by @recktoner 
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * 
  * Iconset: Map Icons 2.1.0
  * https://github.com/scottdejonge/Map-Icons
  * ========================================================================
- * Copyright 2013-2014 Victor Valencia Rico.
+ * Copyright 2013-2015 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,7 @@
         iconClass: '',
         iconClassFix: 'map-icon-',
         icons: [
+            '',
             'art-gallery',
             'campground',
             'bank',
