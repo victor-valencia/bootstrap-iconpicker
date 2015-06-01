@@ -1,22 +1,21 @@
 {
   "name": "bootstrap-iconpicker",
-  "version": "1.6.0",
+  "version": "1.7.0",
+  "homepage": "https://victor-valencia.github.com/bootstrap-iconpicker",
+  "author": {
+    "name": "Victor Valencia Rico",
+    "email": "valencia_vik@hotmail.com.com",
+    "url": "https://victor-valencia.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victor-valencia/bootstrap-iconpicker.git"
+  },
   "devDependencies": {
-    "mocha": "~1.7.4"
-  },
-  "testling": {
-    "harness" : "mocha",
-    "files": "bootstrap-iconpicker/*.js",
-    "browsers": [
-      "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6",
-      "android-browser/latest"
-    ]
-  },
-  "license": "MIT"
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
 }
