@@ -253,7 +253,7 @@
         op.table.find('.page-count').html(op.labelHeader.replace('{0}', (total_pages === 0 ) ? 0 : page).replace('{1}', total_pages));
         var offset = (page - 1) * this.totalIconsPerPage();
         var total = page * this.totalIconsPerPage();
-        op.table.find('.icons-count').html(op.labelFooter.replace('{0}', offset + 1).replace('{1}', (total < total_icons) ? total: total_icons).replace('{2}', total_icons));
+        op.table.find('.icons-count').html(op.labelFooter.replace('{0}', total_icons ? offset + 1 : 0).replace('{1}', (total < total_icons) ? total: total_icons).replace('{2}', total_icons));
         this.updateArrows(page);        
     };
     
