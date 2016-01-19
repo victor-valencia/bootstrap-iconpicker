@@ -470,7 +470,7 @@
                             trigger: 'manual',
                             html: true,
                             content: op.table,
-                            container: 'body',
+                            container: op.container || 'body',
                             placement: op.placement
                         }).on('shown.bs.popover', function () {
                             data.switchPage(op.icon);
