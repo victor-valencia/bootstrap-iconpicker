@@ -42,7 +42,8 @@
         elusiveicon: $.iconset_elusiveicon || Iconpicker.ICONSET_EMPTY,
         fontawesome: $.iconset_fontawesome || Iconpicker.ICONSET_EMPTY,
         ionicon: $.iconset_ionicon || Iconpicker.ICONSET_EMPTY,
-        glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,        
+        glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,
+        glyphiconspro192: $.iconset_glyphiconspro192 || Iconpicker.ICONSET_EMPTY,
         mapicon: $.iconset_mapicon || Iconpicker.ICONSET_EMPTY,
         materialdesign: $.iconset_materialdesign || Iconpicker.ICONSET_EMPTY,
         octicon: $.iconset_octicon || Iconpicker.ICONSET_EMPTY,
@@ -245,7 +246,7 @@
             op.table.find('tfoot').empty().append(icons_count.join(''));
         }
     };
-    
+
     Iconpicker.prototype.updateLabels = function (page) {
         var op = this.options;
         var total_icons = this.totalIcons();
@@ -254,7 +255,7 @@
         var offset = (page - 1) * this.totalIconsPerPage();
         var total = page * this.totalIconsPerPage();
         op.table.find('.icons-count').html(op.labelFooter.replace('{0}', total_icons ? offset + 1 : 0).replace('{1}', (total < total_icons) ? total: total_icons).replace('{2}', total_icons));
-        this.updateArrows(page);        
+        this.updateArrows(page);
     };
     
     Iconpicker.prototype.updatePagesCount = function () {
