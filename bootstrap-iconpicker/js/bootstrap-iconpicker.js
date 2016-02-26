@@ -144,7 +144,7 @@
         if (icon !== '' && op.selected >= 0) {
             op.icon = icon;
 
-            el.find('input').val(icon);
+            el.find('input[type=hidden]').val(icon);
 
             if(op.inline === false){
                 el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
