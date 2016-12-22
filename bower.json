@@ -18,14 +18,14 @@
   "license": "MIT",
   "authers": [
     {
-      "name": "Victor Valencia Rico",
-      "email": "valencia_vik@hotmail.com",
-      "homepage": "https://github.com/victor-valencia"
+      "name": "BENARD Patrick",
+      "email": "pbenard@eliberty.fr",
+      "homepage": "http://www.eliberty.fr"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "http://victor-valencia.github.io/bootstrap-iconpicker"
+    "url": "https://github.com/eliberty/bootstrap-iconpicker"
   },
   "main": "bootstrap-iconpicker/"  
 }
