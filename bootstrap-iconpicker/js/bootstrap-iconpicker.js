@@ -194,15 +194,19 @@
         var total_pages = this.totalPages();
         if (page === 1) { 
             op.table.find('.btn-previous').addClass('disabled');
+            op.table.find('.btn-previous').prop('disabled', true);
         }
         else {
             op.table.find('.btn-previous').removeClass('disabled');
+            op.table.find('.btn-previous').prop('disabled', false);
         }
         if (page === total_pages || total_pages === 0) { 
             op.table.find('.btn-next').addClass('disabled');
+            op.table.find('.btn-next').prop('disabled', true);
         }
         else {
             op.table.find('.btn-next').removeClass('disabled');
+            op.table.find('.btn-next').prop('disabled', false);
         }
     };
     
