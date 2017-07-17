@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),                
+        pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
                 mangle: false,
@@ -13,13 +13,17 @@ module.exports = function(grunt) {
                     'bootstrap-iconpicker/js/bootstrap-iconpicker.min.js': ['bootstrap-iconpicker/js/bootstrap-iconpicker.js'],
                 }
             },
-            iconset: {                
+            iconset: {
                 files: {
                     'bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.0.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.0.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.1.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.1.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.3.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.3.0.js'],
+                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.4.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.4.0.js'],
+                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.5.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.5.0.js'],
+                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.6.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.6.0.js'],
+                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.7.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.7.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js':             ['bootstrap-iconpicker/js/iconset/iconset-glyphicon.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.js'],
@@ -29,7 +33,7 @@ module.exports = function(grunt) {
                     'bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.js']
                 }
             }
-        },        
+        },
         concat: {
             options: {
                 stripBanners: {block: true},
@@ -37,7 +41,7 @@ module.exports = function(grunt) {
             iconset: {
                 src: [
                     'bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js',
-                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.3.0.min.js',
+                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.7.0.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js',
@@ -73,14 +77,14 @@ module.exports = function(grunt) {
             }
         }
     });
-  
+
     // Load the plugin.
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
-  
+
     // Default task(s).
     grunt.registerTask('default', ['watch']);
-    
+
 };

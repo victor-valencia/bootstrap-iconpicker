@@ -1,11 +1,11 @@
 /*!========================================================================
- * Bootstrap: iconset-fontawesome-4.3.0.js by @michaelbilcot 
+ * Bootstrap: iconset-fontawesome-4.3.0.js by @michaelbilcot
  * https://victor-valencia.github.com/bootstrap-iconpicker
- * 
+ *
  * Iconset: Font Awesome 4.3.0
  * http://fortawesome.github.io/Font-Awesome/
  * ========================================================================
- * Copyright 2013-2015 Victor Valencia Rico.
+ * Copyright 2013-2017 Victor Valencia Rico.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -620,6 +620,7 @@
             'youtube',
             'youtube-play',
             'youtube-square'
-        ]};
-    
+        ]
+    };
+
 })(jQuery);
