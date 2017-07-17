@@ -19,6 +19,7 @@ module.exports = function(grunt) {
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.0.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.0.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.1.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.1.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js'],
+                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.3.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.3.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js':             ['bootstrap-iconpicker/js/iconset/iconset-glyphicon.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.js'],
@@ -36,7 +37,7 @@ module.exports = function(grunt) {
             iconset: {
                 src: [
                     'bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js',
-                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.min.js',
+                    'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.3.0.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js',

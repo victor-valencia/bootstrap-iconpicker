@@ -51,6 +51,8 @@ bootstrap-iconpicker/
 │       ├── iconset-fontawesome-4.1.0.min.js
 │       ├── iconset-fontawesome-4.2.0.js
 │       ├── iconset-fontawesome-4.2.0.min.js
+│       ├── iconset-fontawesome-4.3.0.js
+│       ├── iconset-fontawesome-4.3.0.min.js
 │       ├── iconset-glyphicon.js
 │       ├── iconset-glyphicon.min.js
 │       ├── iconset-ionicon-1.5.2.js
