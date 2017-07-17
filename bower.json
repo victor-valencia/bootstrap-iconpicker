@@ -1,12 +1,12 @@
 {
   "name": "bootstrap-iconpicker",
   "description": "Simple Iconpicker for Bootstrap 3.x",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "keywords": [
     "Bootstrap",
     "Iconpicker",
     "Glyphicon",
-    "Font Awesome",    
+    "Font Awesome",
     "Elusive Icons",
     "Ionicons",
     "Map Icons",
@@ -27,5 +27,5 @@
     "type": "git",
     "url": "http://victor-valencia.github.io/bootstrap-iconpicker"
   },
-  "main": "bootstrap-iconpicker/"  
+  "main": "bootstrap-iconpicker/"
 }
