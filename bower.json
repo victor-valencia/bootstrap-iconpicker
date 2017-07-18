@@ -27,5 +27,8 @@
     "type": "git",
     "url": "http://victor-valencia.github.io/bootstrap-iconpicker"
   },
-  "main": "bootstrap-iconpicker/"
+  "main": "bootstrap-iconpicker/",
+  "devDependencies": {
+    "sinonjs": "^1.17.1"
+  }
 }

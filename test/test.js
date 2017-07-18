@@ -1024,7 +1024,7 @@ describe('Bootstrp-IconPicker v1.8.0', function() {
         assert.equal(options.unselectedClass, 'btn-default');
 
     });
-    
+
     it('should init with "div" tag via javascript and "default" options', function() {
 
         var obj = $('<div></div>')
@@ -1173,6 +1173,25 @@ describe('Bootstrp-IconPicker v1.8.0', function() {
         assert.equal(options.selected, 4);
         assert.equal(options.selectedClass, 'btn-danger');
         assert.equal(options.unselectedClass, 'btn-primary');
+
+    });
+
+    it('should init and emit event "change"', function(done) {
+
+        var eventSpy = sinon.spy()
+
+        // var div = $('<div></div>');
+        // $("body").prepend(div);
+
+        var obj = $('<div></div>')
+            .iconpicker()
+            .on('change', eventSpy);
+
+        obj.trigger('change', [{icon: 'test1'}]);        
+
+        assert(eventSpy.called, 'Event did not fire');
+        assert(eventSpy.calledOnce, 'Event fired more than once');
+        done();
 
     });
 
