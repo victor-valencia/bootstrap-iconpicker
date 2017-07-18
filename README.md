@@ -41,6 +41,8 @@ bootstrap-iconpicker/
 │   ├── bootstrap-iconpicker.css
 │   ├── bootstrap-iconpicker.min.css
 ├── js/
+│   ├── bootstrap-iconpicker.js
+│   ├── bootstrap-iconpicker.min.js
 │   ├── iconset/
 │       ├── iconset-all.min.js
 │       ├── iconset-elusiveicon-2.0.0.js
@@ -53,6 +55,14 @@ bootstrap-iconpicker/
 │       ├── iconset-fontawesome-4.2.0.min.js
 │       ├── iconset-fontawesome-4.3.0.js
 │       ├── iconset-fontawesome-4.3.0.min.js
+│       ├── iconset-fontawesome-4.4.0.js
+│       ├── iconset-fontawesome-4.4.0.min.js
+│       ├── iconset-fontawesome-4.5.0.js
+│       ├── iconset-fontawesome-4.5.0.min.js
+│       ├── iconset-fontawesome-4.6.0.js
+│       ├── iconset-fontawesome-4.6.0.min.js
+│       ├── iconset-fontawesome-4.7.0.js
+│       ├── iconset-fontawesome-4.7.0.min.js
 │       ├── iconset-glyphicon.js
 │       ├── iconset-glyphicon.min.js
 │       ├── iconset-ionicon-1.5.2.js
@@ -66,9 +76,7 @@ bootstrap-iconpicker/
 │       ├── iconset-typicon-2.0.6.js
 │       ├── iconset-typicon-2.0.6.min.js
 │       ├── iconset-weathericon-1.2.0.js
-│       ├── iconset-weathericon-1.2.0.min.js
-│   ├── bootstrap-iconpicker.js
-│   └── bootstrap-iconpicker.min.js
+│       └── iconset-weathericon-1.2.0.min.js
 ```
 
 We provide compiled CSS and JS (`bootstrap-iconpicker.*`), as well as compiled and minified CSS and JS (`bootstrap-iconpicker.min.*`).
@@ -81,12 +89,10 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/vi
 You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a template for your bug reports.
 
 ## Changelog
--
-[![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.0.zip).
-    - Fix for case, when there are no icons, and count is displayed, as '1 - 0 of 0 '. @[joews](https://github.com/joews)
+- [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.0.zip).
+    - Fix for case, when there are no icons, and count is displayed, as '1 - 0 of 0 '. @[joews](https://github.com/joews).
     - Support multiple versions (v4.3.0 @[michaelbilcot](https://github.com/michaelbilcot), v4.4.0, v4.5.0, v4.6.0 and v4.7.0) of [Font Awesome Icons](http://fontawesome.io/).
--
-[![v1.7.0](http://img.shields.io/badge/zip-v1.7.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.7.0.zip).
+- [![v1.7.0](http://img.shields.io/badge/zip-v1.7.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.7.0.zip).
     - Support for button and div tags.
     - All `iconset` includes the empty icon value.
     - Option `rows` accepts the value 0 to indicate all rows.
