@@ -18,10 +18,12 @@
     "grunt-contrib-cssmin": "^0.12.3",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "opn-cli": "^3.1.0"
   },
   "scripts": {
+    "grunt": "grunt",
     "browser": "index.html",
-    "test": "start test/index.html"
-   }
+    "test": "opn test/index.html"
+  }
 }
