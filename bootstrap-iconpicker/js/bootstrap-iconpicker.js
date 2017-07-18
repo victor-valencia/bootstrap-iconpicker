@@ -42,7 +42,8 @@
         elusiveicon: $.iconset_elusiveicon || Iconpicker.ICONSET_EMPTY,
         fontawesome: $.iconset_fontawesome || Iconpicker.ICONSET_EMPTY,
         ionicon: $.iconset_ionicon || Iconpicker.ICONSET_EMPTY,
-        glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,        
+        glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,
+        glyphiconspro192: $.iconset_glyphiconspro192 || Iconpicker.ICONSET_EMPTY,
         mapicon: $.iconset_mapicon || Iconpicker.ICONSET_EMPTY,
         materialdesign: $.iconset_materialdesign || Iconpicker.ICONSET_EMPTY,
         octicon: $.iconset_octicon || Iconpicker.ICONSET_EMPTY,
@@ -142,8 +143,10 @@
         }
         if (icon !== '' && op.selected >= 0) {
             op.icon = icon;
+
+            el.find('input[type=hidden]').val(icon);
+
             if(op.inline === false){
-                el.find('input').val(icon);
                 el.find('i').attr('class', '').addClass(op.iconClass).addClass(icon);
             }
             if(icon === op.iconClassFix){
@@ -188,21 +191,25 @@
             return this.options.cols * this.options.rows;
         }
     };
-    
+
     Iconpicker.prototype.updateArrows = function (page) {
         var op = this.options;
         var total_pages = this.totalPages();
-        if (page === 1) { 
+        if (page === 1) {
             op.table.find('.btn-previous').addClass('disabled');
+            op.table.find('.btn-previous').prop('disabled', true); // Add this
         }
         else {
             op.table.find('.btn-previous').removeClass('disabled');
+            op.table.find('.btn-previous').prop('disabled', false); // And this
         }
-        if (page === total_pages || total_pages === 0) { 
+        if (page === total_pages || total_pages === 0) {
             op.table.find('.btn-next').addClass('disabled');
+            op.table.find('.btn-next').prop('disabled', true); // And this
         }
         else {
             op.table.find('.btn-next').removeClass('disabled');
+            op.table.find('.btn-next').prop('disabled', false); // And this
         }
     };
     
@@ -245,7 +252,7 @@
             op.table.find('tfoot').empty().append(icons_count.join(''));
         }
     };
-    
+
     Iconpicker.prototype.updateLabels = function (page) {
         var op = this.options;
         var total_icons = this.totalIcons();
@@ -254,7 +261,7 @@
         var offset = (page - 1) * this.totalIconsPerPage();
         var total = page * this.totalIconsPerPage();
         op.table.find('.icons-count').html(op.labelFooter.replace('{0}', total_icons ? offset + 1 : 0).replace('{1}', (total < total_icons) ? total: total_icons).replace('{2}', total_icons));
-        this.updateArrows(page);        
+        this.updateArrows(page);
     };
     
     Iconpicker.prototype.updatePagesCount = function () {
