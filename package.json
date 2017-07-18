@@ -19,5 +19,9 @@
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
     "mocha": "^3.4.2"
-  }
+  },
+  "scripts": {
+    "browser": "index.html",
+    "test": "start test/index.html"
+   }
 }
