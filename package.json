@@ -12,10 +12,12 @@
     "url": "https://github.com/victor-valencia/bootstrap-iconpicker.git"
   },
   "devDependencies": {
+    "chai": "^4.1.0",
     "grunt": "^0.4.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-cssmin": "^0.12.3",
     "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "mocha": "^3.4.2"
   }
 }
