@@ -1,11 +1,11 @@
-/*!
- * Bootstrap-iconpicker v1.8.0
- *
+/*!========================================================================
+ * Bootstrap: bootstrap-iconpicker.css v1.8.0 by @recktoner
+ * https://victor-valencia.github.com/bootstrap-iconpicker
+ * ========================================================================
  * Copyright 2013-2017 Victor Valencia Rico.
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world by @recktoner.
+ * Licensed under MIT license.
+ * https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE
+ * ========================================================================
  */
 
 .iconpicker .caret {
@@ -42,7 +42,7 @@ div.iconpicker.right .table-icons {
     margin: 2px;
 }
 
-.table-icons td {    
+.table-icons td {
     min-width: 39px;
 }
 
@@ -55,6 +55,6 @@ div.iconpicker.right .table-icons {
 }
 
 .iconpicker-popover .search-control {
-    margin-bottom: 6px; 
+    margin-bottom: 6px;
     margin-top: 6px;
 }
