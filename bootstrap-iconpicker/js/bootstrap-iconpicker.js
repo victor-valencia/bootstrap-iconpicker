@@ -17,6 +17,10 @@
       this.options  = $.extend({}, this.options, options);
     };
 
+    // ICONPICKER VERSION
+    // ==============================
+    Iconpicker.VERSION = '1.8.0';
+
     // ICONPICKER ICONSET_EMPTY
     // ==============================
     Iconpicker.ICONSET_EMPTY = {
@@ -69,8 +73,10 @@
         var el = this;
         op.table.find('.btn-previous, .btn-next').off('click').on('click', function(e) {
             e.preventDefault();
-            var inc = parseInt($(this).val(), 10);
-            el.changeList(op.page + inc);
+            if(!$(this).hasClass('disabled')){
+                var inc = parseInt($(this).val(), 10);
+                el.changeList(op.page + inc);
+            }
         });
         op.table.find('.btn-icon').off('click').on('click', function(e) {
             e.preventDefault();
