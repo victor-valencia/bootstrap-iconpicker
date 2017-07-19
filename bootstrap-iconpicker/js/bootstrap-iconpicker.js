@@ -1,5 +1,5 @@
 /*!========================================================================
- * Bootstrap: bootstrap-iconpicker.js v1.8.0 by @recktoner
+ * Bootstrap: bootstrap-iconpicker.js v1.8.2 by @recktoner
  * https://victor-valencia.github.com/bootstrap-iconpicker
  * ========================================================================
  * Copyright 2013-2017 Victor Valencia Rico.
@@ -19,7 +19,7 @@
 
     // ICONPICKER VERSION
     // ==============================
-    Iconpicker.VERSION = '1.8.0';
+    Iconpicker.VERSION = '1.8.2';
 
     // ICONPICKER ICONSET_EMPTY
     // ==============================

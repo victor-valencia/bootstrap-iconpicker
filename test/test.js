@@ -1,6 +1,12 @@
 var assert = chai.assert;
 
-describe('Bootstrp-IconPicker v1.8.0', function() {
+describe('Bootstrp-IconPicker v1.8.2', function() {
+
+    it('should match current version of plugin', function() {
+
+        assert.equal($.fn.iconpicker.Constructor.VERSION, '1.8.2');
+
+    });
 
     it('should init with "button" tag and attributes[ role="iconpicker" ]', function() {
 
@@ -1187,7 +1193,7 @@ describe('Bootstrp-IconPicker v1.8.0', function() {
             .iconpicker()
             .on('change', eventSpy);
 
-        obj.trigger('change', [{icon: 'test1'}]);        
+        obj.trigger('change', [{icon: 'test1'}]);
 
         assert(eventSpy.called, 'Event did not fire');
         assert(eventSpy.calledOnce, 'Event fired more than once');
