@@ -110,7 +110,7 @@
         else {
             var result = [];
             $.each(Iconpicker.ICONSET[op.iconset].icons, function(i, v) {
-               if (v.indexOf(search) > -1) {
+               if (v.toLowerCase().indexOf(search) > -1) {
                    result.push(v);
                }
             });
@@ -147,6 +147,7 @@
             }
             else {
                 el.trigger({ type: "change", icon: icon });
+                el.find('input').val(icon);
             }
             op.table.find('button.' + op.selectedClass).removeClass(op.selectedClass);
         }
