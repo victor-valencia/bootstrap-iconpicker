@@ -124,7 +124,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
         assert.equal(options.icon, 'ion-ionic');
         assert.equal(options.iconClass, '');
         assert.equal(options.iconClassFix, 'ion-');
-        assert.equal(options.icons.length, 603);
+        assert.equal(options.icons.length, 734);
         assert.equal(options.iconset, 'ionicon');
         assert.equal(options.inline, false);
         assert.equal(options.labelFooter, '{0} - {1} of {2}');
@@ -134,7 +134,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
         assert.equal(options.rows, 4);
         assert.equal(options.search, true);
         assert.equal(options.searchText, 'Search icon');
-        assert.equal(options.selected, 189);
+        assert.equal(options.selected, 255);
         assert.equal(options.selectedClass, 'btn-warning');
         assert.equal(options.unselectedClass, 'btn-default');
 
