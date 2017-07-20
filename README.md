@@ -92,8 +92,8 @@ You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a 
 ## Changelog
 - [![v1.8.2](http://img.shields.io/badge/zip-v1.8.2-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.2.zip).    
     - Fix navigation to invalid pages.
-    - Filling search/hidden inputs.
-    - Search and filter case insensitive.
+    - Filling search/hidden inputs. @[s-belichenko-sold](https://github.com/s-belichenko-sold)
+    - Search and filter case insensitive. @[mahmoud-asadi](https://github.com/mahmoud-asadi)
     - Support for [Bootstrap 3.3.7](http://getbootstrap.com/).
     - Update license to [MIT](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE).
 - [![v1.8.1](http://img.shields.io/badge/zip-v1.8.1-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.1.zip).
@@ -182,7 +182,7 @@ For more information on SemVer, please visit <http://semver.org/>.
 @[victor-valencia](https://github.com/victor-valencia)
 
 ## Contributors
-@[victor-valencia](https://github.com/victor-valencia), @[promatik](https://github.com/promatik), @[jwhitfieldseed](https://github.com/jwhitfieldseed), @[crlcu](https://github.com/crlcu), @[michaelbilcot](https://github.com/michaelbilcot), @[joews](https://github.com/joews)
+@[victor-valencia](https://github.com/victor-valencia), @[promatik](https://github.com/promatik), @[jwhitfieldseed](https://github.com/jwhitfieldseed), @[crlcu](https://github.com/crlcu), @[michaelbilcot](https://github.com/michaelbilcot), @[joews](https://github.com/joews), @[s-belichenko-sold](https://github.com/s-belichenko-sold), @[mahmoud-asadi](https://github.com/mahmoud-asadi)
 
 ## License
 Licensed under [the MIT license](LICENSE).
