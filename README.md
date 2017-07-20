@@ -2,8 +2,8 @@
 [![Code Climate](https://codeclimate.com/github/victor-valencia/bootstrap-iconpicker/badges/gpa.svg)](https://codeclimate.com/github/victor-valencia/bootstrap-iconpicker)
 [![npm](http://img.shields.io/npm/v/bootstrap-iconpicker.svg)](https://npmjs.org/package/bootstrap-iconpicker)
 [![Bower](http://img.shields.io/bower/v/bootstrap-iconpicker.svg)](http://bower.io/search/?q=bootstrap-iconpicker)
-[![Tag](http://img.shields.io/github/tag/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/tags)
 [![Release](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/releases)
+[![Tag](http://img.shields.io/github/tag/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/tags)
 [![Issues](http://img.shields.io/github/issues/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/issues?q=is%3Aopen)
 [![Issues](http://img.shields.io/badge/license-MIT-red.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE)
 
@@ -69,10 +69,26 @@ bootstrap-iconpicker/
 │       ├── iconset-glyphicon.min.js
 │       ├── iconset-ionicon-1.5.2.js
 │       ├── iconset-ionicon-1.5.2.min.js
+│       ├── iconset-ionicon-2.0.1.js
+│       ├── iconset-ionicon-2.0.1.min.js
 │       ├── iconset-mapicon-2.1.0.js
 │       ├── iconset-mapicon-2.1.0.min.js
 │       ├── iconset-materialdesign-1.1.1.js
 │       ├── iconset-materialdesign-1.1.1.min.js
+│       ├── iconset-materialdesign-2.0.0.js
+│       ├── iconset-materialdesign-2.0.0.min.js
+│       ├── iconset-materialdesign-2.0.1.js
+│       ├── iconset-materialdesign-2.0.1.min.js
+│       ├── iconset-materialdesign-2.0.2.js
+│       ├── iconset-materialdesign-2.0.2.min.js
+│       ├── iconset-materialdesign-2.1.0.js
+│       ├── iconset-materialdesign-2.1.0.min.js
+│       ├── iconset-materialdesign-2.1.1.js
+│       ├── iconset-materialdesign-2.1.1.min.js
+│       ├── iconset-materialdesign-2.1.2.js
+│       ├── iconset-materialdesign-2.1.2.min.js
+│       ├── iconset-materialdesign-2.2.0.js
+│       ├── iconset-materialdesign-2.2.0.min.js
 │       ├── iconset-octicon-2.1.2.js
 │       ├── iconset-octicon-2.1.2.min.js
 │       ├── iconset-typicon-2.0.6.js
@@ -89,6 +105,10 @@ See documentation and live examples here: [http://victor-valencia.github.io/boot
 ## Bugs and feature requests
 Have a bug or a feature request? [Please open a new issue](https://github.com/victor-valencia/bootstrap-iconpicker/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
 You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a template for your bug reports.
+
+## What´s next
+- [x] Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0) of [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/).
+- [x] Support for multiple versions (v2.0.1 @[ibrahimyilmaz7](https://github.com/ibrahimyilmaz7)) of [Ionicons](http://ionicons.com/).
 
 ## Changelog
 - [![v1.8.2](http://img.shields.io/badge/zip-v1.8.2-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.2.zip).    
