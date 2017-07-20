@@ -23,6 +23,6 @@
   },
   "scripts": {
     "browser": "index.html",
-    "test": "node run-test.js"
+    "test": "node --harmony run-test.js"
   }
 }
