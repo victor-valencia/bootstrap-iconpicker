@@ -4,6 +4,7 @@
  *
  * Iconset: Font Awesome 4.5.0
  * http://fortawesome.github.io/Font-Awesome/
+ * CDN: https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
  * ========================================================================
  * Copyright 2013-2017 Victor Valencia Rico.
  * Licensed under MIT license.
