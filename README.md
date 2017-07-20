@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/victor-valencia/bootstrap-iconpicker.svg?branch=master)](https://travis-ci.org/victor-valencia/bootstrap-iconpicker)
 [![Code Climate](https://codeclimate.com/github/victor-valencia/bootstrap-iconpicker/badges/gpa.svg)](https://codeclimate.com/github/victor-valencia/bootstrap-iconpicker)
+[![npm](http://img.shields.io/npm/v/bootstrap-iconpicker.svg)](https://npmjs.org/package/bootstrap-iconpicker)
 [![Bower](http://img.shields.io/bower/v/bootstrap-iconpicker.svg)](http://bower.io/search/?q=bootstrap-iconpicker)
 [![Tag](http://img.shields.io/github/tag/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/tags)
 [![Release](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/releases)
@@ -31,7 +32,7 @@ Three quick start options are available:
 - Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.2.zip).
 - Clone the repo: `git clone https://github.com/victor-valencia/bootstrap-iconpicker.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-iconpicker`.
-- Install with [NPM](https://www.npmjs.com): `npm install bootstrap-iconpicker`.
+- Install with [npm](https://www.npmjs.com): `npm install bootstrap-iconpicker`.
 
 ### What's included
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
@@ -97,7 +98,7 @@ You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a 
     - Support for [Bootstrap 3.3.7](http://getbootstrap.com/).
     - Update license to [MIT](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE).
 - [![v1.8.1](http://img.shields.io/badge/zip-v1.8.1-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.1.zip).
-    - Support for [NPM](https://www.npmjs.com) install.
+    - Support for [npm](https://www.npmjs.com) install.
 - [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.0.zip).
     - Fix for case, when there are no icons, and count is displayed, as '1 - 0 of 0 '. @[joews](https://github.com/joews).
     - Support for multiple versions (v4.3.0 @[michaelbilcot](https://github.com/michaelbilcot), v4.4.0, v4.5.0, v4.6.0 and v4.7.0) of [Font Awesome Icons](http://fontawesome.io/).
