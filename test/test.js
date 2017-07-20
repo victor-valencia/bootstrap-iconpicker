@@ -338,7 +338,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     });
 
-    it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="materialdesign" data-icon="md-sd-storage" role="iconpicker" ]', function() {
+    it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="materialdesign" data-icon="zmdi-card-sd" role="iconpicker" ]', function() {
 
         var obj = $('#demo_11');
 
@@ -352,10 +352,10 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
         assert.equal(options.cols, 4);
         assert.equal(options.footer, true);
         assert.equal(options.header, true);
-        assert.equal(options.icon, 'md-sd-storage');
-        assert.equal(options.iconClass, 'md');
-        assert.equal(options.iconClassFix, 'md-');
-        assert.equal(options.icons.length, 745);
+        assert.equal(options.icon, 'zmdi-card-sd');
+        assert.equal(options.iconClass, 'zmdi');
+        assert.equal(options.iconClassFix, 'zmdi-');
+        assert.equal(options.icons.length, 819);
         assert.equal(options.iconset, 'materialdesign');
         assert.equal(options.inline, false);
         assert.equal(options.labelFooter, '{0} - {1} of {2}');
@@ -365,7 +365,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
         assert.equal(options.rows, 4);
         assert.equal(options.search, true);
         assert.equal(options.searchText, 'Search icon');
-        assert.equal(options.selected, 570);
+        assert.equal(options.selected, 142);
         assert.equal(options.selectedClass, 'btn-warning');
         assert.equal(options.unselectedClass, 'btn-default');
 

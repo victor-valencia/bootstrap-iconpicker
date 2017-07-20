@@ -6,9 +6,18 @@ function unique(list) {
     return result;
 }
 
-var a = ["alert","alert-circled","wineglass","woman","wrench","xbox"];
+var a = [];
 
 a.sort();
 a = unique(a);
 
+var b = document.querySelector("body").innerHTML = "'" + a.join("',</br>'") + "'";
+
+
+//For MaterialDesign
+var a = [];
+$('i.zmdi').each(function(v){
+	a.push($(this).attr('class').replace('zmdi ','').replace(' zmdi-hc-fw',''));
+});
+console.log(a);
 var b = document.querySelector("body").innerHTML = "'" + a.join("',</br>'") + "'";

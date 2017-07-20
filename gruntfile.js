@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-ionicon-1.5.2.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-2.0.1.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-ionicon-2.0.1.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.js'],
-                    'bootstrap-iconpicker/js/iconset/iconset-materialdesign-1.1.1.min.js':  ['bootstrap-iconpicker/js/iconset/iconset-materialdesign-1.1.1.js'],
+                    'bootstrap-iconpicker/js/iconset/iconset-materialdesign-2.2.0.min.js':  ['bootstrap-iconpicker/js/iconset/iconset-materialdesign-2.2.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.js']
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
                     'bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-2.0.1.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js',
-                    'bootstrap-iconpicker/js/iconset/iconset-materialdesign-1.1.1.min.js',
+                    'bootstrap-iconpicker/js/iconset/iconset-materialdesign-2.2.0.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js'
