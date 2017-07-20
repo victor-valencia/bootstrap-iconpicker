@@ -21,8 +21,7 @@
     "mocha": "^3.4.2"
   },
   "scripts": {
-    "grunt": "grunt",
     "browser": "index.html",
-    "test": "start test/index.html"
+    "test": "node run-test.js"
   }
 }
