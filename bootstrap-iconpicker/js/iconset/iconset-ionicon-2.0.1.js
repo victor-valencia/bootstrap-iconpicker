@@ -4,6 +4,7 @@
  *
  * Iconset: Ionicons 2.0.1
  * http://ionicons.com/
+ * CDN: http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css
  * ========================================================================
  * Copyright 2013-2017 Victor Valencia Rico.
  * Licensed under MIT license.
