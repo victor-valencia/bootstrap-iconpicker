@@ -16,6 +16,7 @@ module.exports = function(grunt) {
             iconset: {
                 files: {
                     'bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.js'],
+                    'bootstrap-iconpicker/js/iconset/iconset-flagicon-2.8.0.min.js':        ['bootstrap-iconpicker/js/iconset/iconset-flagicon-2.8.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.0.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.0.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.1.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.1.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.2.0.js'],
@@ -37,7 +38,8 @@ module.exports = function(grunt) {
                     'bootstrap-iconpicker/js/iconset/iconset-materialdesign-2.2.0.min.js':  ['bootstrap-iconpicker/js/iconset/iconset-materialdesign-2.2.0.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.js'],
                     'bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.min.js':         ['bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.js'],
-                    'bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.js']
+                    'bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.js'],
+                    //'bootstrap-iconpicker/js/iconset/iconset-weathericon-2.0.9.min.js':     ['bootstrap-iconpicker/js/iconset/iconset-weathericon-2.0.9.js']
                 }
             }
         },
@@ -48,6 +50,7 @@ module.exports = function(grunt) {
             iconset: {
                 src: [
                     'bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js',
+                    'bootstrap-iconpicker/js/iconset/iconset-flagicon-2.8.0.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.7.0.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js',
                     'bootstrap-iconpicker/js/iconset/iconset-ionicon-2.0.1.min.js',
