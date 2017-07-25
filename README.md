@@ -49,6 +49,8 @@ bootstrap-iconpicker/
 │       ├── iconset-all.min.js
 │       ├── iconset-elusiveicon-2.0.0.js
 │       ├── iconset-elusiveicon-2.0.0.min.js
+│       ├── iconset-flagicon-2.8.0.js
+│       ├── iconset-flagicon-2.8.0.min.js
 │       ├── iconset-fontawesome-4.0.0.js
 │       ├── iconset-fontawesome-4.0.0.min.js
 │       ├── iconset-fontawesome-4.1.0.js
