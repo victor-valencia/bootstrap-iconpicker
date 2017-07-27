@@ -43,63 +43,29 @@ bootstrap-iconpicker/
 │   ├── bootstrap-iconpicker.css
 │   ├── bootstrap-iconpicker.min.css
 ├── js/
+│   ├── bootstrap-iconpicker-iconset-all.js
+│   ├── bootstrap-iconpicker-iconset-all.min.js
 │   ├── bootstrap-iconpicker.js
-│   ├── bootstrap-iconpicker.min.js
-│   ├── iconset/
-│       ├── iconset-all.min.js
-│       ├── iconset-elusiveicon-2.0.0.js
-│       ├── iconset-elusiveicon-2.0.0.min.js
-│       ├── iconset-flagicon-2.8.0.js
-│       ├── iconset-flagicon-2.8.0.min.js
-│       ├── iconset-fontawesome-4.0.0.js
-│       ├── iconset-fontawesome-4.0.0.min.js
-│       ├── iconset-fontawesome-4.1.0.js
-│       ├── iconset-fontawesome-4.1.0.min.js
-│       ├── iconset-fontawesome-4.2.0.js
-│       ├── iconset-fontawesome-4.2.0.min.js
-│       ├── iconset-fontawesome-4.3.0.js
-│       ├── iconset-fontawesome-4.3.0.min.js
-│       ├── iconset-fontawesome-4.4.0.js
-│       ├── iconset-fontawesome-4.4.0.min.js
-│       ├── iconset-fontawesome-4.5.0.js
-│       ├── iconset-fontawesome-4.5.0.min.js
-│       ├── iconset-fontawesome-4.6.0.js
-│       ├── iconset-fontawesome-4.6.0.min.js
-│       ├── iconset-fontawesome-4.7.0.js
-│       ├── iconset-fontawesome-4.7.0.min.js
-│       ├── iconset-glyphicon.js
-│       ├── iconset-glyphicon.min.js
-│       ├── iconset-ionicon-1.5.2.js
-│       ├── iconset-ionicon-1.5.2.min.js
-│       ├── iconset-ionicon-2.0.1.js
-│       ├── iconset-ionicon-2.0.1.min.js
-│       ├── iconset-mapicon-2.1.0.js
-│       ├── iconset-mapicon-2.1.0.min.js
-│       ├── iconset-materialdesign-1.1.1.js
-│       ├── iconset-materialdesign-1.1.1.min.js
-│       ├── iconset-materialdesign-2.0.0.js
-│       ├── iconset-materialdesign-2.0.0.min.js
-│       ├── iconset-materialdesign-2.0.1.js
-│       ├── iconset-materialdesign-2.0.1.min.js
-│       ├── iconset-materialdesign-2.0.2.js
-│       ├── iconset-materialdesign-2.0.2.min.js
-│       ├── iconset-materialdesign-2.1.0.js
-│       ├── iconset-materialdesign-2.1.0.min.js
-│       ├── iconset-materialdesign-2.1.1.js
-│       ├── iconset-materialdesign-2.1.1.min.js
-│       ├── iconset-materialdesign-2.1.2.js
-│       ├── iconset-materialdesign-2.1.2.min.js
-│       ├── iconset-materialdesign-2.2.0.js
-│       ├── iconset-materialdesign-2.2.0.min.js
-│       ├── iconset-octicon-2.1.2.js
-│       ├── iconset-octicon-2.1.2.min.js
-│       ├── iconset-typicon-2.0.6.js
-│       ├── iconset-typicon-2.0.6.min.js
-│       ├── iconset-weathericon-1.2.0.js
-│       └── iconset-weathericon-1.2.0.min.js
+│   └── bootstrap-iconpicker.min.js
 ```
 
 We provide compiled CSS and JS (`bootstrap-iconpicker.*`), as well as compiled and minified CSS and JS (`bootstrap-iconpicker.min.*`).
+
+All iconset includes in previous versions are included in file (`bootstrap-iconpicker-iconset-all.js`) compiled and (`bootstrap-iconpicker-iconset-all.min.js`) minified.
+
+## Supported Iconset
+| Iconset | Versions |
+| --- | --- |
+| [Elusive Icons](http://press.codes/downloads/elusive-icons-webfont/) | v2.0.0 (lastest) |
+| [Flag Icons](http://flag-icon-css.lip.is/) | v2.8.0 (lastest)|
+| [Font Awesome Icons](http://fontawesome.io/) | v4.0.0, v4.1.0, v4.2.0, v4.3.0, v4.4.0, v4.5.0, v4.6.0 and v4.7.0 (lastest) |
+| Glyphicons | v3.3.7 (lastest) |
+| [Ionicons](http://ionicons.com/) | v1.5.2 and v2.0.1 (lastest) |
+| [Map Icons](http://map-icons.com/) | v2.1.0 (lastest) |
+| [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/) | v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0 (lastest) |
+| [Octicons](https://octicons.github.com/) | v2.1.2 (lastest) |
+| [Typicons](http://typicons.com) | v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7, v2.0.8 and v2.0.9 (lastest) |
+| [Weather Icons](http://erikflowers.github.io/weather-icons/) | v1.2.0 (lastest)|
 
 ## Documentation and live examples
 See documentation and live examples here: [http://victor-valencia.github.io/bootstrap-iconpicker](http://victor-valencia.github.io/bootstrap-iconpicker)
@@ -109,7 +75,9 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/vi
 You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a template for your bug reports.
 
 ## What´s next
-- [x] Support for [Flag Icons v 2.8.0](http://flag-icon-css.lip.is/).
+- [x] Includes all iconset files in file `bootstrap-iconpicker-iconset-all.js`.
+- [x] Support for [Flag Icons v2.8.0](http://flag-icon-css.lip.is/).
+- [x] Support for multiple versions (v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.7, v2.0.8 and v2.0.9) of [Typicons](http://typicons.com).
 - [ ] Support for multiple versions (v1.3.1, v1.3.2, v2.0.0, v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7, v2.0.8, v2.0.9 and v2.0.10) of [Weather Icons](http://erikflowers.github.io/weather-icons/).
 - [x] Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0) of [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/).
 - [x] Support for multiple versions (v2.0.1 @[ibrahimyilmaz7](https://github.com/ibrahimyilmaz7)) of [Ionicons](http://ionicons.com/).

@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-iconpicker",
   "description": "Simple Iconpicker for Bootstrap 3.x",
-  "version": "1.8.2",
+  "version": "1.9.0",
   "keywords": [
     "Bootstrap",
     "Iconpicker",
@@ -13,7 +13,8 @@
     "Material Design Icons",
     "Octicons",
     "Typicons",
-    "Weather Icons"
+    "Weather Icons",
+    "Flag Icons"
   ],
   "license": "MIT",
   "authers": [
@@ -27,7 +28,7 @@
     "type": "git",
     "url": "http://victor-valencia.github.io/bootstrap-iconpicker"
   },
-  "main": "bootstrap-iconpicker/",
+  "main": "dist",
   "devDependencies": {
     "sinonjs": "^1.17.1"
   }

@@ -1,12 +1,13 @@
 {
   "name": "bootstrap-iconpicker",
-  "version": "1.8.2",
+  "version": "1.9.0",
   "homepage": "https://victor-valencia.github.com/bootstrap-iconpicker",
   "author": {
     "name": "Victor Valencia Rico",
     "email": "valencia_vik@hotmail.com.com",
     "url": "https://victor-valencia.github.com/"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/victor-valencia/bootstrap-iconpicker.git"

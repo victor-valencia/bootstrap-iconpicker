@@ -1,16 +1,16 @@
 var assert = chai.assert;
 
-describe('Bootstrp-IconPicker v1.8.2', function() {
+describe('Bootstrp-IconPicker v1.9.0', function() {
 
     it('should match current version of plugin', function() {
 
-        assert.equal($.fn.iconpicker.Constructor.VERSION, '1.8.2');
+        assert.equal($.fn.iconpicker.Constructor.VERSION, '1.9.0');
 
     });
 
     it('should init with "button" tag and attributes[ role="iconpicker" ]', function() {
 
-        var obj = $('#demo_01');
+        var obj = $('#demo_101');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -43,7 +43,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ role="iconpicker" ]', function() {
 
-        var obj = $('#demo_02');
+        var obj = $('#demo_102');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -76,7 +76,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="glyphicon" data-icon="glyphicon-camera" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_03');
+        var obj = $('#demo_201');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -109,7 +109,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="ionicon" data-icon="ion-ionic" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_04');
+        var obj = $('#demo_202');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -142,7 +142,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="fontawesome" data-icon="fa-wifi" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_05');
+        var obj = $('#demo_203');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -175,7 +175,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="weathericon" data-icon="wi-day-rain" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_06');
+        var obj = $('#demo_204');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -208,7 +208,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="mapicon" data-icon="map-icon-walking" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_07');
+        var obj = $('#demo_205');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -241,7 +241,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="octicon" data-icon="octicon-bug" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_08');
+        var obj = $('#demo_206');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -274,7 +274,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="typicon" data-icon="typcn-anchor" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_09');
+        var obj = $('#demo_207');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -307,7 +307,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="elusiveicon" data-icon="el-icon-female" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_10');
+        var obj = $('#demo_208');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -340,7 +340,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="materialdesign" data-icon="zmdi-card-sd" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_11');
+        var obj = $('#demo_209');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -373,7 +373,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-iconset="flagicon" data-icon="flag-icon-mx" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_12');
+        var obj = $('#demo_210');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -406,7 +406,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-search="true" data-search-text="Search..." role="iconpicker" ]', function() {
 
-        var obj = $('#demo_13');
+        var obj = $('#demo_301');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -439,7 +439,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-search="false" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_14');
+        var obj = $('#demo_302');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -472,7 +472,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-label-header="{0} - {1} pages" data-label-footer="{0} - {1} of {2} icons" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_15');
+        var obj = $('#demo_401');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -505,7 +505,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-header="false" data-footer="false" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_16');
+        var obj = $('#demo_402');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -538,7 +538,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-rows="3" data-cols="6" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_17');
+        var obj = $('#demo_501');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -571,7 +571,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-align="left" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_18');
+        var obj = $('#demo_601');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -604,7 +604,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-align="center" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_19');
+        var obj = $('#demo_602');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -637,7 +637,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-align="right" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_20');
+        var obj = $('#demo_603');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -670,7 +670,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-placement="left" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_21');
+        var obj = $('#demo_701');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -703,7 +703,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-placement="top" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_22');
+        var obj = $('#demo_702');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -736,7 +736,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-placement="bottom" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_23');
+        var obj = $('#demo_703');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -769,7 +769,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" data-placement="right" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_24');
+        var obj = $('#demo_704');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -802,7 +802,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-arrow-class="btn-success" data-arrow-prev-icon-class="glyphicon glyphicon-chevron-left" data-arrow-next-icon-class="glyphicon glyphicon-chevron-right" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_25');
+        var obj = $('#demo_801');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -835,7 +835,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "div" tag and attributes[ data-selected-class="btn-danger" data-unselected-class="btn-info" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_26');
+        var obj = $('#demo_802');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -868,7 +868,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-default" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_27');
+        var obj = $('#demo_901');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -901,7 +901,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-primary" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_28');
+        var obj = $('#demo_902');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -934,7 +934,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-success" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_29');
+        var obj = $('#demo_903');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -967,7 +967,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-warning" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_30');
+        var obj = $('#demo_904');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -1000,7 +1000,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-danger" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_31');
+        var obj = $('#demo_905');
 
         var options = obj.data('bs.iconpicker').options;
 
@@ -1033,7 +1033,7 @@ describe('Bootstrp-IconPicker v1.8.2', function() {
 
     it('should init with "button" tag and attributes[ class="btn btn-info" role="iconpicker" ]', function() {
 
-        var obj = $('#demo_32');
+        var obj = $('#demo_906');
 
         var options = obj.data('bs.iconpicker').options;
 

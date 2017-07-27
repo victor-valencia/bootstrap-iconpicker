@@ -19,11 +19,11 @@ and open the template in the editor.
         <link rel="stylesheet" href="icon-fonts/map-icons-2.1.0/css/map-icons.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"/>
         <link rel="stylesheet" href="icon-fonts/octicons-2.1.2/css/octicons.min.css"/>
-        <link rel="stylesheet" href="icon-fonts/typicons-2.0.6/css/typicons.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.0/css/weather-icons.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.1/css/weather-icons.min.css"/>
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css"/> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css"/>
-        <link rel="stylesheet" href="bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"/>
+        <link rel="stylesheet" href="dist/css/bootstrap-iconpicker.css"/>
 
         <style type="text/css">
             .bg-gray {
@@ -178,7 +178,7 @@ and open the template in the editor.
                         <li><a href="#mapicon" role="tab" data-toggle="tab"><i class="map-icon-walking"></i> Map Icons 2.1.0</a></li>
                         <li><a href="#materialdesign" role="tab" data-toggle="tab"><i class="zmdi zmdi-3d-rotation"></i> Material Design 2.2.0</a></li>
                         <li><a href="#octicon" role="tab" data-toggle="tab"><i class="octicon octicon-bug"></i> Octicons 2.1.2</a></li>
-                        <li><a href="#typicon" role="tab" data-toggle="tab"><i class="typcn typcn-anchor"></i> Typicons 2.0.6</a></li>
+                        <li><a href="#typicon" role="tab" data-toggle="tab"><i class="typcn typcn-anchor"></i> Typicons 2.0.9</a></li>
                         <li><a href="#weathericon" role="tab" data-toggle="tab"><i class="wi wi-day-rain"></i> Weather Icons 1.2.0</a></li>
                     </ul>
                 </li>
@@ -193,22 +193,22 @@ and open the template in the editor.
                             <code class="html"><span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-glyphicon.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Glyphicon --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-glyphicon.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
@@ -224,32 +224,32 @@ and open the template in the editor.
 <span class="c">&lt;!-- Ionicons CDN --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-ionicon-2.0.1.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Ionicons --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-ionicon-2.0.1.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
                     <p>Result</p>
                     <div data-iconset="ionicon" role="iconpicker"></div>
                     <div class="bs-callout bs-callout-info">
-                        <h4>Ionicons iconset availables are:</h4>
+                        <h4>Iconset versions availables are:</h4>
                         <p>
-                            <code>iconset-ionicon-2.0.1.min.js</code>       <span class="c">//Use CDN => </span><span class="o">http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css</span></br>
-                            <code>iconset-ionicon-1.5.2.min.js</code>       <span class="c">//Use CDN => </span><span class="o">http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css</span></br>
+                            <code>2.0.1</code>       <span class="c">//Use CDN => </span><span class="o">http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css</span></br>
+                            <code>1.5.2</code>       <span class="c">//Use CDN => </span><span class="o">http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css</span></br>
                         </p>
                     </div>
                 </div>
@@ -262,22 +262,22 @@ and open the template in the editor.
 <span class="c">&lt;!-- Flag Icons CDN --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-flagicon-2.8.0.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Flag Icons --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-flagicon-2.8.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
@@ -293,38 +293,38 @@ and open the template in the editor.
 <span class="c">&lt;!-- Font Awesome CDN --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-fontawesome-4.7.0.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Font Awesome --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-fontawesome-4.7.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
                     <p>Result</p>
                     <div data-iconset="fontawesome" role="iconpicker"></div>
                     <div class="bs-callout bs-callout-info">
-                        <h4>Font Awesome iconset availables are:</h4>
+                        <h4>Iconset versions availables are:</h4>
                         <p>
-                            <code>iconset-fontawesome-4.7.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css</span></br>
-                            <code>iconset-fontawesome-4.6.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css</span></br>
-                            <code>iconset-fontawesome-4.5.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css</span></br>
-                            <code>iconset-fontawesome-4.4.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css</span></br>
-                            <code>iconset-fontawesome-4.3.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css</span></br>
-                            <code>iconset-fontawesome-4.2.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css</span></br>
-                            <code>iconset-fontawesome-4.1.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css</span></br>
-                            <code>iconset-fontawesome-4.0.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css</span>
+                            <code>4.7.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css</span></br>
+                            <code>4.6.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css</span></br>
+                            <code>4.5.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css</span></br>
+                            <code>4.4.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css</span></br>
+                            <code>4.3.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css</span></br>
+                            <code>4.2.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css</span></br>
+                            <code>4.1.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css</span></br>
+                            <code>4.0.0</code>       <span class="c">//Use CDN => </span><span class="o">https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css</span>
                         </p>
                     </div>
                 </div>
@@ -337,22 +337,22 @@ and open the template in the editor.
 <span class="c">&lt;!-- Weather Icons --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"icon-fonts/weather-icons-1.2.0/css/weather-icons.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-weathericon-1.2.0.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Weather Icons --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-weathericon-1.2.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
@@ -368,22 +368,22 @@ and open the template in the editor.
 <span class="c">&lt;!-- Map Icons --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"icon-fonts/map-icons-2.1.0/css/map-icons.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-mapicon-2.1.0.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Map Icons --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-mapicon-2.1.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
@@ -399,22 +399,22 @@ and open the template in the editor.
 <span class="c">&lt;!-- Octicons --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"icon-fonts/octicons-2.1.2/css/octicons.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-octicon-2.1.2.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Octicons --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-octicon-2.1.2.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
@@ -427,30 +427,44 @@ and open the template in the editor.
                         <pre>
                             <code class="html"><span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span><span class="nt">/&gt;</span>
-<span class="c">&lt;!-- Typicons --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"icon-fonts/typicon-2.0.6/css/typicons.min.css"</span><span class="nt">/&gt;</span>
+<span class="c">&lt;!-- Typicons CDN --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-typicon-2.0.6.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Typicons --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-typicon-2.0.6.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
                     <p>Result</p>
                     <div data-iconset="typicon" role="iconpicker"></div>
+                    <div class="bs-callout bs-callout-info">
+                        <h4>Iconset versions availables are:</h4>
+                        <p>
+                            <code>2.0.1</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.1/typicons.min.css</span></br>
+                            <code>2.0.2</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.2/typicons.min.css</span></br>
+                            <code>2.0.3</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.3/typicons.min.css</span></br>
+                            <code>2.0.4</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.4/typicons.min.css</span></br>
+                            <code>2.0.5</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.5/typicons.min.css</span></br>
+                            <code>2.0.6</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.6/typicons.min.css</span></br>
+                            <code>2.0.7</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css</span></br>
+                            <code>2.0.8</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css</span></br>
+                            <code>2.0.9</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css</span>
+                        </p>
+                    </div>
                 </div>
                 <div class="tab-pane" id="elusiveicon">
                     <p>1.- Add the style files: <code>bootstrap.min.css</code>, <code>elusive-icons.min.css</code> and <code>bootstrap-iconpicker.min.css</code></p>
@@ -461,22 +475,22 @@ and open the template in the editor.
 <span class="c">&lt;!-- Elusive Icons --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-elusiveicon-2.0.0.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Elusive Icons --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-elusiveicon-2.0.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
@@ -492,38 +506,37 @@ and open the template in the editor.
 <span class="c">&lt;!-- Material Design CDN --&gt;</span>
 <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"</span><span class="nt">/&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"bootstrap-iconpicker/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"dist/css/bootstrap-iconpicker.min.css"</span><span class="nt">/&gt;</span>
 </code>
                         </pre>
                     </div>
 
-                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>iconset-materialdesign-2.2.0.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
+                    <p>2.- Add the javascript files: <code>jquery-1.10.2.min.js</code>, <code>bootstrap.min.js</code>, <code>bootstrap-iconpicker-iconset-all.min.js</code> and <code>bootstrap-iconpicker.min.js</code></p>
                     <div class="highlight">
                         <pre>
                             <code class="html"><span class="c">&lt;!-- jQuery CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap CDN --&gt;</span>
 <span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
-<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset for Material Design --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/iconset/iconset-materialdesign-2.2.0.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- Bootstrap-Iconpicker Iconset --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker-iconset-all.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 <span class="c">&lt;!-- Bootstrap-Iconpicker --&gt;</span>
-<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bootstrap-iconpicker/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"dist/js/bootstrap-iconpicker.min.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script&gt;</span>
 </code>
                         </pre>
                     </div>
                     <p>Result</p>
                     <div data-iconset="materialdesign" role="iconpicker"></div>
                     <div class="bs-callout bs-callout-info">
-                        <h4>Font Awesome iconset availables are:</h4>
+                        <h4>Iconset versions availables are:</h4>
                         <p>
-                            <code>iconset-materialdesign-2.2.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css</span></br>
-                            <code>iconset-materialdesign-2.1.2.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css</span></br>
-                            <code>iconset-materialdesign-2.1.1.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.1/css/material-design-iconic-font.min.css</span></br>
-                            <code>iconset-materialdesign-2.1.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.0/css/material-design-iconic-font.min.css</span></br>
-                            <code>iconset-materialdesign-2.0.2.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.2/css/material-design-iconic-font.min.css</span></br>
-                            <code>iconset-materialdesign-2.0.1.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.1/css/material-design-iconic-font.min.css</span></br>
-                            <code>iconset-materialdesign-2.0.0.min.js</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.0/css/material-design-iconic-font.min.css</span></br>
-                            <code>iconset-materialdesign-1.1.1.min.js</code>       <span class="c">//Use     => </span><span class="o">icons-fonts/material-design-1.1.1/css/material-design-iconic-font.min.css</span>
+                            <code>2.2.0</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css</span></br>
+                            <code>2.1.2</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css</span></br>
+                            <code>2.1.1</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.1/css/material-design-iconic-font.min.css</span></br>
+                            <code>2.1.0</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.0/css/material-design-iconic-font.min.css</span></br>
+                            <code>2.0.2</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.2/css/material-design-iconic-font.min.css</span></br>
+                            <code>2.0.1</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.1/css/material-design-iconic-font.min.css</span></br>
+                            <code>2.0.0</code>       <span class="c">//Use CDN => </span><span class="o">https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.0.0/css/material-design-iconic-font.min.css</span></br>
                         </p>
                     </div>
                 </div>
@@ -576,7 +589,7 @@ and open the template in the editor.
                 <div class="row text-center" style="padding-top: 12px;">
                     <div class="col-md-6">
                         <p><code>data-iconset="fontawesome"</code></br><code>data-icon="fa-wifi"</code></p>
-                        <button class="btn btn-default" data-iconset="fontawesome" data-icon="fa-wifi" role="iconpicker"></button>
+                        <button class="btn btn-default" data-iconset="fontawesome" data-iconset-version="4.0.0" data-icon="fa-wifi" role="iconpicker"></button>
                     </div>
                     <div class="col-md-6">
                         <p><code>data-iconset="weathericon"</code></br><code>data-icon="wi-day-rain"</code></p>
@@ -1333,8 +1346,8 @@ and open the template in the editor.
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/iconset/iconset-all.min.js"></script>
-        <script type="text/javascript" src="bootstrap-iconpicker/js/bootstrap-iconpicker.js"></script>
+        <script type="text/javascript" src="dist/js/bootstrap-iconpicker-iconset-all.js"></script>
+        <script type="text/javascript" src="dist/js/bootstrap-iconpicker.js"></script>
 
         <script type="text/javascript">
 
