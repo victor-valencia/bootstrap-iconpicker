@@ -63,7 +63,7 @@ All iconset includes in previous versions are included in file (`bootstrap-iconp
 | [Ionicons](http://ionicons.com/) | v1.5.2 and v2.0.1 (lastest) |
 | [Map Icons](http://map-icons.com/) | v2.1.0 (lastest) |
 | [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/) | v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0 (lastest) |
-| [Octicons](https://octicons.github.com/) | v2.1.2 (lastest) |
+| [Octicons](https://octicons.github.com/) | v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2, v2.2.0, v2.2.1, v2.2.2, v2.2.2, v2.3.0, v2.4.0, v2.4.1, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.4.1, v3.5.0, v4.0.0, v4.1.0, v4.1.1, v4.2.0, v4.2.1, v4.3.0 and v4.4.0 (lastest) |
 | [Typicons](http://typicons.com) | v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7, v2.0.8 and v2.0.9 (lastest) |
 | [Weather Icons](http://erikflowers.github.io/weather-icons/) | v1.2.0 (lastest)|
 
@@ -76,8 +76,10 @@ You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a 
 
 ## What´s next
 - [x] Includes all iconset files in file `bootstrap-iconpicker-iconset-all.js`.
+- [x] Add option `iconsetVersion`.
 - [x] Support for [Flag Icons v2.8.0](http://flag-icon-css.lip.is/).
 - [x] Support for multiple versions (v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.7, v2.0.8 and v2.0.9) of [Typicons](http://typicons.com).
+- [x] Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2, v2.2.0, v2.2.1, v2.2.2, v2.2.2, v2.3.0, v2.4.0, v2.4.1, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.4.1, v3.5.0, v4.0.0, v4.1.0, v4.1.1, v4.2.0, v4.2.1, v4.3.0 and v4.4.0) of [Octicons](https://octicons.github.com/).
 - [ ] Support for multiple versions (v1.3.1, v1.3.2, v2.0.0, v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7, v2.0.8, v2.0.9 and v2.0.10) of [Weather Icons](http://erikflowers.github.io/weather-icons/).
 - [x] Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0) of [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/).
 - [x] Support for multiple versions (v2.0.1 @[ibrahimyilmaz7](https://github.com/ibrahimyilmaz7)) of [Ionicons](http://ionicons.com/).
