@@ -256,7 +256,7 @@ describe('Bootstrp-IconPicker v1.9.0', function() {
         assert.equal(options.icon, 'octicon-bug');
         assert.equal(options.iconClass, 'octicon');
         assert.equal(options.iconClassFix, 'octicon-');
-        assert.equal(options.icons.length, 177);
+        assert.equal(options.icons.length, 173);
         assert.equal(options.iconset, 'octicon');
         assert.equal(options.inline, false);
         assert.equal(options.labelFooter, '{0} - {1} of {2}');
@@ -266,7 +266,7 @@ describe('Bootstrp-IconPicker v1.9.0', function() {
         assert.equal(options.rows, 4);
         assert.equal(options.search, true);
         assert.equal(options.searchText, 'Search icon');
-        assert.equal(options.selected, 19);
+        assert.equal(options.selected, 18);
         assert.equal(options.selectedClass, 'btn-warning');
         assert.equal(options.unselectedClass, 'btn-default');
 
