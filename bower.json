@@ -31,12 +31,16 @@
   "main": "dist/js/bootstrap-iconpicker.js",
   "ignore": [
     "/.*",
-    "bootstrap-iconpicker.png",
-    "index.html",
     "css",
-    "icons-fonts",
+    "icon-fonts",
     "test",
-    "util"
+    "util",
+    "banner.js",
+    "bootstrap-iconpicker.png",
+    "gruntfile.js",
+    "index.html",
+    "package.json",
+    "README.md"
   ],
   "devDependencies": {
     "sinonjs": "^1.17.1"
