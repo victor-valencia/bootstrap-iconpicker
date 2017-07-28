@@ -34,7 +34,7 @@
   ],
   "ignore": [
     "/.*",
-    "css",
+    "css/*",
     "icon-fonts",
     "test",
     "util",
