@@ -30,7 +30,7 @@
   },
   "main": [
     "dist/js/bootstrap-iconpicker.js",
-    "dist/js/bootstrap-iconpicker.css"
+    "dist/css/bootstrap-iconpicker.css"
   ],
   "ignore": [
     "/.*",
