@@ -35,6 +35,7 @@
     "icon-fonts",
     "test",
     "util",
+    "src",
     "banner.js",
     "bootstrap-iconpicker.png",
     "gruntfile.js",
