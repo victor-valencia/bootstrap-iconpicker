@@ -28,7 +28,7 @@
     "type": "git",
     "url": "http://victor-valencia.github.io/bootstrap-iconpicker"
   },
-  "main": "dist/js/bootstrap-iconpicker.js",
+  "main": "dist",
   "ignore": [
     "/.*",
     "css",
