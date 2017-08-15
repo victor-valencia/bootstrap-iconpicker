@@ -22,8 +22,7 @@ Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/el
 - [Supported iconset](#supported-iconset)
 - [Documentation and live examples](#documentation-and-live-examples)
 - [Bugs and feature requests](#bugs-and-feature-requests)
-- [What's next](#whats-next)
-- [Changelog](#changelog)
+- [What's next and changelog](#whats-next-and-changelog)
 - [Versioning](#versioning)
 - [Author](#author)
 - [Contributors](#contributors)
@@ -66,18 +65,7 @@ We provide compiled CSS and JS (`bootstrap-iconpicker.*`), as well as compiled a
 All iconset includes in previous versions are included in file (`bootstrap-iconpicker-iconset-all.js`) compiled and (`bootstrap-iconpicker-iconset-all.min.js`) minified.
 
 ## Supported Iconset
-| Iconset | Versions |
-| --- | --- |
-| [Elusive Icons](http://press.codes/downloads/elusive-icons-webfont/) | v2.0.0 (lastest) |
-| [Flag Icons](http://flag-icon-css.lip.is/) | v2.8.0 (lastest)|
-| [Font Awesome Icons](http://fontawesome.io/) | v4.0.0, v4.1.0, v4.2.0, v4.3.0, v4.4.0, v4.5.0, v4.6.0 and v4.7.0 (lastest) |
-| Glyphicons | v3.3.7 (lastest) |
-| [Ionicons](http://ionicons.com/) | v1.5.2 and v2.0.1 (lastest) |
-| [Map Icons](http://map-icons.com/) | v2.1.0 (lastest) |
-| [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/) | v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0 (lastest) |
-| [Octicons](https://octicons.github.com/) | v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2, v2.2.0, v2.2.1, v2.2.2, v2.2.2, v2.3.0, v2.4.0, v2.4.1, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.4.1, v3.5.0, v4.0.0, v4.1.0, v4.1.1, v4.2.0, v4.2.1, v4.3.0 and v4.4.0 (lastest) |
-| [Typicons](http://typicons.com) | v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7, v2.0.8 and v2.0.9 (lastest) |
-| [Weather Icons](http://erikflowers.github.io/weather-icons/) | v1.2.0 (lastest)|
+You can see all suported iconset in [this doc](docs/SUPPORTED.md)
 
 ## Documentation and live examples
 See documentation and live examples here: [http://victor-valencia.github.io/bootstrap-iconpicker](http://victor-valencia.github.io/bootstrap-iconpicker)
@@ -86,90 +74,8 @@ See documentation and live examples here: [http://victor-valencia.github.io/boot
 Have a bug or a feature request? [Please open a new issue](https://github.com/victor-valencia/bootstrap-iconpicker/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
 You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a template for your bug reports.
 
-## What´s next
-- [ ] Support for multiple versions (v1.3.1, v1.3.2, v2.0.0, v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7, v2.0.8, v2.0.9 and v2.0.10) of [Weather Icons](http://erikflowers.github.io/weather-icons/).
-
-## Changelog
-- [![v1.9.0](http://img.shields.io/badge/zip-v1.9.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.9.0.zip).    
-    - Includes all iconset files in file `bootstrap-iconpicker-iconset-all.js`.
-    - Add option `iconsetVersion`.
-    - Support for [Flag Icons v2.8.0](http://flag-icon-css.lip.is/).
-    - Support for multiple versions (v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.7, v2.0.8 and v2.0.9) of [Typicons](http://typicons.com).
-    - Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2, v2.2.0, v2.2.1, v2.2.2, v2.2.2, v2.3.0, v2.4.0, v2.4.1, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.4.1, v3.5.0, v4.0.0, v4.1.0, v4.1.1, v4.2.0, v4.2.1, v4.3.0 and v4.4.0) of [Octicons](https://octicons.github.com/).
-    - Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0) of [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/).
-    - Support for multiple versions (v2.0.1 @[ibrahimyilmaz7](https://github.com/ibrahimyilmaz7)) of [Ionicons](http://ionicons.com/).
-- [![v1.8.2](http://img.shields.io/badge/zip-v1.8.2-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.2.zip).    
-    - Fix navigation to invalid pages.
-    - Filling search/hidden inputs. @[s-belichenko-sold](https://github.com/s-belichenko-sold)
-    - Search and filter case insensitive. @[mahmoud-asadi](https://github.com/mahmoud-asadi)
-    - Support for [Bootstrap 3.3.7](http://getbootstrap.com/).
-    - Update license to [MIT](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE).
-- [![v1.8.1](http://img.shields.io/badge/zip-v1.8.1-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.1.zip).
-    - Support for [npm](https://www.npmjs.com) install.
-- [![v1.8.0](http://img.shields.io/badge/zip-v1.8.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.0.zip).
-    - Fix for case, when there are no icons, and count is displayed, as '1 - 0 of 0 '. @[joews](https://github.com/joews).
-    - Support for multiple versions (v4.3.0 @[michaelbilcot](https://github.com/michaelbilcot), v4.4.0, v4.5.0, v4.6.0 and v4.7.0) of [Font Awesome Icons](http://fontawesome.io/).
-- [![v1.7.0](http://img.shields.io/badge/zip-v1.7.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.7.0.zip).
-    - Support for button and div tags.
-    - All `iconset` includes the empty icon value.
-    - Option `rows` accepts the value 0 to indicate all rows.
-    - Add options:
-        - `align`
-        - `header`
-        - `footer`
-    - Add methods:
-        - `setAlign`
-        - `setHeader`
-        - `setFooter`
-    - Support for 1 more icon fonts:
-        - [Material Design Icons v1.1.1](http://zavoloklom.github.io/material-design-iconic-font/)
-- [![v1.6.0](http://img.shields.io/badge/zip-v1.6.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.6.0.zip).
-    - Restructure `iconset` configuration.
-    - Option `iconset` accepts `String` and `Object` (Limit your `iconset` option).
-    - Add options:
-        - `arrowPrevIconClass`
-        - `arrowNextIconClass`
-        - `labelHeader`
-        - `labelFooter`
-    - Add methods:
-        - `setArrowClass`
-        - `setArrowPrevIconClass`
-        - `setArrowNextIconClass`
-        - `setCols`
-        - `setIconset`
-        - `setLabelHeader`
-        - `setLabelFooter`
-        - `setPlacement`
-        - `setRows`
-        - `setSearch`
-        - `setSearchText`
-        - `setSelectedClass`
-        - `setUnselectedClass`
-    - Support for 6 more icon fonts:
-        - [Elusive Icons v2.0.0](http://press.codes/downloads/elusive-icons-webfont/)
-        - [Ionicons v1.5.2](http://ionicons.com/)
-        - [Map Icons v2.1.0](http://map-icons.com/)
-        - [Octicons v2.1.2](https://octicons.github.com/)
-        - [Typicons v2.0.6](http://typicons.com)
-        - [Weather Icons v1.2.0](http://erikflowers.github.io/weather-icons/)
-- [![v1.5.0](http://img.shields.io/badge/zip-v1.5.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.5.0.zip).
-    - Add search field.
-- [![v1.4.0](http://img.shields.io/badge/zip-v1.4.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.4.0.zip).
-    - Support for customization of the component.
-- [![v1.3.1](http://img.shields.io/badge/zip-v1.3.1-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.3.1.zip).
-    - Bind `body` `click` to solve issues for ajax loaded pages. @[crlcu](https://github.com/crlcu)
-- [![v1.3.0](http://img.shields.io/badge/zip-v1.3.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.3.0.zip).
-    - Support for multiple versions (v4.0.0, v4.1.0, v4.2.0) of [Font Awesome Icons](http://fontawesome.io/).
-- [![v1.2.1](http://img.shields.io/badge/zip-v1.2.1-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.2.1.zip).
-    - Add `.iconpicker-popover` class. @[jwhitfieldseed](https://github.com/jwhitfieldseed)
-- [![v1.2.0](http://img.shields.io/badge/zip-v1.2.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.2.0.zip).
-    - Add the method `setIcon`.
-- [![v1.1.0](http://img.shields.io/badge/zip-v1.1.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.1.0.zip).
-    - Dispatch `change` event when an iconpicker is changed. @[promatik](https://github.com/promatik)
-- [![v1.0.1](http://img.shields.io/badge/zip-v1.0.1-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.0.1.zip).
-    - Reducing the size of the source file.
-- [![v1.0.0](http://img.shields.io/badge/zip-v1.0.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/1.0.0.zip).
-    - Version initial.
+## What's next and changelog
+You can see what's next and changelog in [this doc](docs/CHANGELOG.md)
 
 ## Versioning
 For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap-Iconpicker is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
