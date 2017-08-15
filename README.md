@@ -65,7 +65,7 @@ We provide compiled CSS and JS (`bootstrap-iconpicker.*`), as well as compiled a
 All iconset includes in previous versions are included in file (`bootstrap-iconpicker-iconset-all.js`) compiled and (`bootstrap-iconpicker-iconset-all.min.js`) minified.
 
 ## Supported Iconset
-You can see all suported iconset in [this doc](docs/SUPPORTED.md)
+You can see all suported iconset in [this doc](docs/SUPPORTED.md).
 
 ## Documentation and live examples
 See documentation and live examples here: [http://victor-valencia.github.io/bootstrap-iconpicker](http://victor-valencia.github.io/bootstrap-iconpicker)
@@ -75,7 +75,7 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/vi
 You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a template for your bug reports.
 
 ## What's next and changelog
-You can see what's next and changelog in [this doc](docs/CHANGELOG.md)
+You can see what's next and changelog in [this doc](docs/CHANGELOG.md).
 
 ## Versioning
 For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap-Iconpicker is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.

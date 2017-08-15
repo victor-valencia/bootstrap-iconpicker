@@ -8,9 +8,6 @@
 [![Issues](http://img.shields.io/badge/license-MIT-red.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE)
 
 # [Bootstrap-Iconpicker](http://victor-valencia.github.io/bootstrap-iconpicker)
-![Iconpicker](bootstrap-iconpicker.png)
-
-A simple iconpicker for Bootstrap 3.x.
 
 ## Table of contents
 - [Supported iconset](#supported-iconset)
