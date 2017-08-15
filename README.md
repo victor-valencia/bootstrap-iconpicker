@@ -7,18 +7,22 @@
 [![Issues](http://img.shields.io/github/issues/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/issues?q=is%3Aopen)
 [![Issues](http://img.shields.io/badge/license-MIT-red.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE)
 
-# [Bootstrap-Iconpicker v1.8.2](http://victor-valencia.github.io/bootstrap-iconpicker)
+# [Bootstrap-Iconpicker v1.9.0](http://victor-valencia.github.io/bootstrap-iconpicker)
 ![Iconpicker](bootstrap-iconpicker.png)
 
 A simple iconpicker for Bootstrap 3.x.
 
 Please note that this project is for [Bootstrap 3.x](http://getbootstrap.com/), including Glyphicons.
-Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/elusive-icons-webfont/), [Font Awesome](http://fontawesome.io/), [Ionicons](http://ionicons.com/), [Map Icons](http://map-icons.com/), [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/), [Octicons](https://octicons.github.com/), [Typicons](http://typicons.com), [Weather Icons](http://erikflowers.github.io/weather-icons/).
+Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/elusive-icons-webfont/), [Font Awesome](http://fontawesome.io/), [Ionicons](http://ionicons.com/), [Map Icons](http://map-icons.com/), [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/), [Octicons](https://octicons.github.com/), [Typicons](http://typicons.com), [Weather Icons](http://erikflowers.github.io/weather-icons/), [Flag Icons](http://flag-icon-css.lip.is/).
 
 ## Table of contents
 - [Quick start](#quick-start)
+- [CDN](#cdn)
+- [What's included](#whats-included)
+- [Supported iconset](#supported-iconset)
 - [Documentation and live examples](#documentation-and-live-examples)
 - [Bugs and feature requests](#bugs-and-feature-requests)
+- [What's next](#whats-next)
 - [Changelog](#changelog)
 - [Versioning](#versioning)
 - [Author](#author)
@@ -27,12 +31,20 @@ Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/el
 
 ## Quick start
 
-Three quick start options are available:
+Several quick start options are available:
 
-- Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.2.zip).
+- Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.9.0.zip).
 - Clone the repo: `git clone https://github.com/victor-valencia/bootstrap-iconpicker.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-iconpicker`.
 - Install with [npm](https://www.npmjs.com): `npm install bootstrap-iconpicker`.
+
+## CDN
+
+The [CDN](https://cdnjs.com/libraries/bootstrap-iconpicker) is updated after the release is made public, which means that there is a delay between the publishing of a release and its availability on the CDN. Check the GitHub page for the latest release.
+
+- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/css/bootstrap-iconpicker.min.css](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/css/bootstrap-iconpicker.min.css)
+- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker-iconset-all.min.js](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker-iconset-all.min.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker.min.js](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker.min.js)
 
 ### What's included
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
@@ -75,16 +87,17 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/vi
 You may use [this JSFiddle](http://jsfiddle.net/victor_valencia/y1q541ar/) as a template for your bug reports.
 
 ## What´s next
-- [x] Includes all iconset files in file `bootstrap-iconpicker-iconset-all.js`.
-- [x] Add option `iconsetVersion`.
-- [x] Support for [Flag Icons v2.8.0](http://flag-icon-css.lip.is/).
-- [x] Support for multiple versions (v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.7, v2.0.8 and v2.0.9) of [Typicons](http://typicons.com).
-- [x] Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2, v2.2.0, v2.2.1, v2.2.2, v2.2.2, v2.3.0, v2.4.0, v2.4.1, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.4.1, v3.5.0, v4.0.0, v4.1.0, v4.1.1, v4.2.0, v4.2.1, v4.3.0 and v4.4.0) of [Octicons](https://octicons.github.com/).
 - [ ] Support for multiple versions (v1.3.1, v1.3.2, v2.0.0, v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7, v2.0.8, v2.0.9 and v2.0.10) of [Weather Icons](http://erikflowers.github.io/weather-icons/).
-- [x] Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0) of [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/).
-- [x] Support for multiple versions (v2.0.1 @[ibrahimyilmaz7](https://github.com/ibrahimyilmaz7)) of [Ionicons](http://ionicons.com/).
 
 ## Changelog
+- [![v1.9.0](http://img.shields.io/badge/zip-v1.9.0-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.9.0.zip).    
+    - Includes all iconset files in file `bootstrap-iconpicker-iconset-all.js`.
+    - Add option `iconsetVersion`.
+    - Support for [Flag Icons v2.8.0](http://flag-icon-css.lip.is/).
+    - Support for multiple versions (v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.7, v2.0.8 and v2.0.9) of [Typicons](http://typicons.com).
+    - Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2, v2.2.0, v2.2.1, v2.2.2, v2.2.2, v2.3.0, v2.4.0, v2.4.1, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.4.1, v3.5.0, v4.0.0, v4.1.0, v4.1.1, v4.2.0, v4.2.1, v4.3.0 and v4.4.0) of [Octicons](https://octicons.github.com/).
+    - Support for multiple versions (v2.0.0, v2.0.1, v2.0.2, v2.1.0, v2.1.1, v2.1.2 and v2.2.0) of [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/).
+    - Support for multiple versions (v2.0.1 @[ibrahimyilmaz7](https://github.com/ibrahimyilmaz7)) of [Ionicons](http://ionicons.com/).
 - [![v1.8.2](http://img.shields.io/badge/zip-v1.8.2-blue.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.8.2.zip).    
     - Fix navigation to invalid pages.
     - Filling search/hidden inputs. @[s-belichenko-sold](https://github.com/s-belichenko-sold)
@@ -177,7 +190,7 @@ For more information on SemVer, please visit <http://semver.org/>.
 @[victor-valencia](https://github.com/victor-valencia)
 
 ## Contributors
-@[victor-valencia](https://github.com/victor-valencia), @[promatik](https://github.com/promatik), @[jwhitfieldseed](https://github.com/jwhitfieldseed), @[crlcu](https://github.com/crlcu), @[michaelbilcot](https://github.com/michaelbilcot), @[joews](https://github.com/joews), @[s-belichenko-sold](https://github.com/s-belichenko-sold), @[mahmoud-asadi](https://github.com/mahmoud-asadi)
+@[victor-valencia](https://github.com/victor-valencia), @[promatik](https://github.com/promatik), @[jwhitfieldseed](https://github.com/jwhitfieldseed), @[crlcu](https://github.com/crlcu), @[michaelbilcot](https://github.com/michaelbilcot), @[joews](https://github.com/joews), @[s-belichenko-sold](https://github.com/s-belichenko-sold), @[mahmoud-asadi](https://github.com/mahmoud-asadi), @[ibrahimyilmaz7](https://github.com/ibrahimyilmaz7)
 
 ## License
 Licensed under [the MIT license](LICENSE).
