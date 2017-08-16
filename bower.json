@@ -47,7 +47,7 @@
     "README.md"
   ],
   "dependencies": {
-    "jquery" : ">=1.10.2 <4.0.0",
+    "jquery" : "~1.10.2",
     "bootstrap": "~3.3.7"
   },
   "devDependencies": {
