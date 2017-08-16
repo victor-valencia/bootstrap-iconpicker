@@ -46,6 +46,10 @@
     "package.json",
     "README.md"
   ],
+  "dependencies": {
+    "jquery" : ">=1.10.2 <4.0.0",
+    "bootstrap": "~3.3.7"
+  },
   "devDependencies": {
     "sinonjs": "^1.17.1"
   }
