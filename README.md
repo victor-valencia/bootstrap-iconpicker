@@ -27,6 +27,7 @@ Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/el
 - [Author](#author)
 - [Contributors](#contributors)
 - [License](#license)
+- [Used by](#used-by)
 
 ## Quick start
 
@@ -100,3 +101,12 @@ For more information on SemVer, please visit <http://semver.org/>.
 
 ## License
 Licensed under [the MIT license](LICENSE).
+
+## Used by
+- [Cake Cup](http://www.cake-cup.mx/)
+- [SAPRIGRAT](http://www.saprigrat.mx/)
+- [KML App](http://kml-riegotec.rhcloud.com/)
+- [Opti Riego](http://or-sdayr.rhcloud.com/)
+
+Does your organization use bootstrap-iconpicker?
+Open an issue, and include a link, and you'll be added to the list.
