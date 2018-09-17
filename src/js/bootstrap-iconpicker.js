@@ -79,7 +79,7 @@
             e.preventDefault();
             el.select($(this).val());
             if(op.inline === false){
-                el.$element.popover('destroy');
+                el.$element.popover('dispose');
             }
             else{
                 op.table.find('i.' + $(this).val()).parent().addClass(op.selectedClass);
@@ -477,11 +477,12 @@
                             content: op.table,
                             container: 'body',
                             placement: op.placement
+                        }).on('inserted.bs.popover', function() {
+                            $($this.data('bs.popover').getTipElement()).addClass('iconpicker-popover');
                         }).on('shown.bs.popover', function () {
                             data.switchPage(op.icon);
                             data.bindEvents();
                         });
-                        $this.data('bs.popover').tip().addClass('iconpicker-popover');
                         $this.popover('show');
                     });
                 }
@@ -517,7 +518,7 @@
             //the 'is' for buttons that trigger popups
             //the 'has' for icons within a button that triggers a popup
             if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-                $(this).popover('destroy');
+                $(this).popover('dispose');
             }
         });
     });
