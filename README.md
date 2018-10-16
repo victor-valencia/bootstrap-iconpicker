@@ -7,12 +7,12 @@
 [![Issues](http://img.shields.io/github/issues/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/issues?q=is%3Aopen)
 [![Issues](http://img.shields.io/badge/license-MIT-red.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE)
 
-# [Bootstrap-Iconpicker v1.9.0](http://victor-valencia.github.io/bootstrap-iconpicker)
-![Iconpicker](bootstrap-iconpicker.png)
+# [Bootstrap-Iconpicker v1.10.0](http://victor-valencia.github.io/bootstrap-iconpicker)
+![Iconpicker](bootstrap-iconpicker_4x.png)
 
-A simple iconpicker for Bootstrap 3.x.
+A simple iconpicker for Bootstrap 3.x and 4.x.
 
-Please note that this project is for [Bootstrap 3.x](http://getbootstrap.com/), including Glyphicons.
+Please note that this project is for [Bootstrap 3.x and 4.x](http://getbootstrap.com/), including Glyphicons in Bootstrap 3.x.
 Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/elusive-icons-webfont/), [Font Awesome](http://fontawesome.io/), [Ionicons](http://ionicons.com/), [Map Icons](http://map-icons.com/), [Material Design Icons](http://zavoloklom.github.io/material-design-iconic-font/), [Octicons](https://octicons.github.com/), [Typicons](http://typicons.com), [Weather Icons](http://erikflowers.github.io/weather-icons/), [Flag Icons](http://flag-icon-css.lip.is/).
 
 ## Table of contents
@@ -33,7 +33,7 @@ Other icon fonts thats supports: [Elusive Icons](http://press.codes/downloads/el
 
 Several quick start options are available:
 
-- Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.9.0.zip).
+- Download the latest release: [![Tag](http://img.shields.io/github/release/victor-valencia/bootstrap-iconpicker.svg)](https://github.com/victor-valencia/bootstrap-iconpicker/archive/v1.10.0.zip).
 - Clone the repo: `git clone https://github.com/victor-valencia/bootstrap-iconpicker.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-iconpicker`.
 - Install with [npm](https://www.npmjs.com): `npm install bootstrap-iconpicker`.
@@ -42,9 +42,10 @@ Several quick start options are available:
 
 The [CDN](https://cdnjs.com/libraries/bootstrap-iconpicker) is updated after the release is made public, which means that there is a delay between the publishing of a release and its availability on the CDN. Check the GitHub page for the latest release.
 
-- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/css/bootstrap-iconpicker.min.css](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/css/bootstrap-iconpicker.min.css)
-- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker-iconset-all.min.js](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker-iconset-all.min.js)
-- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker.min.js](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.9.0/js/bootstrap-iconpicker.min.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/css/bootstrap-iconpicker.min.css](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/css/bootstrap-iconpicker.min.css)
+- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker-iconset-all.min.js](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker-iconset-all.min.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker.bundle.min.js](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker.bundle.min.js)
+- [https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker.min.js](https://cdnjs.cloudflare.com/ajax/libs/bootstrap-iconpicker/1.10.0/js/bootstrap-iconpicker.min.js)
 
 ### What's included
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
@@ -57,6 +58,7 @@ bootstrap-iconpicker/
 ├── js/
 │   ├── bootstrap-iconpicker-iconset-all.js
 │   ├── bootstrap-iconpicker-iconset-all.min.js
+│   ├── bootstrap-iconpicker.bundle.min.js
 │   ├── bootstrap-iconpicker.js
 │   └── bootstrap-iconpicker.min.js
 ```
@@ -64,6 +66,8 @@ bootstrap-iconpicker/
 We provide compiled CSS and JS (`bootstrap-iconpicker.*`), as well as compiled and minified CSS and JS (`bootstrap-iconpicker.min.*`).
 
 All iconset includes in previous versions are included in file (`bootstrap-iconpicker-iconset-all.js`) compiled and (`bootstrap-iconpicker-iconset-all.min.js`) minified.
+
+Files (`bootstrap-iconpicker-iconset-all.min.js`) and (`bootstrap-iconpicker.min.js`) are included in bundle version (`bootstrap-iconpicker.bundle.min.js`).
 
 ## Supported Iconset
 You can see all suported iconset in [this doc](docs/SUPPORTED.md).
@@ -103,10 +107,10 @@ For more information on SemVer, please visit <http://semver.org/>.
 Licensed under [the MIT license](LICENSE).
 
 ## Used by
-- [Cake Cup](http://www.cake-cup.mx/)
+- [Cake Cup](http://cake-cup.herokuapp.com/)
 - [SAPRIGRAT](http://www.saprigrat.mx/)
-- [KML App](http://kml-riegotec.rhcloud.com/)
-- [Opti Riego](http://or-sdayr.rhcloud.com/)
+- [KML App](http://kml-riegotec.herokuapp.com/)
+- [Opti Riego](http://optiriego.herokuapp.com/)
 
 Does your organization use bootstrap-iconpicker?
 Open an issue, and include a link, and you'll be added to the list.

@@ -1,8 +1,8 @@
 /*!========================================================================
-* File: bootstrap-iconpicker.js v1.9.0 by @victor-valencia
+* File: bootstrap-iconpicker.js v1.10.0 by @victor-valencia
 * https://victor-valencia.github.com/bootstrap-iconpicker
 * ========================================================================
-* Copyright 2013-2017 Victor Valencia Rico.
+* Copyright 2013-2018 Victor Valencia Rico.
 * Licensed under MIT license.
 * https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE
 * ========================================================================
@@ -13,14 +13,20 @@
     // ICONPICKER PUBLIC CLASS DEFINITION
     // ==============================
     var Iconpicker = function (element, options) {
+
+      if (typeof $.fn.popover === 'undefined' || typeof $.fn.popover.Constructor.VERSION === 'undefined') {
+        throw new TypeError('Bootstrap iconpicker require Bootstrap popover');
+      }
+
       this.$element = $(element);
       this.options  = $.extend({}, Iconpicker.DEFAULTS, this.$element.data());
       this.options  = $.extend({}, this.options, options);
+
     };
 
     // ICONPICKER VERSION
     // ==============================
-    Iconpicker.VERSION = '1.9.0';
+    Iconpicker.VERSION = '1.10.0';
 
     // ICONPICKER ICONSET_EMPTY
     // ==============================
@@ -36,7 +42,8 @@
         _custom: null,
         elusiveicon: $.iconset_elusiveicon || Iconpicker.ICONSET_EMPTY,
         flagicon: $.iconset_flagicon || Iconpicker.ICONSET_EMPTY,
-        fontawesome: $.iconset_fontawesome || Iconpicker.ICONSET_EMPTY,
+        fontawesome4: $.iconset_fontawesome_4 || Iconpicker.ICONSET_EMPTY,
+        fontawesome5: $.iconset_fontawesome_5 || Iconpicker.ICONSET_EMPTY,
         glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,
         ionicon: $.iconset_ionicon || Iconpicker.ICONSET_EMPTY,
         mapicon: $.iconset_mapicon || Iconpicker.ICONSET_EMPTY,
@@ -51,11 +58,11 @@
     Iconpicker.DEFAULTS = {
         align: 'center',
         arrowClass: 'btn-primary',
-        arrowNextIconClass: 'glyphicon glyphicon-arrow-right',
-        arrowPrevIconClass: 'glyphicon glyphicon-arrow-left',
+        arrowNextIconClass: 'fas fa-arrow-right',
+        arrowPrevIconClass: 'fas fa-arrow-left',
         cols: 4,
         icon: '',
-        iconset: 'glyphicon',
+        iconset: 'fontawesome5',
         iconsetVersion: 'lastest',
         header: true,
         labelHeader: '{0} / {1}',
@@ -66,7 +73,7 @@
         search: true,
         searchText: 'Search icon',
         selectedClass: 'btn-warning',
-        unselectedClass: 'btn-default'
+        unselectedClass: 'btn-secondary'
     };
 
     // ICONPICKER PRIVATE METHODS
@@ -85,10 +92,10 @@
             e.preventDefault();
             el.select($(this).val());
             if(op.inline === false){
-                el.$element.popover('destroy');
+                el.$element.popover(($.fn.bsVersion() === '3.x') ? 'destroy' : 'dispose');
             }
             else{
-                op.table.find('i.' + $(this).val()).parent().addClass(op.selectedClass);
+                op.table.find("i[class$='" + $(this).val() + "']").parent().addClass(op.selectedClass);
             }
         });
         op.table.find('.search-control').off('keyup').on('keyup', function() {
@@ -176,7 +183,9 @@
             this.changeList(page);
         }
         if(icon === ''){
-            op.table.find('i.' + op.iconClassFix).parent().addClass(op.selectedClass);
+            //if(op.iconClassFix !== '')
+                op.table.find('i.' + op.iconClassFix).parent().addClass(op.selectedClass);
+            //else
         }
         else{
             op.table.find('i.' + icon).parent().addClass(op.selectedClass);
@@ -312,7 +321,7 @@
         var search = [
             '<tr>',
             '   <td colspan="' + op.cols + '">',
-            '       <input type="text" class="form-control search-control" style="width: ' + op.cols * 39 + 'px;" placeholder="' + op.searchText + '">',
+            '       <input type="text" class="form-control search-control" style="width: ' + op.cols * (($.fn.bsVersion() === '3.x') ? 39 : 41) + 'px;" placeholder="' + op.searchText + '">',
             '   </td>',
             '</tr>'
         ];
@@ -472,7 +481,7 @@
                         .append('<i></i>')
                         .append('<input type="hidden" ' + name + '></input>')
                         .append('<span class="caret"></span>')
-                        .addClass('iconpicker');
+                        .addClass('iconpicker ' + (($.fn.bsVersion() === '3.x') ? '' : 'dropdown-toggle'));
                     data.setIconset(op.iconset);
                     $this.on('click', function(e) {
                         e.preventDefault();
@@ -483,11 +492,15 @@
                             content: op.table,
                             container: 'body',
                             placement: op.placement
+                        }).on('inserted.bs.popover', function() {
+                            var el = $this.data('bs.popover');
+                            var tip = ($.fn.bsVersion() === '3.x') ? el.tip() : $(el.getTipElement())
+                            tip.addClass('iconpicker-popover');
                         }).on('shown.bs.popover', function () {
                             data.switchPage(op.icon);
                             data.bindEvents();
                         });
-                        $this.data('bs.popover').tip().addClass('iconpicker-popover');
+                        //console.log($.fn.bsVersion());
                         $this.popover('show');
                     });
                 }
@@ -516,6 +529,10 @@
         return this;
     };
 
+    $.fn.bsVersion = function() {
+        return $.fn.popover.Constructor.VERSION.substr(0,2) + 'x';
+    };
+
     // ICONPICKER DATA-API
     // ===============
     $(document).on('click', 'body', function (e) {
@@ -523,7 +540,7 @@
             //the 'is' for buttons that trigger popups
             //the 'has' for icons within a button that triggers a popup
             if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-                $(this).popover('destroy');
+                $(this).popover(($.fn.bsVersion() === '3.x') ? 'destroy' : 'dispose');
             }
         });
     });

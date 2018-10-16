@@ -28,7 +28,8 @@ module.exports = function(grunt) {
                 files: {
                     'temp/js/iconset/iconset-elusiveicon-all.min.js':       ['src/js/iconset/iconset-elusiveicon-all.js'],
                     'temp/js/iconset/iconset-flagicon-all.min.js':          ['src/js/iconset/iconset-flagicon-all.js'],
-                    'temp/js/iconset/iconset-fontawesome-all.min.js':       ['src/js/iconset/iconset-fontawesome-all.js'],
+                    'temp/js/iconset/iconset-fontawesome-4-all.min.js':     ['src/js/iconset/iconset-fontawesome-4-all.js'],
+                    'temp/js/iconset/iconset-fontawesome-5-all.min.js':     ['src/js/iconset/iconset-fontawesome-5-all.js'],
                     'temp/js/iconset/iconset-glyphicon-all.min.js':         ['src/js/iconset/iconset-glyphicon-all.js'],
                     'temp/js/iconset/iconset-ionicon-all.min.js':           ['src/js/iconset/iconset-ionicon-all.js'],
                     'temp/js/iconset/iconset-mapicon-all.min.js':           ['src/js/iconset/iconset-mapicon-all.js'],
@@ -80,7 +81,8 @@ module.exports = function(grunt) {
                 src: [
                     'src/js/iconset/iconset-elusiveicon-all.js',
                     'src/js/iconset/iconset-flagicon-all.js',
-                    'src/js/iconset/iconset-fontawesome-all.js',
+                    'src/js/iconset/iconset-fontawesome-4-all.js',
+                    'src/js/iconset/iconset-fontawesome-5-all.js',
                     'src/js/iconset/iconset-glyphicon-all.js',
                     'src/js/iconset/iconset-ionicon-all.js',
                     'src/js/iconset/iconset-mapicon-all.js',
@@ -99,7 +101,8 @@ module.exports = function(grunt) {
                 src: [
                     'temp/js/iconset/iconset-elusiveicon-all.min.js',
                     'temp/js/iconset/iconset-flagicon-all.min.js',
-                    'temp/js/iconset/iconset-fontawesome-all.min.js',
+                    'temp/js/iconset/iconset-fontawesome-4-all.min.js',
+                    'temp/js/iconset/iconset-fontawesome-5-all.min.js',
                     'temp/js/iconset/iconset-glyphicon-all.min.js',
                     'temp/js/iconset/iconset-ionicon-all.min.js',
                     'temp/js/iconset/iconset-mapicon-all.min.js',
@@ -109,6 +112,17 @@ module.exports = function(grunt) {
                     'temp/js/iconset/iconset-weathericon-all.min.js'
                 ],
                 dest: 'dist/js/bootstrap-iconpicker-iconset-all.min.js'
+            },
+            bundleJSMin: {
+                options: {
+                    stripBanners: {block: true},
+                    banner: banner.get('bootstrap-iconpicker.bundle.min.js')
+                },
+                src: [
+                    'dist/js/bootstrap-iconpicker-iconset-all.min.js',
+                    'dist/js/bootstrap-iconpicker.min.js'
+                ],
+                dest: 'dist/js/bootstrap-iconpicker.bundle.min.js'
             }
         },
         clean: {
@@ -117,7 +131,7 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: ['src/js/**/*.js'], // which files to watch
-                tasks: ['uglify', 'concat:mainJS', 'concat:mainJSMin', 'concat:iconsetJS', 'concat:iconsetJSMin'],
+                tasks: ['uglify', 'concat:mainJS', 'concat:mainJSMin', 'concat:iconsetJS', 'concat:iconsetJSMin', 'concat:bundleJSMin'],
                 options: {
                     spawn: false
                 }

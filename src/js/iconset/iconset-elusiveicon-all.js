@@ -1,7 +1,7 @@
 /*!========================================================================
  * Iconset: Elusive Icons
  * Versions: 2.0.0
- * http://press.codes/downloads/elusive-icons-webfont/
+ * http://elusiveicons.com/
  * ======================================================================== */
 
 ;(function($){

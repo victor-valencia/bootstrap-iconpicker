@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-iconpicker",
-  "description": "Simple Iconpicker for Bootstrap 3.x",
-  "version": "1.9.0",
+  "description": "Simple Iconpicker for Bootstrap 3.x and 4.x",
+  "version": "1.10.0",
   "keywords": [
     "Bootstrap",
     "Iconpicker",
@@ -29,8 +29,13 @@
     "url": "http://victor-valencia.github.io/bootstrap-iconpicker"
   },
   "main": [
+    "dist/css/bootstrap-iconpicker.css",
+    "dist/css/bootstrap-iconpicker.min.css",
+    "dist/js/bootstrap-iconpicker-iconset-all.js",
+    "dist/js/bootstrap-iconpicker-iconset-all.min.js",
+    "dist/js/bootstrap-iconpicker.bundle.min.js",
     "dist/js/bootstrap-iconpicker.js",
-    "dist/css/bootstrap-iconpicker.css"
+    "dist/js/bootstrap-iconpicker.min.js"
   ],
   "ignore": [
     "/.*",
@@ -40,15 +45,19 @@
     "/util",
     "/src",
     "banner.js",
-    "bootstrap-iconpicker.png",
+    "bootstrap-iconpicker_3x.png",
+    "bootstrap-iconpicker_4x.png",
     "gruntfile.js",
+    "index_v3x.html",
     "index.html",
     "package.json",
-    "README.md"
+    "README.md",
+    "docs/SUPPORTED.md",
+    "docs/CHANGELOG.md"
   ],
   "dependencies": {
-    "jquery" : "~1.10.2",
-    "bootstrap": "~3.3.7"
+    "jquery" : "~3.3.1",
+    "bootstrap": "~4.1.3"
   },
   "devDependencies": {
     "sinonjs": "^1.17.1"
