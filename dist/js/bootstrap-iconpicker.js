@@ -406,6 +406,11 @@
         this.select(op.icon);
     };
 
+    Iconpicker.prototype.setVersion = function (value) {
+        this.options.iconsetVersion = value;
+        this.reset();
+    };
+
     Iconpicker.prototype.setLabelHeader = function (value) {
         this.options.labelHeader = value;
         this.updateLabels(this.options.page);
