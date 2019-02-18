@@ -38,6 +38,10 @@
         flagicon: $.iconset_flagicon || Iconpicker.ICONSET_EMPTY,
         fontawesome4: $.iconset_fontawesome_4 || Iconpicker.ICONSET_EMPTY,
         fontawesome5: $.iconset_fontawesome_5 || Iconpicker.ICONSET_EMPTY,
+        fontawesome5brands: $.iconset_fontawesome_5_brands || Iconpicker.ICONSET_EMPTY,
+        fontawesome5regular: $.iconset_fontawesome_5_regular || Iconpicker.ICONSET_EMPTY,
+        fontawesome5solid: $.iconset_fontawesome_5_solid || Iconpicker.ICONSET_EMPTY,
+        fontawesome5light: $.iconset_fontawesome_5_light || Iconpicker.ICONSET_EMPTY,
         glyphicon: $.iconset_glyphicon || Iconpicker.ICONSET_EMPTY,
         ionicon: $.iconset_ionicon || Iconpicker.ICONSET_EMPTY,
         mapicon: $.iconset_mapicon || Iconpicker.ICONSET_EMPTY,
@@ -394,6 +398,11 @@
         op = $.extend(op, Iconpicker.ICONSET[op.iconset]);
         this.reset();
         this.select(op.icon);
+    };
+
+    Iconpicker.prototype.setVersion = function (value) {
+        this.options.iconsetVersion = value;
+        this.reset();
     };
 
     Iconpicker.prototype.setLabelHeader = function (value) {
