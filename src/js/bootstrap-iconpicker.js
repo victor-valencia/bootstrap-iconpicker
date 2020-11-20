@@ -161,8 +161,8 @@
                 el.trigger({ type: "change", icon: 'empty' });
             }
             else {
-                el.trigger({ type: "change", icon: icon });
                 el.find('input').val(icon);
+                el.trigger({ type: "change", icon: icon });
             }
             op.table.find('button.' + op.selectedClass).removeClass(op.selectedClass);
         }
