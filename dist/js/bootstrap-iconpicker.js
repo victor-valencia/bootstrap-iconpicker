@@ -2,7 +2,7 @@
 * File: bootstrap-iconpicker.js v1.10.0 by @victor-valencia
 * https://victor-valencia.github.com/bootstrap-iconpicker
 * ========================================================================
-* Copyright 2013-2018 Victor Valencia Rico.
+* Copyright 2013-2020 Victor Valencia Rico.
 * Licensed under MIT license.
 * https://github.com/victor-valencia/bootstrap-iconpicker/blob/master/LICENSE
 * ========================================================================
@@ -168,7 +168,6 @@
             }
             else {
                 el.trigger({ type: "change", icon: icon });
-                el.find('input').val(icon);
             }
             op.table.find('button.' + op.selectedClass).removeClass(op.selectedClass);
         }
